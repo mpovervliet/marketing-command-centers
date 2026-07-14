@@ -1,0 +1,22 @@
+{
+  "name": "affiliate-marketing-command-center",
+  "version": "0.1.0",
+  "description": "MP's Affiliate Marketing Command Center: 4 skills voor affiliate als kanaal voor NL/EU e-commerce en leadgen: affiliate-marketing-specialist (router, kanaal-fit, netwerk-landschap), affiliate-program-setup (netwerk-keuze Daisycon/TradeTracker/Awin/Tradedoubler, commissiemodel, voorwaarden, launch), affiliate-publisher-management (werving, deals, fraude-detectie, sanctie-ladder) en affiliate-measurement-attribution (dedupe, keuring, incrementaliteit, netto-ROAS). Werkt generiek met elke klantmap.",
+  "author": {
+    "name": "Maarten Pieter Overvliet"
+  },
+  "keywords": [
+    "affiliate",
+    "daisycon",
+    "tradetracker",
+    "awin",
+    "tradedoubler",
+    "publishers",
+    "commissie",
+    "cashback",
+    "kortingscode",
+    "fraude",
+    "attributie",
+    "incrementaliteit"
+  ]
+}

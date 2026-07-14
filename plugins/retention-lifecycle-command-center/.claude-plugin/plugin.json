@@ -1,0 +1,37 @@
+{
+  "name": "retention-lifecycle-command-center",
+  "version": "0.3.0",
+  "description": "MP's complete Retention & Lifecycle Command Center — 15 skills voor Klaviyo email/SMS lifecycle, deliverability (DMARC/BIMI/warmup), loyalty & subscriptions (LoyaltyLion/Smile/Recharge/Smartrr), reviews & UGC, cohort/CLV analytics en WhatsApp/RCS als lifecycle-kanaal. Klaviyo-first, Shopify-integrated. Werkt generiek met elke klantmap.",
+  "author": {
+    "name": "Maarten Pieter Overvliet"
+  },
+  "keywords": [
+    "retention",
+    "lifecycle",
+    "klaviyo",
+    "email-marketing",
+    "sms",
+    "deliverability",
+    "dmarc",
+    "bimi",
+    "loyalty",
+    "subscriptions",
+    "recharge",
+    "smartrr",
+    "reviews",
+    "ugc",
+    "cohort",
+    "clv",
+    "rfm",
+    "churn",
+    "post-purchase",
+    "whatsapp",
+    "rcs",
+    "cdp",
+    "predictive",
+    "winback",
+    "email-design",
+    "zero-party-data",
+    "preference-center"
+  ]
+}

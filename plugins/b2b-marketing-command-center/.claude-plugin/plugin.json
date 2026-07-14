@@ -1,0 +1,18 @@
+{
+  "name": "b2b-marketing-command-center",
+  "version": "0.1.0",
+  "description": "MP's B2B Marketing Command Center — 2 skills voor B2B-groei: LinkedIn Ads (Thought Leader Ads playbook, format-keuze, targeting-discipline 50k-500k, pipeline-meting) en B2B-leadgen/ABM-light voor MKB (ICP-definitie, buying committees, account-tiering, signaal-gedreven outreach, nurture met opvolg-SLA).",
+  "author": {
+    "name": "Maarten Pieter Overvliet"
+  },
+  "keywords": [
+    "b2b",
+    "linkedin-ads",
+    "thought-leader-ads",
+    "abm",
+    "leadgen",
+    "icp",
+    "outbound",
+    "pipeline"
+  ]
+}

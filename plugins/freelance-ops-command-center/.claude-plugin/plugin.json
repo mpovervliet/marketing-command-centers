@@ -1,0 +1,32 @@
+{
+  "name": "freelance-ops-command-center",
+  "version": "0.3.0",
+  "description": "MP's Freelance Ops Command Center — 15 skills die het eigen freelance-proces versnellen: context-index per klantmap (CONTEXT_INDEX.md), client-intake & onboarding, wekelijkse klant-updates, offertes/proposals, QBR-builder, uren & facturen, knowledge-capture, LinkedIn personal brand, cross-channel competitor-teardowns, plus CV-tailoring, motivatiebrieven en vacature-analyse.",
+  "author": {
+    "name": "Maarten Pieter Overvliet"
+  },
+  "keywords": [
+    "freelance",
+    "operations",
+    "intake",
+    "onboarding",
+    "proposals",
+    "offerte",
+    "qbr",
+    "facturen",
+    "urenregistratie",
+    "linkedin",
+    "personal-branding",
+    "competitor-analysis",
+    "knowledge-management",
+    "context-index",
+    "client-updates",
+    "cv",
+    "sollicitatie",
+    "case-study",
+    "new-business",
+    "radar",
+    "contracten",
+    "dba"
+  ]
+}

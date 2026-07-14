@@ -1,0 +1,30 @@
+{
+  "name": "meta-ads-command-center",
+  "version": "0.6.0",
+  "description": "MP's complete Meta Ads Command Center — 15 skills voor Facebook/Instagram Ads setup, audit, optimalisatie, Advantage+ campaigns, rapportage, creatives en measurement (CAPI/EMQ, Andromeda-signaalkwaliteit, attributie-duiding en incrementality-kalibratie). Werkt met elke klantmap.",
+  "author": {
+    "name": "Maarten Pieter Overvliet"
+  },
+  "keywords": [
+    "meta-ads",
+    "facebook-ads",
+    "instagram-ads",
+    "advantage-plus",
+    "audit",
+    "optimization",
+    "capi",
+    "emq",
+    "measurement",
+    "andromeda",
+    "partnership-ads",
+    "creators",
+    "ugc",
+    "lead-ads",
+    "catalog",
+    "dpa",
+    "brand-lift",
+    "whatsapp",
+    "troubleshooting",
+    "audiences"
+  ]
+}

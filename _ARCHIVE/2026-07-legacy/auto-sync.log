@@ -1,0 +1,183 @@
+2026-04-17 14:17:04  [HEARTBEAT]  OK - 34 junctions actief, 0 built-ins, geen wijzigingen
+2026-04-17 15:48:05  [ADD]  seo-geo-ecommerce
+2026-04-17 15:48:05  [SYNC]  Resultaat: +1 nieuw, 0 gerepareerd, 34 onveranderd, 0 built-ins
+2026-04-17 16:03:05  [ADD]  channable-ai-enrichment
+2026-04-17 16:03:05  [ADD]  channable-shopping-feeds
+2026-04-17 16:03:05  [SYNC]  Resultaat: +2 nieuw, 0 gerepareerd, 35 onveranderd, 0 built-ins
+2026-04-17 16:18:05  [ADD]  seo-geo-international
+2026-04-17 16:18:05  [ADD]  seo-geo-programmatic
+2026-04-17 16:18:05  [ADD]  seo-geo-visibility
+2026-04-17 16:18:05  [SYNC]  Resultaat: +3 nieuw, 0 gerepareerd, 37 onveranderd, 0 built-ins
+2026-04-18 00:03:06  [HEARTBEAT]  OK - 40 junctions actief, 0 built-ins, geen wijzigingen
+2026-04-18 09:48:05  [ADD]  seo-geo-digital-pr
+2026-04-18 09:48:05  [ADD]  seo-geo-link-audit
+2026-04-18 09:48:05  [ADD]  seo-geo-outreach
+2026-04-18 09:48:05  [SYNC]  Resultaat: +3 nieuw, 0 gerepareerd, 40 onveranderd, 0 built-ins
+2026-04-18 18:03:06  [ADD]  cro-audit
+2026-04-18 18:03:06  [ADD]  cro-setup
+2026-04-18 18:03:06  [ADD]  cro-specialist
+2026-04-18 18:03:06  [SYNC]  Resultaat: +3 nieuw, 0 gerepareerd, 43 onveranderd, 0 built-ins
+2026-04-18 18:18:06  [ADD]  cro-checkout
+2026-04-18 18:18:06  [ADD]  cro-experimentation
+2026-04-18 18:18:06  [ADD]  cro-landing-page
+2026-04-18 18:18:06  [ADD]  cro-reporting
+2026-04-18 18:18:06  [ADD]  cro-user-research
+2026-04-18 18:18:06  [SYNC]  Resultaat: +5 nieuw, 0 gerepareerd, 46 onveranderd, 0 built-ins
+2026-04-18 19:03:06  [ADD]  ux-accessibility
+2026-04-18 19:03:06  [ADD]  ux-audit
+2026-04-18 19:03:06  [ADD]  ux-content-design
+2026-04-18 19:03:06  [ADD]  ux-design-system
+2026-04-18 19:03:06  [ADD]  ux-ia-wireframing
+2026-04-18 19:03:06  [ADD]  ux-research
+2026-04-18 19:03:06  [ADD]  ux-setup
+2026-04-18 19:03:06  [ADD]  ux-specialist
+2026-04-18 19:03:06  [SYNC]  Resultaat: +8 nieuw, 0 gerepareerd, 51 onveranderd, 0 built-ins
+2026-04-18 19:18:06  [ADD]  ux-implementation
+2026-04-18 19:18:06  [ADD]  ux-shopify-dev
+2026-04-18 19:18:06  [ADD]  ux-visual-design
+2026-04-18 19:18:06  [ADD]  ux-webflow-dev
+2026-04-18 19:18:06  [SYNC]  Resultaat: +4 nieuw, 0 gerepareerd, 59 onveranderd, 0 built-ins
+2026-04-18 19:33:06  [ADD]  cro-implementation
+2026-04-18 19:33:06  [ADD]  ux-framer-dev
+2026-04-18 19:33:06  [SYNC]  Resultaat: +2 nieuw, 0 gerepareerd, 63 onveranderd, 0 built-ins
+2026-04-18 21:33:07  [ADD]  retention-lifecycle-audit
+2026-04-18 21:33:07  [ADD]  retention-lifecycle-campaigns
+2026-04-18 21:33:07  [ADD]  retention-lifecycle-cohort
+2026-04-18 21:33:07  [ADD]  retention-lifecycle-deliverability
+2026-04-18 21:33:07  [ADD]  retention-lifecycle-flows
+2026-04-18 21:33:07  [ADD]  retention-lifecycle-loyalty
+2026-04-18 21:33:07  [ADD]  retention-lifecycle-reviews
+2026-04-18 21:33:07  [ADD]  retention-lifecycle-setup
+2026-04-18 21:33:07  [ADD]  retention-lifecycle-specialist
+2026-04-18 21:33:07  [SYNC]  Resultaat: +9 nieuw, 0 gerepareerd, 65 onveranderd, 0 built-ins
+2026-04-19 00:03:06  [HEARTBEAT]  OK - 74 junctions actief, 0 built-ins, geen wijzigingen
+2026-04-20 00:03:06  [HEARTBEAT]  OK - 74 junctions actief, 0 built-ins, geen wijzigingen
+2026-04-21 00:03:06  [HEARTBEAT]  OK - 74 junctions actief, 0 built-ins, geen wijzigingen
+2026-04-22 00:03:06  [HEARTBEAT]  OK - 74 junctions actief, 0 built-ins, geen wijzigingen
+2026-04-23 00:03:05  [HEARTBEAT]  OK - 74 junctions actief, 0 built-ins, geen wijzigingen
+2026-04-24 00:03:05  [HEARTBEAT]  OK - 74 junctions actief, 0 built-ins, geen wijzigingen
+2026-04-25 00:03:05  [HEARTBEAT]  OK - 74 junctions actief, 0 built-ins, geen wijzigingen
+2026-04-25 12:03:06  [ADD]  channable-ai-enrichment
+2026-04-25 12:03:06  [ADD]  channable-shopping-feeds
+2026-04-25 12:03:06  [ADD]  competitor-intelligence
+2026-04-25 12:03:06  [ADD]  content-onpage-seo
+2026-04-25 12:03:06  [ADD]  cover-letter-writer
+2026-04-25 12:03:06  [ADD]  cro-audit
+2026-04-25 12:03:06  [ADD]  cro-checkout
+2026-04-25 12:03:06  [ADD]  cro-experimentation
+2026-04-25 12:03:06  [ADD]  cro-implementation
+2026-04-25 12:03:06  [ADD]  cro-landing-page
+2026-04-25 12:03:06  [ADD]  cro-reporting
+2026-04-25 12:03:06  [ADD]  cro-setup
+2026-04-25 12:03:06  [ADD]  cro-specialist
+2026-04-25 12:03:06  [ADD]  cro-user-research
+2026-04-25 12:03:06  [ADD]  cv-tailorer
+2026-04-25 12:03:06  [ADD]  google-ads-audit
+2026-04-25 12:03:06  [ADD]  google-ads-creative
+2026-04-25 12:03:06  [ADD]  google-ads-optimize
+2026-04-25 12:03:06  [ADD]  google-ads-pmax-shopping
+2026-04-25 12:03:06  [ADD]  google-ads-reporting
+2026-04-25 12:03:06  [ADD]  google-ads-setup
+2026-04-25 12:03:06  [ADD]  google-ads-specialist
+2026-04-25 12:03:06  [ADD]  growth-lead-badenman
+2026-04-25 12:03:06  [ADD]  meeting-prep-debrief
+2026-04-25 12:03:06  [ADD]  meta-ads-advantage-plus
+2026-04-25 12:03:06  [ADD]  meta-ads-audit
+2026-04-25 12:03:06  [ADD]  meta-ads-creative
+2026-04-25 12:03:06  [ADD]  meta-ads-optimize
+2026-04-25 12:03:06  [ADD]  meta-ads-reporting
+2026-04-25 12:03:06  [ADD]  meta-ads-setup
+2026-04-25 12:03:06  [ADD]  meta-ads-specialist
+2026-04-25 12:03:06  [ADD]  reporting-dashboard
+2026-04-25 12:03:06  [ADD]  retention-lifecycle-audit
+2026-04-25 12:03:06  [ADD]  retention-lifecycle-campaigns
+2026-04-25 12:03:06  [ADD]  retention-lifecycle-cohort
+2026-04-25 12:03:06  [ADD]  retention-lifecycle-deliverability
+2026-04-25 12:03:06  [ADD]  retention-lifecycle-flows
+2026-04-25 12:03:06  [ADD]  retention-lifecycle-loyalty
+2026-04-25 12:03:06  [ADD]  retention-lifecycle-reviews
+2026-04-25 12:03:06  [ADD]  retention-lifecycle-setup
+2026-04-25 12:03:06  [ADD]  retention-lifecycle-specialist
+2026-04-25 12:03:06  [ADD]  scenario-writer
+2026-04-25 12:03:06  [ADD]  seo-geo-audit
+2026-04-25 12:03:06  [ADD]  seo-geo-authority
+2026-04-25 12:03:06  [ADD]  seo-geo-content
+2026-04-25 12:03:06  [ADD]  seo-geo-digital-pr
+2026-04-25 12:03:06  [ADD]  seo-geo-ecommerce
+2026-04-25 12:03:06  [ADD]  seo-geo-international
+2026-04-25 12:03:06  [ADD]  seo-geo-link-audit
+2026-04-25 12:03:06  [ADD]  seo-geo-outreach
+2026-04-25 12:03:06  [ADD]  seo-geo-programmatic
+2026-04-25 12:03:06  [ADD]  seo-geo-reporting
+2026-04-25 12:03:06  [ADD]  seo-geo-setup
+2026-04-25 12:03:06  [ADD]  seo-geo-specialist
+2026-04-25 12:03:06  [ADD]  seo-geo-technical
+2026-04-25 12:03:06  [ADD]  seo-geo-visibility
+2026-04-25 12:03:06  [ADD]  seo-offpage-authority
+2026-04-25 12:03:06  [ADD]  springbok-gdoc
+2026-04-25 12:03:06  [ADD]  springbok-slideshow
+2026-04-25 12:03:06  [ADD]  techseo-implementation
+2026-04-25 12:03:06  [ADD]  ux-accessibility
+2026-04-25 12:03:06  [ADD]  ux-audit
+2026-04-25 12:03:06  [ADD]  ux-content-design
+2026-04-25 12:03:06  [ADD]  ux-design-system
+2026-04-25 12:03:06  [ADD]  ux-framer-dev
+2026-04-25 12:03:06  [ADD]  ux-ia-wireframing
+2026-04-25 12:03:06  [ADD]  ux-implementation
+2026-04-25 12:03:06  [ADD]  ux-research
+2026-04-25 12:03:06  [ADD]  ux-setup
+2026-04-25 12:03:06  [ADD]  ux-shopify-dev
+2026-04-25 12:03:06  [ADD]  ux-specialist
+2026-04-25 12:03:06  [ADD]  ux-visual-design
+2026-04-25 12:03:06  [ADD]  ux-webflow-dev
+2026-04-25 12:03:06  [ADD]  vacancy-analyzer
+2026-04-25 12:03:06  [SYNC]  Resultaat: +74 nieuw, 0 gerepareerd, 0 onveranderd, 0 built-ins
+2026-04-26 00:03:05  [HEARTBEAT]  OK - 74 junctions actief, 0 built-ins, geen wijzigingen
+2026-04-27 09:18:44  [HEARTBEAT]  OK - 74 junctions actief, 0 built-ins, geen wijzigingen
+2026-04-28 08:56:22  [HEARTBEAT]  OK - 74 junctions actief, 0 built-ins, geen wijzigingen
+2026-04-29 00:03:05  [HEARTBEAT]  OK - 74 junctions actief, 0 built-ins, geen wijzigingen
+2026-04-30 00:03:06  [HEARTBEAT]  OK - 74 junctions actief, 0 built-ins, geen wijzigingen
+2026-05-01 11:02:28  [HEARTBEAT]  OK - 74 junctions actief, 0 built-ins, geen wijzigingen
+2026-05-02 00:03:06  [HEARTBEAT]  OK - 74 junctions actief, 0 built-ins, geen wijzigingen
+2026-05-03 00:03:05  [HEARTBEAT]  OK - 74 junctions actief, 0 built-ins, geen wijzigingen
+2026-05-04 00:03:05  [HEARTBEAT]  OK - 74 junctions actief, 0 built-ins, geen wijzigingen
+2026-05-05 00:03:06  [HEARTBEAT]  OK - 74 junctions actief, 0 built-ins, geen wijzigingen
+2026-05-06 00:03:06  [HEARTBEAT]  OK - 74 junctions actief, 0 built-ins, geen wijzigingen
+2026-05-07 09:37:56  [HEARTBEAT]  OK - 74 junctions actief, 0 built-ins, geen wijzigingen
+2026-05-08 07:09:36  [HEARTBEAT]  OK - 74 junctions actief, 0 built-ins, geen wijzigingen
+2026-05-09 10:14:53  [HEARTBEAT]  OK - 74 junctions actief, 0 built-ins, geen wijzigingen
+2026-05-10 09:18:04  [HEARTBEAT]  OK - 74 junctions actief, 0 built-ins, geen wijzigingen
+2026-05-11 09:51:37  [HEARTBEAT]  OK - 74 junctions actief, 0 built-ins, geen wijzigingen
+2026-05-12 00:03:05  [HEARTBEAT]  OK - 74 junctions actief, 0 built-ins, geen wijzigingen
+2026-05-13 00:03:05  [HEARTBEAT]  OK - 74 junctions actief, 0 built-ins, geen wijzigingen
+2026-05-14 11:25:56  [HEARTBEAT]  OK - 74 junctions actief, 0 built-ins, geen wijzigingen
+2026-05-15 08:43:29  [HEARTBEAT]  OK - 74 junctions actief, 0 built-ins, geen wijzigingen
+2026-05-16 00:03:05  [HEARTBEAT]  OK - 74 junctions actief, 0 built-ins, geen wijzigingen
+2026-05-17 00:03:06  [HEARTBEAT]  OK - 74 junctions actief, 0 built-ins, geen wijzigingen
+2026-05-18 00:03:06  [HEARTBEAT]  OK - 74 junctions actief, 0 built-ins, geen wijzigingen
+2026-05-19 00:03:05  [HEARTBEAT]  OK - 74 junctions actief, 0 built-ins, geen wijzigingen
+2026-05-20 00:03:05  [HEARTBEAT]  OK - 74 junctions actief, 0 built-ins, geen wijzigingen
+2026-05-21 00:03:06  [HEARTBEAT]  OK - 74 junctions actief, 0 built-ins, geen wijzigingen
+2026-05-22 00:03:06  [HEARTBEAT]  OK - 74 junctions actief, 0 built-ins, geen wijzigingen
+2026-05-23 00:03:05  [HEARTBEAT]  OK - 74 junctions actief, 0 built-ins, geen wijzigingen
+2026-05-24 00:03:05  [HEARTBEAT]  OK - 74 junctions actief, 0 built-ins, geen wijzigingen
+2026-05-25 00:03:06  [HEARTBEAT]  OK - 74 junctions actief, 0 built-ins, geen wijzigingen
+2026-05-26 00:03:06  [HEARTBEAT]  OK - 74 junctions actief, 0 built-ins, geen wijzigingen
+2026-05-27 00:03:05  [HEARTBEAT]  OK - 74 junctions actief, 0 built-ins, geen wijzigingen
+2026-05-28 00:03:06  [HEARTBEAT]  OK - 74 junctions actief, 0 built-ins, geen wijzigingen
+2026-05-29 00:03:06  [HEARTBEAT]  OK - 74 junctions actief, 0 built-ins, geen wijzigingen
+2026-05-30 00:03:05  [HEARTBEAT]  OK - 74 junctions actief, 0 built-ins, geen wijzigingen
+2026-05-31 00:03:05  [HEARTBEAT]  OK - 74 junctions actief, 0 built-ins, geen wijzigingen
+2026-06-01 00:03:06  [HEARTBEAT]  OK - 74 junctions actief, 0 built-ins, geen wijzigingen
+2026-06-02 00:03:05  [HEARTBEAT]  OK - 74 junctions actief, 0 built-ins, geen wijzigingen
+2026-06-03 00:03:06  [HEARTBEAT]  OK - 74 junctions actief, 0 built-ins, geen wijzigingen
+2026-06-04 00:03:06  [HEARTBEAT]  OK - 74 junctions actief, 0 built-ins, geen wijzigingen
+2026-06-05 09:35:19  [HEARTBEAT]  OK - 74 junctions actief, 0 built-ins, geen wijzigingen
+2026-06-06 00:03:06  [HEARTBEAT]  OK - 74 junctions actief, 0 built-ins, geen wijzigingen
+2026-06-07 00:03:06  [HEARTBEAT]  OK - 74 junctions actief, 0 built-ins, geen wijzigingen
+2026-06-08 09:24:14  [HEARTBEAT]  OK - 74 junctions actief, 0 built-ins, geen wijzigingen
+2026-06-09 08:50:58  [HEARTBEAT]  OK - 74 junctions actief, 0 built-ins, geen wijzigingen
+2026-06-10 08:48:47  [HEARTBEAT]  OK - 74 junctions actief, 0 built-ins, geen wijzigingen
+2026-06-11 00:03:05  [HEARTBEAT]  OK - 74 junctions actief, 0 built-ins, geen wijzigingen
+2026-06-12 00:03:05  [HEARTBEAT]  OK - 74 junctions actief, 0 built-ins, geen wijzigingen
+2026-06-13 00:03:05  [HEARTBEAT]  OK - 74 junctions actief, 0 built-ins, geen wijzigingen

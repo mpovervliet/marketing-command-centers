@@ -1,0 +1,21 @@
+{
+  "name": "social-content-command-center",
+  "version": "0.1.0",
+  "description": "MP's Social Content Command Center — 3 skills voor organic social van klant-merken: master-specialist (kanaal-keuzekader, contentpijlers, social-naar-email capture), short-video playbooks (TikTok/Reels/Shorts: hooks, formats, video-zoekgedrag) en community-management (DM/comment-funnels, Instagram-comment-naar-opt-in via Klaviyo, moderatie en crisis-protocol). Werkt generiek met elke klantmap.",
+  "author": {
+    "name": "Maarten Pieter Overvliet"
+  },
+  "keywords": [
+    "social-media",
+    "organic-social",
+    "content",
+    "short-video",
+    "tiktok",
+    "reels",
+    "shorts",
+    "community",
+    "instagram",
+    "linkedin",
+    "ugc"
+  ]
+}

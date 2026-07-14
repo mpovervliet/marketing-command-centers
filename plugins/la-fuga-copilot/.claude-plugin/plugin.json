@@ -1,0 +1,17 @@
+{
+  "name": "la-fuga-copilot",
+  "version": "0.1.0",
+  "description": "La Fuga (Salento) copilot — growth-lead skill voor luxury estate villa rental: direct-booking groei, gastcommunicatie en backoffice (offertes, deposits, facturen), seizoenspricing en minimum-stay, Airbnb-vs-direct kanaalmix. Combineer met luxury-villa-rental-ux uit het UX Design Command Center voor UX/CRO-werk.",
+  "author": {
+    "name": "Maarten Pieter Overvliet"
+  },
+  "keywords": [
+    "la-fuga",
+    "villa-rental",
+    "hospitality",
+    "direct-booking",
+    "guest-communication",
+    "salento",
+    "client-copilot"
+  ]
+}

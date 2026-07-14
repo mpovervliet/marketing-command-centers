@@ -1,0 +1,38 @@
+{
+  "name": "seo-geo-command-center",
+  "version": "0.8.0",
+  "description": "MP's complete SEO/GEO Command Center — 23 skills voor site setup, audits, technische SEO, on-page content, e-commerce SEO, autoriteitsopbouw (GEO/LLM), internationale SEO/hreflang, AI visibility tracking, programmatic SEO, digital PR, outreach linkbuilding, link-audit/reclamation, rapportage, local SEO/GBP, content-refresh & pruning, site-migraties, algorithm-update triage, topical maps & entity/E-E-A-T SEO-forecasting/business cases, meertalige content-workflows (TMS), Reddit/community-SEO en video/YouTube-SEO. Werkt generiek met elke klantmap.",
+  "author": {
+    "name": "Maarten Pieter Overvliet"
+  },
+  "keywords": [
+    "seo",
+    "geo",
+    "llm-optimization",
+    "technical-seo",
+    "content",
+    "authority",
+    "audit",
+    "international",
+    "hreflang",
+    "programmatic",
+    "ai-visibility",
+    "linkbuilding",
+    "digital-pr",
+    "outreach",
+    "local-seo",
+    "google-business-profile",
+    "content-refresh",
+    "migration",
+    "update-triage",
+    "topical-authority",
+    "entity-seo",
+    "forecasting",
+    "multilingual",
+    "tms",
+    "reddit",
+    "community-seo",
+    "video-seo",
+    "youtube"
+  ]
+}

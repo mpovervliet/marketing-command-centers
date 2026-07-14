@@ -1,0 +1,23 @@
+{
+  "name": "marketplaces-command-center",
+  "version": "0.1.0",
+  "description": "MP's Marketplaces Command Center — 3 skills voor verkopen via Amazon en bol: marketplace-specialist (kanaalstrategie, P&L per kanaal, fulfilment FBA/LVB, kanaal-conflict), bol-retail-media (listings, Buy Box, Sponsored Products, servicenormen) en amazon-seo-listings (COSMO/Alexa-for-Shopping tijdperk, backend-attributen, A+ content). Werkt generiek met elke klantmap.",
+  "author": {
+    "name": "Maarten Pieter Overvliet"
+  },
+  "keywords": [
+    "marketplaces",
+    "amazon",
+    "bol",
+    "buy-box",
+    "sponsored-products",
+    "fba",
+    "lvb",
+    "cosmo",
+    "rufus",
+    "alexa-for-shopping",
+    "retail-media",
+    "listings",
+    "a-plus-content"
+  ]
+}

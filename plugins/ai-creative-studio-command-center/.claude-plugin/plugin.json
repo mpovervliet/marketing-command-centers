@@ -1,0 +1,24 @@
+{
+  "name": "ai-creative-studio-command-center",
+  "version": "0.1.0",
+  "description": "MP's AI Creative Studio Command Center: 4 skills voor AI-creative-productie op schaal (Andromeda en PMax vragen 10-15 concepten per campagne): ai-video-ads (Veo/Kling/Runway productie-workflows), ai-image-production (Midjourney/Nano Banana/FLUX pipelines, productfotografie-regels), ai-ugc-avatar (avatar-UGC met AI Act Art. 50 disclosure) en creative-qa-brand-gate (verplichte kwaliteitspoort: brand, artefacten, claims, rechten, disclosure, platform-policy). Concept-strategie blijft bij de ads-centers.",
+  "author": {
+    "name": "Maarten Pieter Overvliet"
+  },
+  "keywords": [
+    "ai-creative",
+    "ai-video",
+    "veo",
+    "kling",
+    "runway",
+    "midjourney",
+    "flux",
+    "nano-banana",
+    "avatar",
+    "ugc",
+    "heygen",
+    "brand-qa",
+    "disclosure",
+    "ai-act"
+  ]
+}

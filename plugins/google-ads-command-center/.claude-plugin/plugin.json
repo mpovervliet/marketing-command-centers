@@ -1,0 +1,29 @@
+{
+  "name": "google-ads-command-center",
+  "version": "0.7.0",
+  "description": "MP's complete Google Ads Command Center — 15 skills voor account setup, audit, optimalisatie, Performance Max/Shopping, AI Max, value-based bidding (POAS), scripts & geautomatiseerde bewaking, rapportage, creatives en Channable feed/AI-enrichment. Werkt met elke klantmap.",
+  "author": {
+    "name": "Maarten Pieter Overvliet"
+  },
+  "keywords": [
+    "google-ads",
+    "ppc",
+    "sea",
+    "performance-max",
+    "ai-max",
+    "shopping",
+    "audit",
+    "optimization",
+    "channable",
+    "feed-management",
+    "poas",
+    "value-based-bidding",
+    "scripts",
+    "automation",
+    "demand-gen",
+    "leadgen",
+    "microsoft-ads",
+    "bing",
+    "merchant-center"
+  ]
+}

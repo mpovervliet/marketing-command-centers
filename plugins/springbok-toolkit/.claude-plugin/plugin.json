@@ -1,0 +1,17 @@
+{
+  "name": "springbok-toolkit",
+  "version": "0.2.0",
+  "description": "Springbok huisstijl-toolkit — 2 deliverable-generators: springbok-gdoc (professionele .docx documenten in Springbok-stijl) en springbok-slideshow (branded PowerPoint presentaties via PptxGenJS).",
+  "author": {
+    "name": "Maarten Pieter Overvliet"
+  },
+  "keywords": [
+    "springbok",
+    "docx",
+    "pptx",
+    "deliverables",
+    "huisstijl",
+    "templates",
+    "presentaties"
+  ]
+}
