@@ -171,7 +171,7 @@ Niet alles tegelijk migreren: faseer per feature-team.
 - Custom wielen uitvinden waar Radix/Headless UI bestaat
 - Versioning negeren → breaking changes zonder communicatie
 
-## Output-formaten
+## Output-formaat
 
 ### Design System Audit-rapport (docx via `springbok-gdoc`)
 1. Maturity-assessment

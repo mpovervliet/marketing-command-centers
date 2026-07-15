@@ -69,7 +69,11 @@ Rol van MP in dit werk: strategisch partner + regie-voerder richting identity-de
 
 ---
 
-## Drie-laags model (altijd hanteren)
+## Kern-kennis (2026)
+
+Het fundament van identity-werk: lagenmodel, architectuurkeuze, en de systeemonderdelen (logo, typografie, kleur, fotografie, voice, guidelines, handoff) die samen het brand-guidelines-document vormen.
+
+### Drie-laags model (altijd hanteren)
 
 | Laag | Scope | Skill |
 |---|---|---|
@@ -79,7 +83,7 @@ Rol van MP in dit werk: strategisch partner + regie-voerder richting identity-de
 
 Identity \u2192 System \u2192 Product. Elke laag erft van de laag erboven. Tokens uit identity feeden design-system; components uit design-system composeren product.
 
-## Brand-architectuur (merken onder het dak-merk)
+### Brand-architectuur (merken onder het dak-merk)
 
 | Architectuur | Voorbeeld | Wanneer passend |
 |---|---|---|
@@ -90,7 +94,7 @@ Identity \u2192 System \u2192 Product. Elke laag erft van de laag erboven. Token
 
 Beslissen voor keuze: hoe belangrijk is trust-overdracht, hoe overlappen doelgroepen, en hoe autonoom opereren sub-teams.
 
-## Logo-design principes (voor designer-briefing)
+### Logo-design principes (voor designer-briefing)
 
 **Criteria waaraan elk voorstel voldoet**:
 1. Werkt in 1 kleur
@@ -108,7 +112,7 @@ Beslissen voor keuze: hoe belangrijk is trust-overdracht, hoe overlappen doelgro
 - Geforceerde letter-ligature (werkt niet buiten hoofdlogo)
 - Stock-vector esthetiek
 
-## Typography-systeem (serieuze scope, niet alleen "welk font")
+### Typography-systeem (serieuze scope, niet alleen "welk font")
 
 Een typography-systeem bevat:
 
@@ -127,7 +131,7 @@ Een typography-systeem bevat:
 - Commercial foundries (Colophon, GrillType, Dinamo, Production Type) voor premium-projecten: duurder maar onderscheidend
 - Variable fonts aanbevolen voor performance (1 file, meerdere weights)
 
-## Color-systeem (functional, niet alleen "mooie kleuren")
+### Color-systeem (functional, niet alleen "mooie kleuren")
 
 Een volwassen color-systeem heeft:
 
@@ -145,7 +149,7 @@ Een volwassen color-systeem heeft:
 4. Surface-levels in tokens
 5. Dark-mode mapping apart \u2014 niet auto-invert
 
-## Photography-regels (hoor bij identity, niet bij art-direction ad-hoc)
+### Photography-regels (hoor bij identity, niet bij art-direction ad-hoc)
 
 Hospitality-klanten: zie `luxury-villa-rental-ux` voor genre-specifieke foto-regels.
 Generiek brand photography-document bevat:
@@ -157,7 +161,7 @@ Generiek brand photography-document bevat:
 - **Verhouding product/lifestyle**: balans
 - **Do & don't-lijst** met concrete voorbeelden
 
-## Voice & tone-matrix
+### Voice & tone-matrix
 
 Een goede voice-matrix is klein en streng. Niet 20 adjectieven maar 4-6 assen met gradaties:
 
@@ -180,7 +184,7 @@ Gevolgd door **voice-per-moment**:
 
 En **do & don't word-list** (do: "reserve", "stay"; don't: "book now", "limited-time"; dit is merk-specifiek).
 
-## Brand-guidelines document (structure)
+### Brand-guidelines document (structure)
 
 Aanbevolen structuur voor het eindproduct:
 
@@ -198,7 +202,7 @@ Aanbevolen structuur voor het eindproduct:
 
 Lever dit als PDF \u00e9n als Figma-library. PDF voor execs en externe partners, Figma voor designers + dev.
 
-## Handoff naar `ux-design-system`
+### Handoff naar `ux-design-system`
 
 Het identity-systeem levert tokens aan het design-system:
 
@@ -224,7 +228,7 @@ Export via W3C Design Tokens format \u2192 Style Dictionary \u2192 consumptie in
 - Logo herontwerpen zonder naam-positionering te herevalueren
 - Identity-systeem zonder governance-owner (verzandt binnen 12 maanden)
 
-## Output-formaten
+## Output-formaat
 
 - **Brand-strategy brief** (docx via `springbok-gdoc`): positionering, essence, personality-axes, story, vermijd-richtingen
 - **Identity-designer briefing** (docx): wat wel, wat niet, referenties per as, budget + timing + decisies-to-maken

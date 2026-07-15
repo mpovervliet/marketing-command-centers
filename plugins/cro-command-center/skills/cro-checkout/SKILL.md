@@ -201,7 +201,22 @@ Fix-prioriteit volgt deze tellingen.
 - Cross-sells midden in payment-step (distracties)
 - Abandoned-cart mail na 7 dagen (te laat, al vergeten)
 
-## Output-formaten
+## Output-formaat
+
+Skelet voor het checkout-audit-rapport, gebruik makend van de funnel-diagnose en heuristieken-scan uit Werkwijze:
+
+```markdown
+# Checkout-audit: [klant], [maand jaar]
+1. Funnel-analyse per stap, met visualisatie
+2. Top-10 friction-points, gescoord
+3. Quick wins, minder dan 2 weken implementatie
+4. Structural changes: multi-step versus one-page
+5. Payment-diversificatie roadmap per markt
+6. Abandoned-cart recovery flow-design
+7. Impact-estimaat in euro's, AOV keer verwachte CVR-lift
+```
+
+### Overige deliverable-skeletten
 
 ### Checkout-audit (docx via `springbok-gdoc`)
 1. Funnel-analyse per stap (met visualisatie)

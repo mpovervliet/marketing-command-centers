@@ -155,7 +155,25 @@ Je bent de methodologische hoeder van het experiment-programma. Slechte statisti
 - Te kleine MDE willen vangen (20% lift horen? volume is te klein)
 - Copy-paste winnende tests van andere klanten zonder context
 
-## Output-formaten
+## Output-formaat
+
+Skelet voor de experiment-brief (test-brief), aansluitend op het hypothese-format uit Werkwijze:
+
+```markdown
+# Experiment-brief: [ID], [naam]
+1. Status: draft, live of afgerond
+2. Hypothese in vast format: omdat, geloven we, weten we het als
+3. Primary, secondary en guardrail metrics
+4. Sample-size-berekening en MDE
+5. Design: screenshots of Figma-link per variant
+6. QA-checklist-status
+7. Start- en stopcriteria
+8. Klant-goedkeuring: ja of nee, met datum
+```
+
+Testresultaat-memo volgt dezelfde opbouw als de test-result analyse hierboven: primary-metric lift en significantie, segment-breakdown, guardrail-status, visualisatie, aanbeveling en learnings.
+
+### Overige deliverable-skeletten
 
 ### Test-brief (md template)
 - ID, naam, status

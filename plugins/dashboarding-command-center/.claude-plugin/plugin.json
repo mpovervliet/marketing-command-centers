@@ -1,7 +1,7 @@
 {
   "name": "dashboarding-command-center",
-  "version": "0.1.0",
-  "description": "MP's Dashboarding & Data Command Center: 7 skills voor de rapportage- en beslislaag over alle kanalen heen: dashboard-specialist (router, tool-keuze), looker-studio-builder, analytics-bigquery-sql (GA4-export als datalaag), kpi-framework-design (metric-bomen, targets, alerts), cowork-live-dashboards (live artifacts op MCP-data), dashboard-audit en marketing-data-analyst (AI-gedreven analyse, anomalie-detectie, seizoenspatronen). Werkt generiek met elke klantmap.",
+  "version": "0.2.0",
+  "description": "MP's Dashboarding & Data Command Center: 15 skills voor de rapportage- en beslislaag over alle kanalen heen: dashboard-specialist (router, tool-keuze), looker-studio-builder, analytics-bigquery-sql (GA4-export als datalaag), kpi-framework-design (metric-bomen, targets, alerts), cowork-live-dashboards (live artifacts op MCP-data), dashboard-audit en marketing-data-analyst (AI-gedreven analyse, anomalie-detectie, seizoenspatronen). Werkt generiek met elke klantmap.",
   "author": {
     "name": "Maarten Pieter Overvliet"
   },
@@ -17,6 +17,16 @@
     "anomalie-detectie",
     "cowork-artifacts",
     "live-dashboards",
-    "dashboard-audit"
+    "dashboard-audit",
+    "data-storytelling",
+    "sheets",
+    "apps-script",
+    "explorations",
+    "alerting",
+    "data-quality",
+    "shopify",
+    "poas",
+    "profit",
+    "kosten-pipeline"
   ]
 }

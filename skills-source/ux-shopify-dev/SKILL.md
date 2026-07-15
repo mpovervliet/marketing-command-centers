@@ -198,7 +198,7 @@ Skip Hydrogen als:
 - Checkout extensions ≠ checkout.liquid (begrip mengen)
 - Native Shopify Admin apps negeren voor third-party
 
-## Output-formaten
+## Output-formaat
 
 ### Shopify development-brief (docx via `springbok-gdoc`)
 1. Theme-architecture (2.0 / Hydrogen)

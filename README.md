@@ -4,7 +4,7 @@ Single source of truth voor alle skills, plugins en kennis van MP (Maarten Piete
 
 ## Kerncijfers (stand juli 2026)
 
-- 19 command centers (plugins), 167 gebundelde skills, 168 skill-folders in skills-source/
+- 19 command centers (plugins), 200 gebundelde skills, 201 skill-folders in skills-source/
 - Kwaliteitsstandaard: SKILL-WRITING-STANDARDS.md (verplicht bij elke nieuwe of gewijzigde skill)
 - Bouwpijplijn: WORKFLOW.md → plugin-map.json → build-plugins.py → dist/*.plugin → installeren in Cowork
 
@@ -18,17 +18,17 @@ Single source of truth voor alle skills, plugins en kennis van MP (Maarten Piete
 | cro-command-center | 15 | Experimentation, research, checkout, offer/pricing, synthetic panels |
 | ux-design-command-center | 15 | Audit t/m platform-dev (Shopify/Webflow/Framer), accessibility/EAA, brand identity, hospitality |
 | retention-lifecycle-command-center | 15 | Klaviyo flows, deliverability, loyalty, reviews, cohort/CLV, WhatsApp/RCS |
-| analytics-command-center | 6 | GA4/GTM-audit, meetplannen, server-side, incrementality, consent |
+| analytics-command-center | 15 | GA4/GTM-audit, meetplannen, server-side, incrementality, consent |
 | marketplaces-command-center | 3 | Amazon (COSMO-tijdperk), bol, kanaalstrategie |
-| ai-automation-command-center | 8 | Copilot-generator, agentic commerce, automation, agents (MCP/evals), content-factory, skill-ops |
-| ai-consultancy-command-center | 6 | AI-adoptie, EU AI Act, trainingen, toolstack, promptbibliotheken |
+| ai-automation-command-center | 15 | Copilot-generator, agentic commerce, automation, agents (MCP/evals), content-factory, skill-ops |
+| ai-consultancy-command-center | 15 | AI-adoptie, EU AI Act, trainingen, toolstack, promptbibliotheken |
 | social-content-command-center | 3 | Organic social, short-video, community-management |
 | b2b-marketing-command-center | 2 | LinkedIn Ads (TLA), ABM-light/leadgen |
 | freelance-ops-command-center | 15 | Intake, proposals, weekupdates, QBR, facturen, LinkedIn, teardowns, context-index |
 | badenman-copilot | 8 | Badenman/DMG klant-copilot plus data-analyse-laag |
 | la-fuga-copilot | 1 | La Fuga (Salento) growth-lead copilot |
 | springbok-toolkit | 2 | Springbok-huisstijl deliverables (docx, pptx) |
-| dashboarding-command-center | 7 | Looker Studio, BigQuery/GA4-SQL, KPI-frameworks, live Cowork-dashboards, dashboard-audit, data-analyse |
+| dashboarding-command-center | 15 | Looker Studio, BigQuery/GA4-SQL, KPI-frameworks, live Cowork-dashboards, dashboard-audit, data-analyse |
 | affiliate-marketing-command-center | 4 | Netwerk-keuze (Daisycon/TradeTracker/Awin), programma-setup, publishers, meting/incrementaliteit |
 | ai-creative-studio-command-center | 4 | AI-video (Veo/Kling/Runway), AI-image, avatar-UGC, brand-QA-poort |
 
@@ -74,3 +74,5 @@ Elke klant heeft een eigen OneDrive-map met per discipline een subfolder (seo-ge
 - 12 juli 2026: eerste volledige library-audit (audit-reports/), 30 legacy-skills verdiept naar de standaard (google-ads, channable, meta-ads, cro, seo-geo, badenman, ux, freelance-drieluik, scenario-writer), hele bibliotheek dash- en emoji-vrij, 9 plugins gebumpt
 - 12-13 juli 2026 (vervolg): +3 command centers (dashboarding, affiliate-marketing, ai-creative-studio, samen 15 nieuwe skills), +marketing-agent-builder in ai-automation, verdiepingsronde 2 over 17 april-generatie skills (masters, springbok, badenman) incl. references/-splitsing van seo-geo-authority, techseo-implementation en springbok-toolkit
 - 13 juli 2026: 15-per-center programma gestart (client-plugins uitgezonderd): +23 skills, 6 centers naar 15+ (google-ads, meta-ads, cro, retention, freelance-ops; seo-geo en ux stonden al op 15+). Totaal 167 gebundelde skills.
+- 13 juli 2026 (avond, Sonnet-agents onder Fable-regie): Output-formaat-fix op 18 ux/cro-skills, dashboarding en ai-automation naar 15 (+15 skills). Totaal 182 gebundelde skills; 9 vak-centers op 15+.
+- 14 juli 2026: analytics en ai-consultancy naar 15 (+18 skills via Sonnet-agents). Totaal 200 gebundelde skills; 11 vak-centers op 15+.

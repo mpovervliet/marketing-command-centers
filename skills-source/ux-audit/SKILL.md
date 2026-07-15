@@ -146,7 +146,7 @@ Volledige scan via `ux-accessibility`; hier signaaldetectie.
 - Findings zonder recommendation ("X is slecht": wat dan wel?)
 - Aesthetic-issues opblazen (klant fixt die altijd; prioriteer diep-UX-issues)
 
-## Output-formaten
+## Output-formaat
 
 ### Audit-rapport (docx via `springbok-gdoc`)
 

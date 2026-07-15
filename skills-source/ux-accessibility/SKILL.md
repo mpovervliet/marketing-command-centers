@@ -194,7 +194,7 @@ WCAG 3.0 is in werkconcept: adoptie nog niet algemeen, houden we in gaten.
 - Gemaakte-captcha's zonder alternatief (WCAG 3.3.8)
 - Infinite-scroll zonder "load more"-alternatief
 
-## Output-formaten
+## Output-formaat
 
 ### Accessibility audit-rapport (docx via `springbok-gdoc`)
 1. Executive summary + compliance-status (AA%)

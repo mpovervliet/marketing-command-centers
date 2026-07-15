@@ -204,7 +204,7 @@ Voice blijft; tone past per moment aan.
 - Destructive CTA zonder confirmatie
 - Ellipsis-button zonder modal daarachter ("Instellingen...")
 
-## Output-formaten
+## Output-formaat
 
 ### Voice & tone-guide (docx via `springbok-gdoc`)
 1. Merk-voice-chart + voorbeelden

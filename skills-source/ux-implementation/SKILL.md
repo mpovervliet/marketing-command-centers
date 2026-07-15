@@ -225,7 +225,7 @@ Default in 2026: Next.js 15 (App Router, RSC, Partial Prerendering) + Sanity voo
 - Legacy jQuery+WP in headless-context verkrijgbaar
 - "Wij fixen het later" (CWV/a11y/SEO)
 
-## Output-formaten
+## Output-formaat
 
 ### Dev-handoff-packet (folder/doc)
 1. Figma-link + Dev Mode aan

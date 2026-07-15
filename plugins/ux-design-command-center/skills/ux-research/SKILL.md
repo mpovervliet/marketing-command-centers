@@ -161,7 +161,7 @@ Output: map-visual (FigJam/Miro) + prioriteit-fix-list per fase
 - Persona-posters zonder gedragsbasis
 - Research afmaken voordat klant beslissingen neemt (research-ops-falen)
 
-## Output-formaten
+## Output-formaat
 
 ### Research-report (docx via `springbok-gdoc`)
 1. Research-vraag + methode

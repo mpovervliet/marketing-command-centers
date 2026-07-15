@@ -206,7 +206,7 @@ Kwaliteit varieert; test CWV-impact.
 - Animations overal (afhandelings-latency)
 - Webflow voor enterprise-dashboards (verkeerde tool)
 
-## Output-formaten
+## Output-formaat
 
 ### Webflow-build-brief (docx via `springbok-gdoc`)
 1. Site-architecture (statisch + CMS)

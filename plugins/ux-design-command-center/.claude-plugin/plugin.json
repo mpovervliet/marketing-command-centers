@@ -1,6 +1,6 @@
 {
   "name": "ux-design-command-center",
-  "version": "0.5.0",
+  "version": "0.6.0",
   "description": "MP's complete UX Design Command Center — 15 skills (web-only, end-to-end strategie → audit → design → build → launch): setup, UX audit, user research, IA & wireframing, design systems, brand identity systems, accessibility (WCAG 2.2 AA + EAA 2025), content design, visual design productie, luxury hospitality UX, implementation & launch-ops (headless Next.js/Astro), en platform-specifieke dev voor Shopify, Webflow en Framer. Werkt generiek met elke klantmap.",
   "author": {
     "name": "Maarten Pieter Overvliet"

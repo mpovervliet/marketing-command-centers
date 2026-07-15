@@ -26,13 +26,13 @@
       "name": "cro-command-center",
       "source": "./plugins/cro-command-center",
       "description": "MP's complete CRO Command Center — 15 skills voor conversion rate optimization: setup, audit, A/B testing & experimentation, user research, landing page, checkout, experiment-implementation (VWO/AB Tasty/Optimizely custom code, feature flags, personalization, anti-flicker, QA) rapportage, offer/pricing-architectuur en synthetische pre-test-panels. Werkt generiek met elke klantmap.",
-      "version": "0.5.0"
+      "version": "0.6.0"
     },
     {
       "name": "ux-design-command-center",
       "source": "./plugins/ux-design-command-center",
       "description": "MP's complete UX Design Command Center — 15 skills (web-only, end-to-end strategie → audit → design → build → launch): setup, UX audit, user research, IA & wireframing, design systems, brand identity systems, accessibility (WCAG 2.2 AA + EAA 2025), content design, visual design productie, luxury hospitality UX, implementation & launch-ops (headless Next.js/Astro), en platform-specifieke dev voor Shopify, Webflow en Framer. Werkt generiek met elke klantmap.",
-      "version": "0.5.0"
+      "version": "0.6.0"
     },
     {
       "name": "retention-lifecycle-command-center",
@@ -43,8 +43,8 @@
     {
       "name": "analytics-command-center",
       "source": "./plugins/analytics-command-center",
-      "description": "MP's Analytics & Measurement Command Center — 6 skills voor het meetfundament onder alle kanalen: master-specialist (router), GA4/GTM-audit (60+ punten), meetplannen & datalayer-specs, server-side tagging met Consent Mode v2 (incl. de juni-2026 GA4-Ads consent-wijziging) en incrementality-testing (geo-holdouts, conversion lift, MMM-light) en consent/privacy-optimalisatie (banner-UX, CMP-audit, consent-rate als groei-KPI). Werkt generiek met elke klantmap.",
-      "version": "0.2.0"
+      "description": "MP's Analytics & Measurement Command Center — 15 skills voor het meetfundament onder alle kanalen: master-specialist (router), GA4/GTM-audit (60+ punten), meetplannen & datalayer-specs, server-side tagging met Consent Mode v2 (incl. de juni-2026 GA4-Ads consent-wijziging) en incrementality-testing (geo-holdouts, conversion lift, MMM-light) en consent/privacy-optimalisatie (banner-UX, CMP-audit, consent-rate als groei-KPI). Werkt generiek met elke klantmap.",
+      "version": "0.3.0"
     },
     {
       "name": "marketplaces-command-center",
@@ -55,8 +55,8 @@
     {
       "name": "ai-automation-command-center",
       "source": "./plugins/ai-automation-command-center",
-      "description": "MP's AI-Automation Command Center — 8 skills voor AI-gedreven schaalvergroting en skill-ops: client-copilot-generator, agentic-commerce-readiness, ai-marketing-automation (n8n/Make workflows), ai-content-factory (contentproductie met kwaliteitspoorten), skill-distillation (dure-model-workflows vastleggen voor goedkopere modellen), skill-library-audit (kwartaal-doorlichting van de bibliotheek) en research-corpus-builder (max-recall vakkennis-corpora) en marketing-agent-builder (AI-agents met tools, MCP, guardrails en evals).",
-      "version": "0.3.0"
+      "description": "MP's AI-Automation Command Center — 15 skills voor AI-gedreven schaalvergroting en skill-ops: client-copilot-generator, agentic-commerce-readiness, ai-marketing-automation (n8n/Make workflows), ai-content-factory (contentproductie met kwaliteitspoorten), skill-distillation (dure-model-workflows vastleggen voor goedkopere modellen), skill-library-audit (kwartaal-doorlichting van de bibliotheek) en research-corpus-builder (max-recall vakkennis-corpora) en marketing-agent-builder (AI-agents met tools, MCP, guardrails en evals).",
+      "version": "0.4.0"
     },
     {
       "name": "freelance-ops-command-center",
@@ -85,8 +85,8 @@
     {
       "name": "ai-consultancy-command-center",
       "source": "./plugins/ai-consultancy-command-center",
-      "description": "MP's AI-Consultancy Command Center — 6 skills voor AI-consultancy bij MKB en marketing-teams: master-specialist (adoptie boven tooling, use-case-first, champions-model), AI-adoptie-audit en use-case-discovery, EU AI Act compliance-ondersteuning (Art. 50 transparantie per aug 2026, high-risk via Omnibus uitgesteld naar dec 2027), AI-trainingen en workshops, AI-toolstack-advies en team-promptbibliotheken. Werkt generiek met elke klantmap.",
-      "version": "0.1.0"
+      "description": "MP's AI-Consultancy Command Center — 15 skills voor AI-consultancy bij MKB en marketing-teams: master-specialist (adoptie boven tooling, use-case-first, champions-model), AI-adoptie-audit en use-case-discovery, EU AI Act compliance-ondersteuning (Art. 50 transparantie per aug 2026, high-risk via Omnibus uitgesteld naar dec 2027), AI-trainingen en workshops, AI-toolstack-advies en team-promptbibliotheken. Werkt generiek met elke klantmap.",
+      "version": "0.2.0"
     },
     {
       "name": "social-content-command-center",
@@ -103,8 +103,8 @@
     {
       "name": "dashboarding-command-center",
       "source": "./plugins/dashboarding-command-center",
-      "description": "MP's Dashboarding & Data Command Center: 7 skills voor de rapportage- en beslislaag over alle kanalen heen: dashboard-specialist (router, tool-keuze), looker-studio-builder, analytics-bigquery-sql (GA4-export als datalaag), kpi-framework-design (metric-bomen, targets, alerts), cowork-live-dashboards (live artifacts op MCP-data), dashboard-audit en marketing-data-analyst (AI-gedreven analyse, anomalie-detectie, seizoenspatronen). Werkt generiek met elke klantmap.",
-      "version": "0.1.0"
+      "description": "MP's Dashboarding & Data Command Center: 15 skills voor de rapportage- en beslislaag over alle kanalen heen: dashboard-specialist (router, tool-keuze), looker-studio-builder, analytics-bigquery-sql (GA4-export als datalaag), kpi-framework-design (metric-bomen, targets, alerts), cowork-live-dashboards (live artifacts op MCP-data), dashboard-audit en marketing-data-analyst (AI-gedreven analyse, anomalie-detectie, seizoenspatronen). Werkt generiek met elke klantmap.",
+      "version": "0.2.0"
     },
     {
       "name": "affiliate-marketing-command-center",
@@ -116,6 +116,12 @@
       "name": "ai-creative-studio-command-center",
       "source": "./plugins/ai-creative-studio-command-center",
       "description": "MP's AI Creative Studio Command Center: 4 skills voor AI-creative-productie op schaal (Andromeda en PMax vragen 10-15 concepten per campagne): ai-video-ads (Veo/Kling/Runway productie-workflows), ai-image-production (Midjourney/Nano Banana/FLUX pipelines, productfotografie-regels), ai-ugc-avatar (avatar-UGC met AI Act Art. 50 disclosure) en creative-qa-brand-gate (verplichte kwaliteitspoort: brand, artefacten, claims, rechten, disclosure, platform-policy). Concept-strategie blijft bij de ads-centers.",
+      "version": "0.1.0"
+    },
+    {
+      "name": "design-os-command-center",
+      "source": "./plugins/design-os-command-center",
+      "description": "MP's Design OS Command Center: 7 skills voor data-governed redesigns waarbij elke ontwerpkeuze herleidbaar is naar data (evidence → hypothese → DDR → Figma → experiment → learning): design-os-specialist (router, fase-gates), design-os-setup (intake plus client-stencil met de volledige 00-11 projectstructuur en agent-prompts), design-os-evidence (data-baseline, Evidence Registry, Measurement-QA), design-os-references (Refero/Mobbin cross-industry bewijs), design-os-hypotheses-ddr (Design Decision Records, ICE, Coverage Matrix), design-os-figma-build (wireframes, hi-fi richtingen, design tokens via Figma MCP) en design-os-red-team (onafhankelijke QA-poort plus learning-loop). Gegeneraliseerd uit de eerste volledige case, juli 2026. Werkt generiek met elke klantmap.",
       "version": "0.1.0"
     }
   ]

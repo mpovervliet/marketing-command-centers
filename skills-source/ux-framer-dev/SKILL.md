@@ -198,7 +198,7 @@ Kies **Shopify** voor serieus e-com (Framer + Shopify voor marketing + commerce 
 - Animaties zonder reduced-motion-variant
 - Hero-animaties die LCP vertragen
 
-## Output-formaten
+## Output-formaat
 
 ### Framer-build-brief (docx via `springbok-gdoc`)
 1. Site-architecture (statisch + CMS)

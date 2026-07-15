@@ -126,10 +126,15 @@ def build_plugin(plugin_spec: dict, author: dict) -> Path:
         (plugin_dir / "README.md").write_text("\n".join(readme_lines), encoding="utf-8")
 
         # 2b. Kopieer ongezipte plugin-folder naar plugins/ (bron voor de git-marketplace)
+        # Probeer eerst schoon te verwijderen (vangt verwijderde skills op); rmtree faalt op
+        # sommige mounts (sandbox/netwerk-fs) - val dan terug op een mergende copytree.
         dest = PLUGINS_DIR / name
         if dest.exists():
-            shutil.rmtree(dest)
-        shutil.copytree(plugin_dir, dest)
+            try:
+                shutil.rmtree(dest)
+            except OSError:
+                pass
+        shutil.copytree(plugin_dir, dest, dirs_exist_ok=True)
 
         # 3. Zip naar dist/
         DIST.mkdir(exist_ok=True)

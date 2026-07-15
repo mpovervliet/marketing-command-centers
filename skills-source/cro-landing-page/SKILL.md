@@ -167,7 +167,23 @@ Snelcheck: is je headline urgent? Uniek? Nuttig? Ultra-specifiek?
 - 10+ formuliervelden op eerste interactie
 - Generieke headlines ("Welcome to our platform")
 
-## Output-formaten
+## Output-formaat
+
+Skelet voor de landingspagina-blauwdruk, gebaseerd op de LP-brief hierboven:
+
+```markdown
+# LP-blauwdruk: [klant], [campagne]
+1. Doel-conversie + primary metric
+2. Audience: awareness-stage en segment
+3. Traffic-source(s) en message-match
+4. Value proposition
+5. Copy-framework: AIDA, PAS, AICPBSAWN of 4U, met rationale
+6. Secties-overzicht: hero, proof, FAQ, CTA
+7. Design-specs: wireframe of Figma-link
+8. Tech-specs: LCP-target, mobile-breakpoints
+```
+
+### Overige deliverable-skeletten
 
 ### LP-brief (md)
 - Doel-conversion + primary metric

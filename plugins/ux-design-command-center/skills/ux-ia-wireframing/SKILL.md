@@ -161,7 +161,7 @@ Deze skill produceert tot mid-fi of gedetailleerde wireframe-brief.
 - Mobile-navigatie als after-thought van desktop
 - Wireframes dichttimmeren als productie-design (fidelity-conflict met designer)
 
-## Output-formaten
+## Output-formaat
 
 ### Sitemap-diagram (FigJam/Miro, export PDF)
 - Alle niveaus, labels, URL-structuur

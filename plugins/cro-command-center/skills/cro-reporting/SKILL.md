@@ -168,7 +168,23 @@ Geen klant wil "p-value" lezen. Wel "95% zeker".
 - Rapport zonder visual (tekst-walls scoren niet)
 - Aannames als feiten presenteren
 
-## Output-formaten
+## Output-formaat
+
+Skelet voor het testresultaat-memo (individueel experiment-rapport); zie Output-formaten hierboven voor de overige rapport-types:
+
+```markdown
+# Testresultaat-memo: [test-ID], [naam]
+1. Header: test-ID, naam, periode, status
+2. Hypothese en methodologie
+3. Primary metric resultaat, met visualisatie
+4. Guardrails-status
+5. Segment-analyse
+6. Conclusie en roll-out aanbeveling
+7. Business-impact in euro's per jaar
+8. Learnings en volgende stap
+```
+
+### Overige deliverable-skeletten
 
 ### Individueel experiment-rapport (md of docx)
 1. Header: test-ID, naam, periode, status

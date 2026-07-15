@@ -45,7 +45,11 @@ Referentiemerken in dit segment: The Thinking Traveller, Le Collectionist, Plum 
 
 ---
 
-## Het genre-idioom (wat luxury hospitality UX onderscheidt)
+## Kern-kennis (2026)
+
+Het genre-idioom, IA-patronen, booking-modellen, CRO-lekken, photography-lens, trust-signalen, copy-regels en competitive-methodiek die luxury hospitality UX onderscheiden van generieke e-commerce of SaaS UX.
+
+### Het genre-idioom (wat luxury hospitality UX onderscheidt)
 
 **1. Photography is het product.** In dit segment wordt gevoelde luxe voor 60-70% bepaald door fotografie. Hero-images zijn groot, stil, editorieel, niet promotioneel. Stockfoto's of overproduced real-estate shots doden brand-equity meteen. Wide establishing shots, detail shots (texture, light, materials), en mens-in-scene shots (subtiel, niet camera-facing) domineren. Videocontent werkt als ambient loop, zelden als auto-play.
 
@@ -61,7 +65,7 @@ Referentiemerken in dit segment: The Thinking Traveller, Le Collectionist, Plum 
 
 ---
 
-## IA-patterns voor multi-property estates
+### IA-patterns voor multi-property estates
 
 | Estate-configuratie | IA-structuur |
 |---|---|
@@ -72,7 +76,7 @@ Referentiemerken in dit segment: The Thinking Traveller, Le Collectionist, Plum 
 
 Voor estate-met-units specifiek: respecteer de estate-identiteit als dak-merk en laat individuele units daaronder zweven. De estate-pagina is het verhaal; unit-pagina's zijn feiten + photography + specific-copy. Nooit units platslaan tot identieke cards \u2014 elk unit verdient zijn karakter.
 
-## Booking-modellen (kies bewust)
+### Booking-modellen (kies bewust)
 
 **Request-to-book / inquiry-first** \u2014 standaard voor hogere segmenten (>\u20ac1.500/nacht). Flow: date-select \u2192 guest-count \u2192 contact-details + personal note \u2192 owner/concierge reageert binnen 24u \u2192 tailored quote \u2192 deposit link. Voordelen: filtert prospects, bouwt relatie, rechtvaardigt premium. Nadelen: trager, verliest impulse-bookings.
 
@@ -84,7 +88,7 @@ Voor estate-met-units specifiek: respecteer de estate-identiteit als dak-merk en
 
 **Cancellation policy** moet evenwichtig zijn \u2014 flexible = impulskoop-friendly, strict = signal voor premium. Rage-click en cancellation-page-views zijn in hospitality CRO-leading indicators voor trust-issues.
 
-## Direct-booking CRO (villa rental-specifiek)
+### Direct-booking CRO (villa rental-specifiek)
 
 Dit is een aparte discipline binnen CRO \u2014 generieke e-com playbooks werken hier niet. Centrale metric is inquiry-rate of direct-booking-rate, niet cart-abandonment.
 
@@ -116,7 +120,7 @@ Dit is een aparte discipline binnen CRO \u2014 generieke e-com playbooks werken 
 - Hero-video vs hero-still
 - Direct-price display vs "from" pricing
 
-## Photography & visual-grammar (audit-lens)
+### Photography & visual-grammar (audit-lens)
 
 Bij elke audit van een hospitality-site: check tegen deze criteria.
 
@@ -130,7 +134,7 @@ Bij elke audit van een hospitality-site: check tegen deze criteria.
 
 Bij shoot-brief: maak een shot-list per unit (exterior establishing, pool/outdoor detail, indoor hero room, bathroom, kitchen, human moments, area/destination context, food moment).
 
-## Trust-signalen in luxury-segment
+### Trust-signalen in luxury-segment
 
 | Signal | Werkt in luxury? | Notes |
 |---|---|---|
@@ -143,7 +147,7 @@ Bij shoot-brief: maak een shot-list per unit (exterior establishing, pool/outdoo
 | Concierge-availability badge | Ja | Premium-signaal |
 | Chef/service-add-ons zichtbaar | Ja | Verhoogt perceived value |
 
-## Copy & voice (audit-lens)
+### Copy & voice (audit-lens)
 
 - Hero-headline: specifiek, zintuiglijk, geen superlatief. "A private estate above the Ionian sea" \u2192 ja. "Luxury villa paradise" \u2192 nee.
 - Body-copy: korte zinnen, concrete details, geen marketingese. Liever "the floors are polished limestone" dan "elegant materials throughout".
@@ -151,7 +155,7 @@ Bij shoot-brief: maak een shot-list per unit (exterior establishing, pool/outdoo
 - Forms: conversational (veld-copy "When would you like to stay?" niet "Select dates")
 - Error-states: warm, nooit alarmerend. "These dates aren't available \u2014 try the week after?" beats "Error: no availability".
 
-## Mobile-first realiteit
+### Mobile-first realiteit
 
 Travel-research gebeurt voor 70%+ mobiel; booking-completion schuift naar desktop voor 40-50% van bookings. Optimaliseer mobile voor discovery + save, desktop voor commitment. Key mobile-patterns:
 - Gallery-scroll over grid (TT-style horizontal swipe)
@@ -159,7 +163,7 @@ Travel-research gebeurt voor 70%+ mobiel; booking-completion schuift naar deskto
 - Date-picker full-screen, niet modal-in-modal
 - Text-heavy pagina's (Journal) met gedoseerde beeld-interludes
 
-## Competitive-decompositie methodiek
+### Competitive-decompositie methodiek
 
 Bij start elke project, decomposeer minimaal 3 referentie-sites op:
 
@@ -185,7 +189,7 @@ Lever dit in een decomposition-sheet (csv of Notion table) die als benchmark die
 - Translation-plugins (Google Translate widget) op meertalige versies (zie `multilingual-content-architecture`)
 - Generieke hospitality-iconography (palmbomen, cocktails, suitcases) \u2014 toon het pand, niet het genre
 
-## Output-formaten
+## Output-formaat
 
 - **Hospitality UX Audit** (docx via `springbok-gdoc`): 15-25 pagina's met visueel voor-na, genre-scorecard, prioriteits-matrix
 - **Competitive decomposition sheet** (xlsx): referentie-sites x 7 dimensies

@@ -169,7 +169,7 @@ Notes & handoff
 - **Replace Color / Relight**: image-treatment
 - Altijd: human-edit = non-negotiable; AI-output = starting-point
 
-## Output-formaten
+## Output-formaat
 
 ### Productie-klaar Figma-file
 - Alle templates × alle breakpoints

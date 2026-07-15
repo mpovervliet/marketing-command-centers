@@ -252,7 +252,19 @@ Tool-specifiek: Google Optimize-stijl snippet is standaard. Controleer documenta
 - **BrowserStack / LambdaTest**: cross-device
 - **axe DevTools**: a11y-regression-check
 
-## Output-formaten
+## Output-formaat
+
+Compact skelet implementatie-ticket, voor dev-overdracht:
+
+| Veld | Inhoud |
+|---|---|
+| ID + hypothese | uit cro-experimentation |
+| Tool-keuze | met reden |
+| Variant-code | pseudo-code of snippet |
+| Targeting + goals | audiences, pages, devices, dataLayer-spec |
+| QA-plan + kill-switch | browsers/devices, rollback-trigger |
+
+### Overige deliverable-skeletten
 
 ### Implementation-spec (per experiment)
 1. Experiment-ID + hypothese
