@@ -540,6 +540,41 @@
       ]
     },
     {
+      "name": "hospitality-command-center",
+      "version": "0.1.0",
+      "description": "MP's Hospitality Command Center: 6 skills voor horeca, venues en kleinschalig verblijf: hospitality-guest-crm (gastdata-activatie, soft opt-in artikel 11.7 Tw, re-permission, reactivatie-segmenten), hospitality-reputation-reviews (respons-ritme, thema-monitoring, AI-review-summaries), giftcard-voucher-marketing (cadeaubon-programma, decemberpiek, NL-kanaalkeuze), stay-camping-distribution (kanaal-mix en launch voor stadscampings en bijzonder verblijf), local-media-city-marketing (hyperlokale pers en city-marketing-partnerships) en corporate-offsites-wellbeing (heidagen en wellbeing-dagen als B2B-productlijn). Werkt generiek met elke horeca/venue-klantmap.",
+      "keywords": [
+        "hospitality",
+        "horeca",
+        "venue",
+        "gastdata",
+        "crm",
+        "soft-opt-in",
+        "reviews",
+        "reputatie",
+        "cadeaubonnen",
+        "vouchers",
+        "camping",
+        "verblijf",
+        "lokale-media",
+        "city-marketing",
+        "heidagen",
+        "offsites",
+        "teambuilding",
+        "wellbeing",
+        "zenchef",
+        "tebi"
+      ],
+      "skills": [
+        "hospitality-guest-crm",
+        "hospitality-reputation-reviews",
+        "giftcard-voucher-marketing",
+        "stay-camping-distribution",
+        "local-media-city-marketing",
+        "corporate-offsites-wellbeing"
+      ]
+    },
+    {
       "name": "tuin-van-de-smid-copilot",
       "version": "0.1.0",
       "description": "De Tuin van de Smid (Leiden) copilot: growth-lead skill voor de horeca- en eventlocatie in Polderpark Cronesteyn: herpositionering en integraal marketingplan, partij-funnel (bruiloften, zakelijk, feesten, afscheid), Cafe Riet-merkafsplitsing 2027, Dankjewellness en camping De Achtertuin als groeionderdelen, Zenchef/GTM/GBP-datalaag. Combineer met het brand-strategy-command-center voor strategiewerk en venue-hospitality-marketing voor de partij-tactiek.",

@@ -213,7 +213,12 @@ De copilot bevat koers en context, de command-center skills bevatten de vakkenni
 | Meta-retargeting op warme partij-bezoekers (fase 4) | meta-ads-specialist |
 | Instagram-format, LinkedIn-ritme, contentkalender | social-content-specialist |
 | Reels zoals "Van kas tot kampvuur" | short-video-content |
-| Oud-klanten ambassadeur-mail, gastprofiel-activatie | retention-lifecycle-specialist |
+| Gastdata naar CRM: opt-in-audit, re-permission, reactivatie, ambassadeur-mail | hospitality-guest-crm |
+| Review-ritme, thema-monitoring, AI-review-summaries, crisis | hospitality-reputation-reviews |
+| Cadeaubonnen en arrangement-vouchers, decemberpiek | giftcard-voucher-marketing |
+| Camping De Achtertuin: kanaal-mix, launch, arrangementen | stay-camping-distribution |
+| Sleutelstad, Leidsch Dagblad, Leiden&Partners, persmomenten | local-media-city-marketing |
+| Heidagen en reset-dagen verkopen aan Bio Science Park e.o. | corporate-offsites-wellbeing |
 | Wekelijkse klant-update | weekly-client-update |
 | Kwartaal-review met de eigenaren | qbr-builder |
 

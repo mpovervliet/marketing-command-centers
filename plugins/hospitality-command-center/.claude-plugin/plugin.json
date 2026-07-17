@@ -1,0 +1,30 @@
+{
+  "name": "hospitality-command-center",
+  "version": "0.1.0",
+  "description": "MP's Hospitality Command Center: 6 skills voor horeca, venues en kleinschalig verblijf: hospitality-guest-crm (gastdata-activatie, soft opt-in artikel 11.7 Tw, re-permission, reactivatie-segmenten), hospitality-reputation-reviews (respons-ritme, thema-monitoring, AI-review-summaries), giftcard-voucher-marketing (cadeaubon-programma, decemberpiek, NL-kanaalkeuze), stay-camping-distribution (kanaal-mix en launch voor stadscampings en bijzonder verblijf), local-media-city-marketing (hyperlokale pers en city-marketing-partnerships) en corporate-offsites-wellbeing (heidagen en wellbeing-dagen als B2B-productlijn). Werkt generiek met elke horeca/venue-klantmap.",
+  "author": {
+    "name": "Maarten Pieter Overvliet"
+  },
+  "keywords": [
+    "hospitality",
+    "horeca",
+    "venue",
+    "gastdata",
+    "crm",
+    "soft-opt-in",
+    "reviews",
+    "reputatie",
+    "cadeaubonnen",
+    "vouchers",
+    "camping",
+    "verblijf",
+    "lokale-media",
+    "city-marketing",
+    "heidagen",
+    "offsites",
+    "teambuilding",
+    "wellbeing",
+    "zenchef",
+    "tebi"
+  ]
+}
