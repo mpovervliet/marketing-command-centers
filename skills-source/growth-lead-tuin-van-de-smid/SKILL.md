@@ -88,11 +88,11 @@ In 2027 splitst het restaurant-deel af onder werktitel Cafe Riet. De Tuin blijft
 | GA4 | via Google-tag | key events worden nu pas ingericht (was 0) |
 | GBP | manager-invite (7 juli) | in behandeling, MP accepteren, daarna API-aanvraag |
 | WordPress | gateway-handle detuin, rol administrator | Elementor op Versio-hosting, app-password in server-.env |
-| Zenchef | restaurantId b53dbc6e-4fc4-4306-afe3-e3ddf7b55e67 | Grow-abonnement, API-key aanwezig, wacht op docs via api-tech-help@zenchef.com |
+| Zenchef naar Tebi | Zenchef restaurantId b53dbc6e-4fc4-4306-afe3-e3ddf7b55e67 | Zenchef, Orderbilly en Lightspeed worden vervangen door Tebi (tebi.com), live verwacht eind juli 2026; Zenchef-API-traject gestopt; Tebi API-toegang via Nienke aangevraagd 14 juli |
 | Overig | Shiftbase (personeel), The Perfect Wedding en MICE Operations (partijen) | lead-exports TPW en MICE nog te regelen |
 | Centrale sheet | 1bPprXF1udYM_fhZh21Y_2fpYu2H1Ku7kI0JuCzoqSN4 | Marketing Analyse en To-do's, personal profiel |
 
-Site-technisch: PHP 8.0 (end-of-life, upgrade naar 8.2 of 8.3 openstaand), WP Fastest Cache aangezet, mu-plugin zenchef-defer-load.php lokaal gebouwd maar nog niet live. Menu's staan als PDF, Restaurant- en EventVenue-schema ontbreekt nog.
+Site-technisch: PHP 8.0 (end-of-life; 8.4 brak de site bij Nienkes eigen test, dus eerst lokaal 8.2/8.3 testen), WP Fastest Cache aangezet, mu-plugin zenchef-defer-load.php on hold: de Zenchef-widget verdwijnt bij de Tebi-overgang, check dan het laadgedrag van de Tebi-widget (zelfde auto-open-risico). Menu's staan als PDF, Restaurant- en EventVenue-schema ontbreekt nog.
 
 ### Website- en kanaaldata (juli 2026)
 
@@ -102,14 +102,22 @@ Site-technisch: PHP 8.0 (end-of-life, upgrade naar 8.2 of 8.3 openstaand), WP Fa
 - Reputatie: Google 4,4 ster, circa 940 reviews. GBP-toptermen: generiek "restaurants" (verkeerd publiek) plus brand.
 - GBP juni 2026: 5.446 interacties, routebeschrijvingen +3 procent terwijl discovery daalt. Lezing: al-besliste bezoekers stabiel, top-of-funnel zwakker. Beoordeel GBP altijd jaar-op-jaar, niet maand-op-maand: deze locatie boekt maanden vooruit, dus een MoM-daling is een zwak signaal.
 
-### Zenchef-boekingsdata (juli 2024 tot juli 2026)
+### Boekingsdata-historie uit Zenchef (juli 2024 tot juli 2026)
 
-5.272 boekingen, 30.546 gasten. Kernpunten die beslisregels sturen:
+5.272 boekingen, 30.546 gasten, 3.680 unieke e-mailadressen, 625 herhaalgasten (17 procent). Kernpunten die beslisregels sturen:
 
 - Cancel-rate groepen 15 en groter is 53,4 procent, tegen 13,6 procent bij kleine tafels. Grootste omzetlek: elke grote-groep-flow vraagt om een aanbetaling of borg als beleidsknop (eigenaren-besluit).
 - Circa 5 tot 6 partijen per maand, vooral zondag en zaterdag in de eetzaal. De kas wordt amper voor partijen gebruikt: onbenutte capaciteit voor een tweede gelijktijdige partij.
 - Lead-time partijen mediaan 22 dagen. Follow-up binnen die 22 dagen is waar de offerte wint of sneuvelt.
 - Winterdip: november 795 gasten tegen september 2.195. Plan events en zakelijke acties tegen de dip in.
+
+### Systeemwissel naar Tebi (aangekondigd 13 juli 2026, live verwacht eind juli)
+
+- Tebi bundelt kassa, betalingen, QR, reserveringen (incl. website-widget), cadeaubonnen en gastprofielen; prijsmodel omzetgebaseerd (0 euro per maand tot 10.000 euro omzet, daarna 20 euro per extra 10.000; bron tebi.com/pricing, juli 2026). Prepayments bestaan, no-show-beleid en review-management zijn niet gedocumenteerd: verifieer bij inrichting.
+- Geen gedocumenteerde migratie van gastprofielen, boekingshistorie of openstaande cadeaubonnen. Daarom VOOR de Zenchef-opzegging: verse boekings-export, gastprofielen-export, reviews en cadeaubon-saldi veiligstellen (checklist in sessie-recap-2026-07-17).
+- Geen open developer-API: integraties lopen via partner-tokens in de Tebi Back Office. Let op naamsverwarring: docs.tebi.io en api.docs.tebi.com zijn van een ander bedrijf.
+- Kansen: kassa plus reserveringen in 1 systeem maakt besteding per gast en per partij-type voor het eerst meetbaar; richt de nieuwe reserverings- en QR-flow vanaf dag 1 in met marketing-opt-in-tekst (soft opt-in artikel 11.7 Tw) en postcode/tag-velden, dan bouwt het CRM-bestand legaal en verrijkt op.
+- Conversie-tracking (fase 1) definitief inrichten op de Tebi-flow, niet meer op de Zenchef-widget: voorkomt dubbel werk binnen 2 weken.
 
 ## Strategisch Kader
 
@@ -228,7 +236,7 @@ Elke baseline heeft een peildatum: zonder datum is een cijfer over drie maanden 
 ## Non-negotiables
 
 - Niets live zetten of naar eigenaren of klanten versturen zonder MP-bevestiging. Concepten leveren, MP verstuurt.
-- Geen wijzigingen aan Zenchef-instellingen, WordPress-productie of GBP zonder akkoord. Echte code eerst lokaal in Local by Flywheel (tuinvandesmid.local), pas na goedkeuring live; simpele omkeerbare toggles mogen direct.
+- Geen wijzigingen aan reserveringssysteem-instellingen (Zenchef, na de overgang Tebi), WordPress-productie of GBP zonder akkoord. Echte code eerst lokaal in Local by Flywheel (tuinvandesmid.local), pas na goedkeuring live; simpele omkeerbare toggles mogen direct.
 - Prijzen en deposit-beleid zijn eigenaren-beslissingen (beslissessie B1 tot B10 met Nienke), nooit zelf vaststellen.
 - De service-account-sleutel (tuin-van-de-smid-backoffice JSON in de klantmap) nooit citeren, openen of verplaatsen. Ook WordPress-app-password en Zenchef-API-key niet in output herhalen.
 - Geen verzonnen cijfers: gebruik alleen data uit de klantmap of expliciet gelabelde vuistregels.
@@ -244,8 +252,9 @@ Klantmap: `C:\Users\mpove\OneDrive\TUIN VAN DE SMID`.
 | briefing-tuin-van-de-smid-marketing.md | Kerndocument v3 (7 juli 2026): business, data, plan, open vragen | ALTIJD bij strategie en planning |
 | sessie-recap-2026-07-09-toegangen-zenchef-wordpress.md | Toegangen, Zenchef-API, GBP, GTM, maandrapport | Bij data-toegang of systeemvragen |
 | sessie-recap-2026-07-13-performance-fix-versio.md | TTFB-diagnose, live fixes, defer-load mu-plugin | Bij site-performance en dev-werk |
-| zenchef-defer-load.php | De lokaal gebouwde defer-load fix | Bij het live pushen van de widget-fix |
+| sessie-recap-2026-07-17-tebi-transitie.md | Tebi-systeemwissel, export-borging checklist, impact op lopende acties | Bij alles rond reserveringen, kassa, CRM of tracking |
+| zenchef-defer-load.php | De lokaal gebouwde defer-load fix (on hold door Tebi-overgang) | Alleen als Zenchef toch langer live blijft |
 
 Log elke run en wijziging in `history-log.md` van de klantmap: wat, waarom, verwacht effect, evaluatiedatum.
 
-*Eerste versie: juli 2026. Herzie uiterlijk oktober 2026 (voor het november-orientatievenster van bruiloften) of eerder bij de Cafe Riet-afsplitsing, een eigenaren-besluit over prijzen en deposits, of zodra de conversie-tracking live cijfers levert.*
+*Eerste versie: juli 2026, bijgewerkt 17 juli 2026 (Tebi-transitie). Herzie zodra Tebi live is (verwacht eind juli 2026) en uiterlijk oktober 2026 (voor het november-orientatievenster van bruiloften), of eerder bij de Cafe Riet-afsplitsing, een eigenaren-besluit over prijzen en deposits, of zodra de conversie-tracking live cijfers levert.*
