@@ -500,6 +500,66 @@
       ]
     },
     {
+      "name": "brand-strategy-command-center",
+      "version": "0.1.0",
+      "description": "MP's Brand Strategy Command Center: 7 skills voor de strategische laag boven de kanaal-centers: brand-strategy-specialist (router, fase-gates diagnose naar keuze naar plan naar executie), market-opportunity-analysis (situatieanalyse, TOWS-confrontatiematrix, opportunity-scoring), brand-positioning-repositioning (herpositionering na eigenaarswissel of sentimentschade), brand-architecture-naming (merkarchitectuur, naamsafsplitsing, GBP/review/301-migratie), growth-portfolio-planner (5-jaar groeikansen per bedrijfsonderdeel, Ansoff/Three Horizons/OGSM), marketing-plan-writer (integraal marketingplan, budget, KPI's, 90-dagen ritme) en venue-hospitality-marketing (partij-funnels, venue-pricing, offerte- en kijkmoment-conversie). Werkt generiek met elke klantmap.",
+      "keywords": [
+        "brand-strategy",
+        "positionering",
+        "herpositionering",
+        "merkstrategie",
+        "merkarchitectuur",
+        "naming",
+        "rebrand",
+        "marketingplan",
+        "sostac",
+        "ogsm",
+        "ansoff",
+        "three-horizons",
+        "groeistrategie",
+        "portfolio",
+        "situatieanalyse",
+        "swot",
+        "tows",
+        "share-of-search",
+        "venue",
+        "hospitality",
+        "horeca",
+        "trouwlocatie",
+        "events",
+        "mice"
+      ],
+      "skills": [
+        "brand-strategy-specialist",
+        "market-opportunity-analysis",
+        "brand-positioning-repositioning",
+        "brand-architecture-naming",
+        "growth-portfolio-planner",
+        "marketing-plan-writer",
+        "venue-hospitality-marketing"
+      ]
+    },
+    {
+      "name": "tuin-van-de-smid-copilot",
+      "version": "0.1.0",
+      "description": "De Tuin van de Smid (Leiden) copilot: growth-lead skill voor de horeca- en eventlocatie in Polderpark Cronesteyn: herpositionering en integraal marketingplan, partij-funnel (bruiloften, zakelijk, feesten, afscheid), Cafe Riet-merkafsplitsing 2027, Dankjewellness en camping De Achtertuin als groeionderdelen, Zenchef/GTM/GBP-datalaag. Combineer met het brand-strategy-command-center voor strategiewerk en venue-hospitality-marketing voor de partij-tactiek.",
+      "keywords": [
+        "tuin-van-de-smid",
+        "cafe-riet",
+        "leiden",
+        "horeca",
+        "eventlocatie",
+        "trouwlocatie",
+        "partijen",
+        "zenchef",
+        "client-copilot",
+        "herpositionering"
+      ],
+      "skills": [
+        "growth-lead-tuin-van-de-smid"
+      ]
+    },
+    {
       "name": "la-fuga-copilot",
       "version": "0.1.0",
       "description": "La Fuga (Salento) copilot — growth-lead skill voor luxury estate villa rental: direct-booking groei, gastcommunicatie en backoffice (offertes, deposits, facturen), seizoenspricing en minimum-stay, Airbnb-vs-direct kanaalmix. Combineer met luxury-villa-rental-ux uit het UX Design Command Center voor UX/CRO-werk.",
