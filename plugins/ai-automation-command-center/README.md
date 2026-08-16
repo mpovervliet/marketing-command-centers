@@ -1,6 +1,6 @@
 # ai-automation-command-center
 
-MP's AI-Automation Command Center — 15 skills voor AI-gedreven schaalvergroting en skill-ops: client-copilot-generator, agentic-commerce-readiness, ai-marketing-automation (n8n/Make workflows), ai-content-factory (contentproductie met kwaliteitspoorten), skill-distillation (dure-model-workflows vastleggen voor goedkopere modellen), skill-library-audit (kwartaal-doorlichting van de bibliotheek) en research-corpus-builder (max-recall vakkennis-corpora) en marketing-agent-builder (AI-agents met tools, MCP, guardrails en evals).
+MP's AI-Automation Command Center — 16 skills voor AI-gedreven schaalvergroting en skill-ops: client-copilot-generator, agentic-commerce-readiness, ai-marketing-automation (n8n/Make workflows), ai-content-factory (contentproductie met kwaliteitspoorten), skill-distillation (dure-model-workflows vastleggen voor goedkopere modellen), skill-library-audit (kwartaal-doorlichting van de bibliotheek) en research-corpus-builder (max-recall vakkennis-corpora) en marketing-agent-builder (AI-agents met tools, MCP, guardrails en evals) en skill-github-sync (bewaakt dat elke skill-wijziging automatisch naar GitHub wordt gepusht en gesynchroniseerd).
 
 ## Skills in deze plugin
 
@@ -19,5 +19,6 @@ MP's AI-Automation Command Center — 15 skills voor AI-gedreven schaalvergrotin
 - `workflow-resilience`
 - `ai-cost-optimization`
 - `copilot-ops`
+- `skill-github-sync`
 
 Gegenereerd door `build-plugins.py` uit `skills-source/`.
