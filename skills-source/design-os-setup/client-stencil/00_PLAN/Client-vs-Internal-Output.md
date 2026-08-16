@@ -17,7 +17,7 @@ Doel: scheiden wat intern is (volledige werkelijkheid) van wat klantwaardig is (
 
 ## Wat NIET naar CLIENT-FACING mag
 
-- GA4 property-ID ([GA4_PROPERTY_ID]), Ads customer-ID ([ADS_CUSTOMER_ID]), GSC-property-string ([GSC_SITE]).
+- de gedragsbron property-ID ([MEETBRON_ID]), Ads customer-ID ([ADVERTENTIEBRON_ID]), property van de zoekbron-string ([ZOEKBRON_ID]).
 - Toolnamen en gateway-prefixen, GAQL-queries, dataLayer-internals.
 - Promptlogs en agent-instructies.
 - Onbevestigde aannames als feit gepresenteerd.

@@ -1,6 +1,7 @@
 # [KLANT]: Pagina-inventaris en template-kaart
 Versie: 0.1 (stencil)
-Status: TEMPLATE, invullen bij intake
+Status: TEMPLATE, invullen in fase 4
+Eigenaar: design-os-strategy
 
 Doel: welke pagina's bestaan er nu, welke templates zijn er nodig, wat is de scope van het redesign?
 
@@ -10,7 +11,7 @@ Doel: welke pagina's bestaan er nu, welke templates zijn er nodig, wat is de sco
 
 | Productlijn/functie | Hoofd-URL | Conversie-URL |
 |---------------------|-----------|---------------|
-| [PRODUCT] | /[pad] | /[pad]/bestellen of /checkout |
+| [PRODUCT] | /[pad] | [conversie-URL: bestellen, aanvragen, offerte, reserveren, aanmelden] |
 | [tweede lijn, indien aanwezig] | | |
 
 ## Alle pagina's, gegroepeerd per functie
@@ -19,8 +20,8 @@ Doel: welke pagina's bestaan er nu, welke templates zijn er nodig, wat is de sco
 
 | URL | Functie | Template |
 |-----|---------|----------|
-| /[pad] | Hoofdpagina producten plus plankaarten | T1: Product Hub |
-| /[pad]/bestellen | Checkout/configurator | T2: Checkout |
+| /[pad] | Hoofdpagina aanbod plus keuze-kaarten | T1: Aanbod-hub |
+| /[pad]/[conversiestap] | De conversiestap zelf | T2: [naam] |
 | /[pad]/[infopagina] | Uitlegpagina | T3: Info/Uitleg |
 
 ### 2. Long-tail SEO landingspagina's
@@ -52,9 +53,17 @@ Varianten op dezelfde template; alleen kop en filter wijzigen. Voorbeeldclusters
 
 ## Eindoverzicht
 
-| Template ID | Naam | Aantal URLs | Sprint | In scope |
-|-------------|------|------------:|--------|----------|
-| HP | Homepage | 1 | | |
-| T1 | | | | |
-| T2 | | | | |
-| E1 | | | | |
+| Template ID | Naam | Aantal URLs | Sessies (90d) | Conversiebijdrage | Sprint | In scope |
+|-------------|------|------------:|--------------:|------------------:|--------|----------|
+| HP | Homepage | 1 | | | | |
+| T1 | | | | | | |
+| T2 | | | | | | |
+| E1 | | | | | | |
+
+Volume en conversiebijdrage komen uit de baseline (`02_DATA-BASELINE/`). Doel van deze
+tabel is niet volledigheid maar prioritering: welke 20 procent van de templates draagt
+80 procent van de waarde. Die templates zijn de kandidaten voor de kern-flow.
+
+De kolom "In scope" volgt traject-omvang (P8) in `01_CONTEXT/Client-Profile.md`: bij `vol`
+alle kern-templates, bij `light` de kern-flow plus maximaal 2 aanpalende templates. Wat hier
+buiten scope valt, krijgt in `Template-Registry.md` de status OUT-OF-SCOPE met reden.

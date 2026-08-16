@@ -1,42 +1,73 @@
 # Data-Analysis-Prompts
-Versie: 0.1 (stencil)
+Versie: 0.2 (stencil)
 Status: TEMPLATE, invullen bij intake
 
-Herbruikbare gateway-queries voor de baseline en diagnose. Vul [GA4_PROPERTY_ID], [GSC_SITE], [ADS_CUSTOMER_ID], [PROFILE] in.
+Herbruikbare queries voor de baseline en diagnose. De metric-namen hangen af van de
+meet-stack (P2) en het conversie-model (P1) uit `01_CONTEXT/Client-Profile.md`; de
+**vragen** zijn voor elke klant hetzelfde.
 
-## GA4 (property [GA4_PROPERTY_ID], profile [PROFILE])
+Vul eerst de identifiers in: [MEETBRON_ID], [ZOEKBRON_ID], [ADVERTENTIEBRON_ID], [PROFILE].
 
-- **Device-split plus funnel:** dimensions `deviceCategory`, metrics `sessions,addToCarts,checkouts,ecommercePurchases,purchaseRevenue`, 90daysAgo t/m yesterday.
-- **Kanaal:** dimensions `sessionDefaultChannelGroup`, zelfde metrics.
-- **New vs returning:** dimensions `newVsReturning`, metrics `sessions,ecommercePurchases,purchaseRevenue`.
-- **Top landingspagina's:** dimensions `landingPagePlusQueryString`, metrics `sessions,ecommercePurchases,purchaseRevenue`, order by sessions desc.
-- **Event-taxonomie (QA):** dimensions `eventName`, metrics `eventCount,keyEvents` (bij grote output naar sheet exporteren).
+## Vaste parameters van deze klant
 
-Let op: verifieer per klant of `addToCarts` echte cart-intentie meet of interactie-ruis is (bijv. een configurator). Gebruik `checkouts` en `ecommercePurchases` als betrouwbare ankers tot het Data-Contract anders zegt.
+| Veld | Waarde |
+|------|--------|
+| Gedragsbron plus identifier | |
+| Zoekbron plus identifier | |
+| Advertentiebron plus identifier | |
+| Valuta van de advertentie- en omzetdata | |
+| Standaardperiode | 90 dagen, tenzij anders vastgelegd in het Data-Contract |
+| Funnel-metrics (uit het Data-Contract) | |
 
-## GSC ([GSC_SITE], profile [PROFILE])
+## Gedragsdata: de vijf vaste vragen
 
-- **Intentie:** action `search_analytics`, dimensions `query`, row_limit 30.
-- **Device:** dimensions `device`.
-- **Pagina's:** dimensions `page`.
-- Stel `start_date`/`end_date` gelijk aan de GA4-periode (90d) om mismatch te vermijden.
+Vervang [FUNNEL-METRICS] door de metric-namen uit het Data-Contract van deze klant.
 
-## Google Ads (customer_id [ADS_CUSTOMER_ID], profile [PROFILE])
+- **Device-split plus funnel:** dimensie device, metrics `sessies, [FUNNEL-METRICS], [waarde-metric]`, standaardperiode.
+- **Kanaal:** dimensie kanaalgroepering, zelfde metrics.
+- **Nieuw tegenover terugkerend:** dimensie nieuw/terugkerend, zelfde metrics.
+- **Top instappagina's:** dimensie landingspagina, zelfde metrics, gesorteerd op sessies aflopend.
+- **Event-taxonomie (QA):** dimensie event-naam, metrics event-aantal en key events. Bij grote output eerst naar een bestand exporteren en daar parsen.
 
-- **Campagne-performance:**
-```
-SELECT campaign.name, campaign.advertising_channel_type, metrics.clicks,
-       metrics.cost_micros, metrics.conversions, metrics.conversions_value
-FROM campaign
-WHERE segments.date BETWEEN 'YYYY-MM-DD' AND 'YYYY-MM-DD'
-  AND metrics.clicks > 0
-ORDER BY metrics.cost_micros DESC
-```
-- Les: gebruik expliciete `BETWEEN`-datums; `LAST_90_DAYS` is geen geldig literal (`LAST_30_DAYS` wel).
-- Kosten = `cost_micros` / 1.000.000 (EUR). ROAS = conversions_value / kosten.
-- GA4- en Ads-conversies nooit optellen of vergelijken als gelijk (andere attributie, zie Data-Contract).
+Twee regels die voor elke stack gelden:
 
-## PageSpeed (fase 3)
+1. Draai de event-taxonomie **voordat** je de funnel trekt. Tien minuten QA vooraf voorkomt een middag analyses op een ruis-event.
+2. Verifieer per klant of het intentie-event echte intentie meet of interactie-ruis. Een event dat vaker vuurt dan er sessies zijn, meet interactie. Degradeer het dan in het Data-Contract en gebruik het dichtstbijzijnde betrouwbare intentie-event als funnel-anker.
 
-- `pagespeed_tool` op de kern-LP's (homepage, [PRODUCT]-instap, checkout) mobiel; LCP/INP/CLS noteren in `03_DIAGNOSIS/CWV-Status.md`.
-- Bij 429 (quota): later opnieuw proberen en de blokkade in het decision-log noteren.
+## Zoekdata
+
+- **Intentie:** zoekopdrachten, top 30 op volume.
+- **Device:** dezelfde data uitgesplitst naar device.
+- **Pagina's:** dezelfde data uitgesplitst naar pagina.
+- Trek de periode gelijk met de gedragsdata om mismatch te vermijden.
+
+Is er geen zoekconsole beschikbaar voor de dominante zoekmachine in deze markt, noteer dat dan als beperking in het Data-Contract in plaats van de sectie leeg te laten.
+
+## Advertentiedata
+
+- **Campagne-performance:** campagnenaam, kanaaltype, klikken, kosten, conversies, conversiewaarde, over de standaardperiode, gesorteerd op kosten aflopend.
+- Gebruik expliciete begin- en einddatums in plaats van relatieve periode-literals; die worden per platform anders geïnterpreteerd.
+- Kosten worden door sommige platforms in micro-eenheden geleverd: deel dan door 1.000.000. **Haal de accountvaluta op en noteer die**; de eenheid rolt door in elke latere business case.
+- Conversies uit het advertentieplatform en uit de gedragsbron nooit optellen of als gelijk vergelijken (andere attributie, zie Data-Contract).
+
+Heeft deze klant geen betaalde advertenties, noteer dan "niet van toepassing" in het klantprofiel en sla deze sectie over. Dat is geen ontbrekende toegang.
+
+## Performance (fase 3)
+
+- Meet de kern-templates uit `03_SITE-STRUCTURE/Template-Registry.md` op mobiel; noteer de Core Web Vitals in `03_DIAGNOSIS/CWV-Status.md`.
+- Bij quota-fouten: later opnieuw proberen en de blokkade in het decision-log noteren.
+
+## Tegenboeking voor de dedupe-check
+
+De primaire conversie moet naast een onafhankelijke bron gelegd worden. Welke dat is,
+hangt van het conversie-model af:
+
+| Conversie-model | Tegenboeking |
+|-----------------|--------------|
+| transactie | ordersysteem of backend-transacties |
+| lead | CRM-records over dezelfde periode |
+| abonnement | signup- of billingdatabase |
+| offerte-configurator | offerte-administratie |
+
+Vergelijk over 28 hele dagen. Een afwijking boven ongeveer 10 procent zonder verklaring
+is eerst uitzoeken, dan pas baseline bouwen.

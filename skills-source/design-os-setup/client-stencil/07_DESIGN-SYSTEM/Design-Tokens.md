@@ -2,7 +2,7 @@
 Versie: 0.1 (stencil)
 Status: TEMPLATE, invullen bij intake
 
-> Invul-instructie: lees de tokens uit het bestaande Figma design system van [KLANT] (file_key in `INTAKE-CHECKLIST.md`) of uit de live site (CSS-variabelen). Dit document is de bron voor Figma-fase 05 t/m 08; wireframes (fase 04) gebruiken uitsluitend het grijze wireframe-palet uit `10_PROMPTS-AND-AGENTS/Agent-3-Figma-Build-Compiler.md`.
+> Invul-instructie: lees de tokens uit het bestaande Figma design system van [KLANT] (file_key in `INTAKE-CHECKLIST.md`) of uit de live site (CSS-variabelen). Dit document is de bron voor de Figma-pagina's 04 t/m 06 (Selected Direction, Design System, Prototype); wireframes (pagina 03) gebruiken uitsluitend het grijze wireframe-palet uit `10_PROMPTS-AND-AGENTS/Agent-3-Figma-Build-Compiler.md`.
 
 ## Kleuren
 
@@ -30,7 +30,7 @@ Status: TEMPLATE, invullen bij intake
 | type/h3 | | | | | Subkop |
 | type/body | | | | | Bodytekst |
 | type/small | | | | | Voorwaarden, meta |
-| type/price | | | | | Prijsweergave |
+| type/emphasis | | | | | Nadruk op het kerncijfer of de kernbelofte (prijs, doorlooptijd, resultaat); laat leeg als er geen kerncijfer is |
 | type/cta | | | | | Knoptekst |
 
 ## Spacing
@@ -56,6 +56,6 @@ Status: TEMPLATE, invullen bij intake
 
 ## Regels
 
-- Geen nieuwe kleuren of fonts introduceren zonder decision-log-entry; we werken binnen het bestaande [KLANT] design system.
+- Geen nieuwe kleuren of fonts introduceren zonder decision-log-entry; bij merk-mandaat brand-vast en brand-open werken we binnen het bestaande [KLANT] design system; bij brand-afwezig wordt dit bestand juist in fase 7 ingevuld als deliverable.
 - Contrast minimaal WCAG 2.2 AA; check bij elke token-combinatie voor tekst op vlak.
 - Afwijkingen van het design system loggen in `09_DECISION-LOG/Decision-Log.md`.

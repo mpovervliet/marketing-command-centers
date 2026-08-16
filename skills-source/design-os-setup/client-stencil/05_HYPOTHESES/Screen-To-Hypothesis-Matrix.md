@@ -24,7 +24,7 @@ Rijen sorteren op pagina, dan op prioriteit (hoog > middel > laag).
 | Homepage (mobiel) | | | | | | | |
 | Homepage (desktop) | | | | | | | |
 
-## 2. [PRODUCT] productpagina
+## 2. [PRODUCT]: aanbod- of dienstpagina
 
 | Scherm | Component | BM | Hypothese | Bewijsbron | Primary KPI | Guardrail | Experiment |
 |--------|-----------|----|-----------|------------|-------------|-----------|------------|
@@ -36,7 +36,7 @@ Rijen sorteren op pagina, dan op prioriteit (hoog > middel > laag).
 |--------|-----------|----|-----------|------------|-------------|-----------|------------|
 | | | | | | | | |
 
-## 4. Checkout
+## 4. [De conversiestap: checkout, aanvraagformulier, boekingsflow of signup]
 
 | Scherm | Component | BM | Hypothese | Bewijsbron | Primary KPI | Guardrail | Experiment |
 |--------|-----------|----|-----------|------------|-------------|-----------|------------|

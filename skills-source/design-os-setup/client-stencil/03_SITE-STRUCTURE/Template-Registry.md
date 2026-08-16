@@ -1,9 +1,20 @@
 # Template Registry [KLANT]
 Versie: 0.1 (stencil)
-Status: TEMPLATE, invullen bij intake
+Status: TEMPLATE, invullen in fase 4
+Eigenaar: design-os-strategy
 
 Scope: alle templates van het redesign (site plus e-mail), afgeleid uit `Page-Inventory.md`.
 Status legenda per template: SPECCED (volledig uitgewerkt) / STUBBED (format klaar, invullen bij sprint) / OUT-OF-SCOPE.
+
+Hoeveel templates in scope zijn volgt uit traject-omvang (P8) in `01_CONTEXT/Client-Profile.md`:
+bij `vol` alle kern-templates, bij `light` de kern-flow plus maximaal 2 aanpalende templates.
+
+Regel bij `light`: elke template die daarbuiten valt krijgt hier expliciet de status OUT-OF-SCOPE
+plus een reden in het statusveld, bijvoorbeeld `Status: OUT-OF-SCOPE (light: buiten kern-flow, geen
+ruimte binnen doorlooptijd)`. Zowel het blok per template als de statuskolom in het Eindoverzicht
+draagt die status. Zonder reden is een template stil verdwenen in plaats van bewust overgeslagen, en
+kan later niemand nagaan wat er niet is aangeraakt. Een OUT-OF-SCOPE-template blijft in dit registry
+staan, hij wordt niet verwijderd.
 
 ## Format per template
 
@@ -25,10 +36,10 @@ Vereiste modules (in volgorde):
   2. ...
 
 Figma-componenten:
-  - C-XX NaamComponent (DDR-H[X]-[NN]): [status: APPROVED / NEEDS VALIDATION]
+  - C-XX NaamComponent (DDR-H[X]-[NN]): [status: APPROVED / PERMANENT / NEEDS VALIDATION / BLOCKED / RESEARCH NEEDED]
 
 Primaire KPI voor deze template:
-  [Meetbare doelstelling, bijv. sessie → begin_checkout van X% naar >= Y%]
+  [Meetbare doelstelling, bijv. sessie → [primaire conversie of de laatste funnel-anker uit het Data-Contract] van X% naar >= Y%]
 
 Evidence basis:
   [Relevante E-IDs, max 5 kernpunten]
@@ -52,7 +63,7 @@ Primaire gebruikersintentie:
 Gebruikersbezwaren op deze pagina:
   - Wat betaal ik echt (prijs-onzekerheid)? (E-SURVEY-PRIJS-001)
   - Is [KLANT] betrouwbaar? (E-REVIEW-TRUST-001)
-  - Op mobiel: CTA niet zichtbaar zonder scrollen (E-GA4-FUNNEL-001)
+  - Op mobiel: CTA niet zichtbaar zonder scrollen (E-BEHAV-FUNNEL-001)
 
 Vereiste modules (in volgorde):
   1. Hero met prijs en CTA above fold: mobiele instap (DDR-H1-01)

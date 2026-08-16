@@ -4,6 +4,8 @@ Status: TEMPLATE, invullen bij intake
 
 Doel: concrete wireframe-briefings per hypothese voor overdracht aan Figma (design-fase). Kopieer het blok hieronder per wireframe (WF-01, WF-02, ...). Orden briefs van hoogste naar laagste ICE-score.
 
+Waar je een brief voor maakt, volgt `traject-omvang` (P8) uit `01_CONTEXT/Client-Profile.md`: **elke template in scope krijgt een brief, ook de aanpalende**, bij `vol` en bij `light`. Wat bij `light` schaalt is niet het aantal briefs maar hoeveel schermen er per template worden uitgewerkt: binnen de kern-flow allemaal, daarbuiten alleen het scherm waar de beslissing landt. De inhoud van een brief schaalt niet mee: elk veld hieronder blijft verplicht.
+
 ---
 
 ## WF-[XX]: [naam van het scherm of de component]
@@ -47,4 +49,4 @@ Doel: concrete wireframe-briefings per hypothese voor overdracht aan Figma (desi
 
 ---
 
-Herhaal het blok per wireframe. Elke WF verwijst naar minimaal een hypothese en de bijbehorende DDR zodra die bestaat.
+Herhaal het blok per wireframe. Elke WF verwijst naar minimaal een hypothese en de bijbehorende DDR zodra die bestaat. De Evidence Score met anker staat in die DDR en wordt hier niet gekopieerd: één bron van waarheid. De ICE-score hierboven is prioritering, geen bewijskracht, en draagt dus geen anker.
