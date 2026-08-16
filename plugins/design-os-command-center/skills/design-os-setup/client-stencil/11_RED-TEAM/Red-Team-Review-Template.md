@@ -2,7 +2,20 @@
 Versie: 0.1 (stencil)
 Status: TEMPLATE, invullen bij intake
 
-Doel: na elke fase de eigen conclusies aanvallen voordat ze doorwerken. Dit onderscheidt een serieuze methodiek van mooie AI-output. Kopieer per fase naar `Red-Team-Review-Fase-[N].md`.
+Doel: de eigen conclusies aanvallen voordat ze doorwerken. Dit onderscheidt een serieuze methodiek van mooie AI-output. Kopieer per review naar `Red-Team-Review-Fase-[N].md`.
+
+## Wanneer je deze review draait
+
+Het ritme volgt `traject-omvang` (P8) uit `01_CONTEXT/Client-Profile.md`.
+
+| Traject-omvang | Ritme |
+|----------------|-------|
+| vol | na elke fase |
+| light | samengevoegd: drie reviews, na fase 3 (dekt 0 t/m 3), na fase 6 (dekt 4 t/m 6) en na fase 8 (dekt 7 en 8), elk over alle tussenliggende fases samen |
+
+Fase 9 handoff heeft ook bij `vol` geen eigen review en hangt aan die van fase 8.
+
+Bij `light` verandert alleen de frequentie, niet de diepgang. Geen fase blijft ongetoetst: `light` voegt reviews samen, het laat er geen vervallen. De zeven dimensies hieronder worden ook in een samengevoegde review alle zeven doorlopen, en de samengevoegde review benoemt per dimensie welke fases hij dekt.
 
 ## Hoe te gebruiken
 
@@ -13,6 +26,7 @@ Voer de review uit met een kritische bril (idealiter een aparte agent/sessie). B
 ## Red Team Review, Fase [N]
 
 **Beoordeelde documenten:** [lijst]
+**Gedekte fases:** [bij `vol` één fase; bij `light` de samengevoegde reeks, bijvoorbeeld fase 1 t/m 3]
 **Datum:** [datum]
 
 ### 1. Datakwaliteit
@@ -50,4 +64,5 @@ Voer de review uit met een kritische bril (idealiter een aparte agent/sessie). B
   2. [invullen]
   3. [invullen]
 - **Acties:** [naar Open-Questions/Assumptions] of correcties [naar de fasedocumenten].
-- **Beslissing: fase vrijgegeven ja/nee.** [go / no-go plus voorwaarden]
+- **Gate-Record:** [GATE-FASE-[nr] in `Gate-Records.md`; verplicht, zonder record geen vrijgave]
+- **Beslissing:** fase vrijgegeven ja of nee. [go / no-go plus voorwaarden]

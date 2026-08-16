@@ -28,4 +28,4 @@ Niet dupliceren: bestanden groter dan ~10 MB of buiten scope; verwijs ernaar met
 ## Regels
 
 - Elk gekopieerd bestand krijgt een regel in de tabel met de reden.
-- Context is input, geen bewijs: claims uit contextdocumenten worden pas Evidence Items na verificatie in fase 2/3.
+- Context is input, geen bewijs. Uitzondering: `Client-Profile.md` is geen context maar bindende configuratie; skills lezen die waarden en passen hun regels erop aan: claims uit contextdocumenten worden pas Evidence Items na verificatie in fase 2/3.

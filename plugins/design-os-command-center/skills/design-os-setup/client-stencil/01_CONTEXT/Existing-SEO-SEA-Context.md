@@ -2,7 +2,7 @@
 Versie: 0.1 (stencil)
 Status: TEMPLATE, invullen bij intake
 
-> Invul-instructie: inventariseer lopende SEO/SEA-sporen zodat het redesign ze versterkt in plaats van breekt. Bronnen: GSC ([GSC_SITE]), Ads ([ADS_CUSTOMER_ID]), bestaande audits.
+> Invul-instructie: inventariseer lopende SEO/SEA-sporen zodat het redesign ze versterkt in plaats van breekt. Bronnen: de zoekbron ([ZOEKBRON_ID]), Ads ([ADVERTENTIEBRON_ID]), bestaande audits.
 
 ## Invulvragen
 

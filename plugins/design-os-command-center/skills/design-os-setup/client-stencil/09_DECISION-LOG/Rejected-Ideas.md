@@ -2,7 +2,7 @@
 Versie: 0.1 (stencil)
 Status: TEMPLATE, invullen bij intake
 
-Ideeen die we bewust niet doen, met reden. Voorkomt dat afgewezen richtingen later opnieuw opduiken.
+Ideeen die we bewust niet doen, met reden. Voorkomt dat weerlegde patronen later opnieuw opduiken. Let op: niet-gekozen ONTWERPRICHTINGEN horen hier niet; die staan onderbouwd in `05b_DIRECTIONS/Not-Selected.md` en zijn afgewezen keuzes, geen weerlegde keuzes.
 
 | # | Datum | Afgewezen idee | Reden |
 |---|-------|----------------|-------|

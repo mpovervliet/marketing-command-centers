@@ -6,7 +6,7 @@ Opgeschoonde, klantwaardige output voor [KLANT]. Conclusies en aanbevelingen in 
 
 ## Wat NIET in klant-output mag
 
-- Property-IDs en account-IDs ([GA4_PROPERTY_ID], [ADS_CUSTOMER_ID], [GSC_SITE]).
+- Property-IDs en account-IDs ([MEETBRON_ID], [ADVERTENTIEBRON_ID], [ZOEKBRON_ID]).
 - Toolnamen, gateway-prefixen en profile-namen.
 - GAQL-queries, dataLayer-internals en andere query- of implementatiedetails.
 - Promptlogs en agent-instructies.

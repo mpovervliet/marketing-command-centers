@@ -3,29 +3,31 @@ Versie: 0.1 (stencil)
 Status: TEMPLATE, invullen bij intake
 
 Intern document, niet client-facing.
-Bronnen: [opsommen: GA4 baseline-periode, GSC-analyse, crawl, survey plus n, A/B-historie, Hypothesis-Backlog, Impact-Effort-Matrix]
+Bronnen: [opsommen: de gedragsbron baseline-periode, zoekdata-analyse, crawl, survey plus n, A/B-historie, Hypothesis-Backlog, ICE-prioritering uit de Hypothesis-Backlog]
 
 ## 1. Doel van dit document
 
 Dit is de data-to-design vertaaltabel. Alle Figma-beslissingen zijn hierop terug te voeren. Niets in Figma staat er zonder dat dit document een databron aanwijst.
+
+Scope-omvang volgt `traject-omvang` (P8) uit `01_CONTEXT/Client-Profile.md`: bij `vol` alle kern-templates uit het Template-Registry, bij `light` de kern-flow plus maximaal 2 aanpalende templates. Elke template in scope krijgt een wireframe-brief, ook de aanpalende; bij `light` schaalt niet het aantal briefs maar het aantal uitgewerkte schermen per template: binnen de kern-flow allemaal, daarbuiten alleen het scherm waar de beslissing landt. De omvang schaalt, de lat niet: de minimumscore 3 voor Figma-productie en elk verplicht veld blijven gelijk.
 
 ## 2. Vastgestelde feiten (de harde data)
 
 > Vul per sub-sectie een compacte tabel met de kerncijfers plus E-IDs.
 
 ### 2a. Funnel per device
-| Device | Sessies | Sessie → checkout | Checkout → aankoop | CVR |
+| Device | Sessies | Sessie → beslisstap | Beslisstap → conversie | Conversieratio |
 |--------|--------:|------------------:|-------------------:|----:|
 | Mobiel | | | | |
 | Desktop | | | | |
 
-### 2b. Checkout-microfunnel (grootste lek)
+### 2b. Microfunnel van de conversiestap
 | Stap | Events | Drop |
 |------|-------:|-----:|
 | | | |
 
 ### 2c. Beste en slechtste converters (per LP)
-### 2d. Organische kansen (GSC)
+### 2d. Organische kansen (de zoekbron)
 ### 2e. A/B-testbewijs (wat intern al getest is, met winners en losers)
 ### 2f. Klantbewijs (survey/reviews: top-blokkades)
 ### 2g. Technische bevindingen (crawl, rendering, browsers)
@@ -54,29 +56,31 @@ Volgorde en inhoud per Figma-pagina; elke pagina heeft een helder doel.
 |--------|--------|----------|
 | 00 Cover & Method | titel, datum, eigenaar, leeswijzer | geen |
 | 01 Current Site Audit | annotated screenshots huidige kernpagina's, annotaties verwijzen naar H-nummers | technische audit, crawl |
-| 02 Data Insights | 5-7 data-kaartjes, 1 getal per kaart | GA4, GSC, survey |
-| 03 Conversion Architecture | funnel-diagram plus beslismoment-kaart | baseline, Decision-Moment-Map |
-| 04 Wireframes (eerst bouwen) | lo-fi per hypothese, grijs palet, blauwe annotaties | Wireframe-briefs (WF-XX) |
-| 05 Design Explorations | 3 visuele richtingen naast elkaar | tokens, pattern libraries |
-| 06 Selected Direction | gekozen richting plus argumentatie | beoordeling op hypothese-fit |
-| 07 Components & Tokens | token-referentie plus component-library | `07_DESIGN-SYSTEM/Design-Tokens.md` |
-| 08 Page Designs (hi-fi) | volledige schermen in merkkleur, pas na keuze richting | APPROVED DDRs |
+| 02 Data & Conversion Architecture | 5-7 data-kaartjes plus funnel-diagram en beslismoment-kaart | de gedragsbron, de zoekbron, survey, Decision-Moment-Map |
+| 03 Wireframes | lo-fi per hypothese, grijs palet, blauwe annotaties | Wireframe-briefs (WF-XX), 1 per template in scope bij `vol` en bij `light`; binnen de kern-flow worden alle schermen uitgewerkt, daarbuiten alleen het scherm waar de beslissing landt |
+| 04 Selected Direction | de in fase 5b gekozen richting, hi-fi | Direction Case plus APPROVED of PERMANENT DDRs (elk met Evidence Score plus anker, minimaal 3) |
+| 05 Design System | token-referentie plus component-library en spec-kaarten | `07_DESIGN-SYSTEM/Design-Tokens.md` |
+| 06 Prototype | klikbaar prototype van de geteste flows | hypotheses die het prototype test |
+| 07 Assets | SVG-logo's, iconen, beeldmateriaal buiten de templates | brand assets |
+| z_Archief [datum] | eerdere staten, nooit verwijderen | historie |
 
-## 6. Kleurgebruik per Figma-fase
+Er is geen pagina met concurrerende visuele richtingen meer: die keuze is in fase 5b gemaakt en onderbouwd in `05b_DIRECTIONS/`. Deze tabel is de enige bron voor de pagina-indeling; `design-os-figma-build` volgt hem.
 
-| Fase | Palet |
-|------|-------|
+## 6. Kleurgebruik per Figma-pagina
+
+| Pagina | Palet |
+|--------|-------|
 | 01 Audit | screenshots plus rode annotatiekleur |
-| 02 Data | merkkleur plus wit, cijfers bold |
-| 03 Architecture | grijs plus merkkleur voor knelpunten |
-| 04 Wireframes | grijs palet only, geen brandkleuren |
-| 05-06 Explorations | volledige brandkleuren (uit Design-Tokens) |
-| 07 Tokens | kleurstalen plus typography scale |
-| 08 Page Designs | volledige brand, pixel-perfect |
+| 02 Data & Architecture | merkkleur plus wit, cijfers bold, grijs met merkkleur voor knelpunten |
+| 03 Wireframes | grijs palet only, geen brandkleuren |
+| 04 Selected Direction | volledige brandkleuren uit Design-Tokens, binnen het visuele mandaat van de gekozen richting |
+| 05 Design System | kleurstalen plus typography scale |
+| 06 Prototype | volledige brand, pixel-perfect |
 
 ## 7. Wat er NIET in Figma hoeft (buiten scope)
 
 - [invullen: productlijnen, paginatypes en flows buiten scope]
+- [bij `light`: wat er door de beperkte omvang buiten scope blijft, en wat dat mogelijk kost]
 
 ## 8. Openstaande vragen voor [KLANT] (voor klant-presentatie)
 

@@ -17,6 +17,12 @@ Status: TEMPLATE, invullen bij intake
 9. Wat is de afspraak over rebrand? (default: geen rebrand, werken binnen bestaand systeem)
 10. Welke claims mag [KLANT] juridisch wel/niet maken?
 
+## Merk-mandaat
+
+Het merk-mandaat (P4: brand-vast, brand-open of brand-afwezig) staat in
+`01_CONTEXT/Client-Profile.md` en is daar bindend voor fase 5b. Vul het daar in, niet hier.
+Wat hieronder staat is de inhoudelijke merkcontext; het mandaat is configuratie.
+
 ## Vaste terminologielijst (bindend)
 
 | Term | Schrijfwijze | Niet gebruiken |
