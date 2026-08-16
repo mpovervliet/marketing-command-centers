@@ -8,10 +8,15 @@ Doel: dev-ready opleveren met een gefaseerd rollout-plan dat big-bang-risico ver
 
 | Document | Inhoud |
 |----------|--------|
-| `Dev-Handoff.md` | Specs per component/scherm, Figma Dev Mode / Code Connect, acceptatiecriteria per DDR |
+| `Dev-Handoff.md` | Specs per component/scherm. Route A (met devteam): Figma Dev Mode / Code Connect, acceptatiecriteria per DDR. Route B (zonder devteam, bijv. freelance WordPress/Elementor-bouwer): screenshots plus niet-technische checklist |
 | `Content-Handoff.md` | Definitieve copy per page-type, terminologie conform `01_CONTEXT/Brand-Context.md` |
-| `Tracking-Handoff.md` | dataLayer/events, conversie- en guardrail-definities, het consent-mechanisme van dit rechtsregime (P5), nieuwe events per DDR |
-| `Rollout-Plan.md` | Gefaseerde uitrol per beslismoment plus rollback-criteria. Met staging, feature flags en een dev-team: uitrol per flag met een go/no-go per fase. Zonder die infrastructuur: uitrol in een afgebakend tijdvenster met een dagelijkse guardrail-check en een teruggezette versie klaar |
+| `Tracking-Handoff.md` | Conversie- en guardrail-definities. Route A (met devteam): dataLayer/events, het consent-mechanisme van dit rechtsregime (P5), nieuwe events per DDR. Route B (zonder devteam/GTM-toegang): native platform-tracking of handmatige telling als guardrail-vervanger |
+| `Rollout-Plan.md` | Gefaseerde uitrol per beslismoment plus rollback-criteria. Route A: met staging, feature flags en een dev-team, uitrol per flag met een go/no-go per fase. Route B: zonder die infrastructuur, uitrol in een afgebakend tijdvenster met een dagelijkse guardrail-check en een teruggezette versie klaar |
+
+Welke route (A of B) van toepassing is volgt uit `01_CONTEXT/Technical-Constraints.md`
+(vraag 1: CMS/frontend-framework, en vraag 4: releaseproces). Beide routes zijn
+volwaardig: Route B is geen verkapte lagere kwaliteitslat, maar een andere manier om
+dezelfde Definition of Done te halen bij minder technische infrastructuur.
 
 ## Inputs
 

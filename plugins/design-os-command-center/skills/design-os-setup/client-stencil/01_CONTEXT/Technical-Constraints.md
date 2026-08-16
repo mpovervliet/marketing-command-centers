@@ -2,7 +2,7 @@
 Versie: 0.1 (stencil)
 Status: TEMPLATE, invullen bij intake
 
-> Invul-instructie: beantwoord met het dev-team van [KLANT]. Onbeantwoorde vragen naar `09_DECISION-LOG/Open-Questions.md`. Technische haalbaarheid is geen van de 10 verplichte vragen uit het protocol; het is dimensie 4 van de Red Team-fase-review ("Technische haalbaarheid": welke ingreep is technisch lastig of duur en daardoor risicovol, en botst iets met platform-, legal- of compliance-constraints). Onbeantwoorde vragen hier komen daar dus terug, en ze bepalen bovendien het veld Implementatielast in elke Direction Case.
+> Invul-instructie: beantwoord met het dev-team van [KLANT] waar dat bestaat. Heeft [KLANT] geen eigen devteam (bijv. een no-code/low-code CMS zoals WordPress/Elementor, onderhouden door een freelance bouwer), beantwoord dan met die bouwer of, bij ontbreken daarvan, zo goed mogelijk zelf op basis van het platform — het antwoord op vraag 1 (CMS/frontend-framework) bepaalt dan Route B in `08_HANDOFF/Dev-Handoff.md` en `08_HANDOFF/Tracking-Handoff.md`. Onbeantwoorde vragen naar `09_DECISION-LOG/Open-Questions.md`. Technische haalbaarheid is geen van de 10 verplichte vragen uit het protocol; het is dimensie 4 van de Red Team-fase-review ("Technische haalbaarheid": welke ingreep is technisch lastig of duur en daardoor risicovol, en botst iets met platform-, legal- of compliance-constraints). Onbeantwoorde vragen hier komen daar dus terug, en ze bepalen bovendien het veld Implementatielast in elke Direction Case.
 
 ## Invulvragen
 

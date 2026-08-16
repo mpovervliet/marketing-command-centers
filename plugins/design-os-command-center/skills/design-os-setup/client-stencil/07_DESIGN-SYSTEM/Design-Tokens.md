@@ -59,3 +59,41 @@ Status: TEMPLATE, invullen bij intake
 - Geen nieuwe kleuren of fonts introduceren zonder decision-log-entry; bij merk-mandaat brand-vast en brand-open werken we binnen het bestaande [KLANT] design system; bij brand-afwezig wordt dit bestand juist in fase 7 ingevuld als deliverable.
 - Contrast minimaal WCAG 2.2 AA; check bij elke token-combinatie voor tekst op vlak.
 - Afwijkingen van het design system loggen in `09_DECISION-LOG/Decision-Log.md`.
+
+## Voorbeeld (fictief, ter illustratie van het formaat — niet kopiëren als klantwaarde)
+
+Zo ziet een volledig ingevulde kleurenset eruit; vervang elke waarde door de daadwerkelijke
+tokens van [KLANT]:
+
+| Token | Waarde (hex) | Gebruik |
+|-------|--------------|---------|
+| color/primary | #1B4D3E | Primaire merkkleur, koppen, accenten |
+| color/primary-dark | #0F2E24 | Hover/active states |
+| color/secondary | #E8A33D | Secundaire accenten |
+| color/cta | #1B4D3E | Primaire CTA-knoppen |
+| color/success | #2E7D32 | Positieve feedback, besparingen |
+| color/warning | #ED6C02 | Waarschuwingen |
+| color/error | #C62828 | Fouten, validatie |
+| color/text | #1A1A1A | Bodytekst |
+| color/text-muted | #6B6B6B | Secundaire tekst |
+| color/background | #FFFFFF | Pagina-achtergrond |
+| color/surface | #F7F6F3 | Kaarten, panelen |
+| color/border | #DDDAD3 | Randen, dividers |
+
+| Token | Font | Size | Weight | Line-height | Gebruik |
+|-------|------|------|--------|-------------|---------|
+| type/h1 | Inter | 40px | 700 | 1.15 | Paginakop |
+| type/h2 | Inter | 28px | 700 | 1.2 | Sectiekop |
+| type/body | Inter | 16px | 400 | 1.5 | Bodytekst |
+| type/cta | Inter | 16px | 600 | 1.2 | Knoptekst |
+
+| Token | Waarde (px) | Gebruik |
+|-------|-------------|---------|
+| space/xs | 4 | Binnen componenten |
+| space/s | 8 | Tussen gerelateerde elementen |
+| space/m | 16 | Tussen componenten |
+| space/l | 32 | Tussen secties |
+| space/xl | 64 | Paginamarges, hero |
+
+Dit is 1 mogelijke, willekeurig gekozen tokenset (geen huisstijl van een echte klant) —
+het format is het punt, niet de kleuren.

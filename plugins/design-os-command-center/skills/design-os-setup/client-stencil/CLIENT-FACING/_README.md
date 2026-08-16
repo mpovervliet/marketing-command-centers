@@ -21,10 +21,16 @@ Opgeschoonde, klantwaardige output voor [KLANT]. Conclusies en aanbevelingen in 
 
 ## Inhoud
 
-| Document | Inhoud |
-|----------|--------|
-| `Executive-Summary-Baseline.md` | Samenvatting van de nulmeting en de grootste kansen |
-| [per fase aanvullen] | Diagnose-samenvatting, strategie-presentatie, experiment-resultaten |
+| Document | Na fase | Inhoud |
+|----------|---------|--------|
+| `Executive-Summary-Baseline.md` | 3 (Diagnose) | Samenvatting van de nulmeting en de grootste kansen (zie template en voorbeeld in dit bestand) |
+| `Strategie-Presentatie.md` | 4/5b (Strategie/Richtingen) | De gekozen kern-flow, de beslismomenten in klanttaal, en de ontwerprichtingen ter keuze |
+| `Design-Voorstel.md` | 7 (Design) | Screenshots van de uitgewerkte richting met 1-2 zinnen per scherm over het functionele en visuele mandaat dat het waarmaakt |
+| `Experiment-Resultaten.md` | 8 (Validatie) | Per experiment: wat getest is, de uitkomst in klanttaal (gewonnen/geen verschil/verloren), en het vervolg |
+| `Rollout-Samenvatting.md` | 9 (Handoff) | Wat live gaat, in welke volgorde, en wat de klant kan verwachten na livegang |
+
+Maak elk document pas aan wanneer de bijbehorende fase daadwerkelijk is afgerond; een leeg
+document vooraf aanmaken suggereert voortgang die er nog niet is.
 
 ## Werkwijze
 

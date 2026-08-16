@@ -15,7 +15,7 @@ Doel: vastleggen wie beslist, hoe kwaliteit wordt bewaakt en in welk ritme het C
 | Kwaliteitspoort | Red Team in aparte subagent | Geen go zonder Gate-Record met isolatie-bewijs |
 | Productie/systeem | De designtool van het traject | Source of truth voor productie-design, componenten, tokens |
 | Eindbeslisser inhoud | [lead invullen] | Keurt fasen goed, bewaakt klantbelang |
-| Klant-beslisser | [KLANT], contactpersoon invullen | Akkoord op design/checkout/tracking-wijzigingen |
+| Klant-beslisser | [KLANT], contactpersoon invullen | Akkoord op design/conversieflow/tracking-wijzigingen |
 
 ## Kwaliteitspoorten (gates)
 

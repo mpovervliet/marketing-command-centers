@@ -7,7 +7,7 @@ description: >
   een Design OS-traject de baseline, registry of diagnose nodig heeft. Trigger bij
   "bouw de data-baseline", "maak het data-contract", "doe de measurement-qa",
   "vul de evidence registry", "waar lekt de funnel", "draai de diagnose", "klopt
-  add_to_cart wel", "hoe oud mag deze data zijn",
+  dit conversie-event wel", "hoe oud mag deze data zijn",
   "trek de funnel per device", "wat zegt de zoekdata over intentie", "gedragsbron en advertentieplatform verschillen",
   "welke evidence ontbreekt nog", of elke vraag over evidence en diagnose in het Design
   OS. Leest <klantmap>/design-os/ (02_DATA-BASELINE, 03_DIAGNOSIS, Data-Analysis-Prompts),
@@ -223,7 +223,7 @@ Per lek:
 - Trek eerst de event-taxonomie en dan pas de funnel: 10 minuten QA vooraf voorkomt dat je een middag analyses op een ruis-event bouwt.
 - Exporteer grote gateway-outputs naar een bestand en parse daar; registry-items schrijf je uit de geparste samenvatting, niet uit een half afgekapte tool-output.
 - Noteer bij elk gedragsdata-item de consent-context van de periode als er een consent-regime geldt; een conversiesprong na een wijziging in het toestemmingsmechanisme is een meetartefact, geen gedragsverandering.
-- Zet de periode-keuze (90 dagen is de default uit de stencil) 1 keer vast in het Data-Contract en wijk alleen gedocumenteerd af; wisselende periodes maken items onvergelijkbaar.
+- Zet de periode-keuze (90 dagen is de default uit de stencil) 1 keer vast in het Data-Contract en wijk alleen gedocumenteerd af; wisselende periodes maken items onvergelijkbaar. Bij een lange sales-cyclus (B2B met weken tot maanden tussen eerste bezoek en gesloten deal) is 90 dagen vaak te kort om de conversie eerlijk toe te schrijven: verleng de periode tot minimaal de mediane doorlooptijd van de cyclus, of werk met een apart attributie-venster voor de late-funnel-conversie (SQL/deal) naast het korte venster voor vroege signalen (MQL/formulier-start).
 - Kwantificeer lekken in waarde waar het kan: lek-volume maal conversieratio maal waarde-per-conversie, gelabeld als vuistregel-berekening. De waarde-per-conversie komt uit het conversie-model (P1): orderwaarde bij transactie, waarde per gekwalificeerde lead bij lead, maandwaarde maal verwachte levensduur bij abonnement, offertewaarde maal winkans bij offerte-configurator. Een lek in waarde krijgt prioriteit, een lek in procenten krijgt uitstel. Is er geen waarde-eenheid vast te stellen, kwantificeer dan in het volume van de primaire conversie en meld het ontbreken van de waarde-eenheid als research backlog-regel.
 - Betaal- en identiteitsredirects vervuilen kanaal- en funneldata als de verwijzende domeinen niet zijn uitgesloten. Dit speelt bij elke externe redirect in de conversieflow (betaalproviders, single sign-on, boekingsengines, formulier-tools van derden), in elke markt. Check het voordat je kanaalconclusies trekt.
 - Schrijf het beperkingen-veld alsof de klant meeleest: dat dwingt precisie af en maakt de client-facing vertaling later bijna gratis.

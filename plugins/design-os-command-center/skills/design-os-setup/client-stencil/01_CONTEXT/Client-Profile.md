@@ -45,6 +45,8 @@ elke waardeberekening in het traject.
 | offerte-configurator | configuratie afgerond en aanvraag verstuurd | configurator-start, stap-voltooiing, aanvraag | gemiddelde offertewaarde maal winkans | offerte-kwaliteit, doorlooptijd |
 | hybride | meerdere naast elkaar | per stroom apart | per stroom apart | per stroom apart |
 
+Bij `lead` in een B2B-context met een langere sales-cyclus: knip "gekwalificeerd" in de funnel-ankers desgewenst verder op in MQL (marketing-gekwalificeerd, bijv. formulier-inhoud of contentgedrag) en SQL (sales-gekwalificeerd, na een gesprek), en behandel meerdere betrokken personen bij 1 deal (buying committee) als 1 lead-eenheid in plaats van losse sessies. Dat voorkomt dat een lange, meerkoppige B2B-cyclus als een reeks losse, onsamenhangende conversies wordt gemeten.
+
 **Vul in voor deze klant:**
 
 | Veld | Waarde |

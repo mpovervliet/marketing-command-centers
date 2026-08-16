@@ -19,7 +19,7 @@ Omvang van deze scope volgt uit traject-omvang (P8) in `01_CONTEXT/Client-Profil
 - Backend-/CRM-/billing-systeemwijzigingen.
 - App (iOS/Android) UX, behalve waar app-promotie de webfunnel raakt.
 - Volledige merk-rebrand. We werken binnen het bestaande [KLANT] design system; propositie-aanscherping kan wel.
-- Bij traject-omvang (P8) `light`: de templates buiten de kern-flow plus de maximaal 2 aanpalende templates. Die krijgen in `03_SITE-STRUCTURE/Template-Registry.md` de status OUT-OF-SCOPE met reden, zodat zichtbaar blijft wat er niet is aangeraakt.
+- Bij traject-omvang (P8) `light`: de templates buiten de kern-flow plus de maximaal 2 aanpalende templates. Die krijgen in `03b_SITE-STRUCTURE/Template-Registry.md` de status OUT-OF-SCOPE met reden, zodat zichtbaar blijft wat er niet is aangeraakt.
 - [aanvullen: parallelle sporen zoals linkbuilding/off-page die elders lopen]
 
 ## Commerciele prioriteit (voorlopig, te bevestigen in 04_STRATEGY)

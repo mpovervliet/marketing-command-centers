@@ -23,7 +23,7 @@ Vink af wat voor deze klant relevant is; maak per document een eigen bestand in 
 
 ### Competitive intelligence
 - [ ] `Competitive-UX-Teardowns.md`: schermgebonden analyse van directe concurrenten per beslismoment.
-- [ ] `Conversiestap-Benchmark.md`: stap-voor-stap vergelijking van de eigen checkout met die van concurrenten.
+- [ ] `Conversiestap-Benchmark.md`: stap-voor-stap vergelijking van de eigen conversieflow (checkout, aanvraagformulier of offerteflow) met die van concurrenten.
 - [ ] `Full-Funnel-Competitor-Benchmark.md`: volledige funnel-walkthroughs bij concurrenten, van LP tot bevestiging.
 - [ ] `SEO-Competitor-Analysis.md`: wie wint op de kern-queries en met welk paginatype.
 - [ ] `Paid-Search-Competitor-Messaging.md`: welke advertentieboodschappen en angles concurrenten voeren.

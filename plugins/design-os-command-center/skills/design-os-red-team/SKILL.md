@@ -293,7 +293,7 @@ Afsluiten met het uitkomst-blok: top-3 zwakke plekken, acties (naar Open-Questio
 4. Werk de Decision-Coverage-Matrix bij: statuskolom van het component, en de Evidence Score met zijn anker. Nieuw eigen A/B-bewijs op deze ingreep met een significant effect in de richting die de beslissing ondersteunt verzet het anker naar T1 en daarmee de bodem naar 3; herscoor de DDR volgens het ankermodel in plaats van er een punt bij te tellen. Een INCONCLUSIVE readout verzet het anker niet en dekt ook geen B3: die gaat het onzekerhedenveld in. Een LOSER is geen anker maar een blokkade.
 5. Rapporteer aan de lead: wat is geleerd, welke volgende beslissing verandert hierdoor, welk experiment kan nu gestart of aangepast worden.
 
-Doelbestanden: `07_VALIDATION/Experiment-Readouts.md` (format: Experiment-Readout-Template), `02_DATA-BASELINE/Evidence-Registry.md`, de betreffende `09_DECISION-LOG/DDR-HX-NN.md` en `09_DECISION-LOG/Decision-Coverage-Matrix.md`. Alle vier, altijd; een half verwerkte learning is erger dan geen, want de matrix liegt dan.
+Doelbestanden: `07b_VALIDATION/Experiment-Readouts.md` (format: Experiment-Readout-Template), `02_DATA-BASELINE/Evidence-Registry.md`, de betreffende `09_DECISION-LOG/DDR-HX-NN.md` en `09_DECISION-LOG/Decision-Coverage-Matrix.md`. Alle vier, altijd; een half verwerkte learning is erger dan geen, want de matrix liegt dan.
 
 **Wat een readout met de go doet.** Een readout wijzigt de DDR, en volgens de vervalregel van het Gate-Record zou dat elke go laten vervallen, ook op een component dat door dat experiment juist beter onderbouwd is dan ooit. Daarom één scherp afgebakende uitzondering, uit het protocol onder "Wat een experiment-readout met het Gate-Record doet":
 
@@ -357,11 +357,11 @@ Acties: [naar Open-Questions/Assumptions of correcties in de fasedocumenten]
 Beslissing: fase vrijgegeven ja/nee plus voorwaarden
 ```
 
-**Learning Record** (in `07_VALIDATION/Experiment-Readouts.md`): L-EXP-XX-NNN met de 7 velden uit stap 1 van het Learning Extractor stappenplan, plus een afvinklijst van de 4 bijgewerkte doelbestanden.
+**Learning Record** (in `07b_VALIDATION/Experiment-Readouts.md`): L-EXP-XX-NNN met de 7 velden uit stap 1 van het Learning Extractor stappenplan, plus een afvinklijst van de 4 bijgewerkte doelbestanden.
 
 ## Dependencies
 
-- Klantmap: `00_PLAN/Data-Governed-Design-Protocol.md`, `02_DATA-BASELINE/` (Evidence-Registry, Data-Contract), `09_DECISION-LOG/` (DDR's, Coverage Matrix, Decision-Log), `07_VALIDATION/`, `11_RED-TEAM/`
+- Klantmap: `00_PLAN/Data-Governed-Design-Protocol.md`, `02_DATA-BASELINE/` (Evidence-Registry, Data-Contract), `09_DECISION-LOG/` (DDR's, Coverage Matrix, Decision-Log), `07b_VALIDATION/`, `11_RED-TEAM/`
 - Stencil-templates: Agent-2-Red-Team-Evidence-QA.md, Agent-4-Learning-Extractor.md, Red-Team-Review-Template.md, Experiment-Readout-Template.md uit `design-os-setup/client-stencil/`
 - de gedragsbron-tool en de zoekbron-tool (profile per klant): steekproefsgewijs claims narekenen bij twijfel over een metric
 - Een aparte sessie of subagent-run als uitvoeringsvorm (Agent tool of verse Cowork-sessie)

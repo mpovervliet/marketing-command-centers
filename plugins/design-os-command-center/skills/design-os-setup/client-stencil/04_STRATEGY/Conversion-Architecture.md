@@ -82,7 +82,7 @@ Bij traject-omvang (P8) `light` bestaat de scope uit deze kern-flow plus maximaa
 templates; bij `vol` uit alle kern-templates uit het Template-Registry. Harde regel: de kern-flow
 zelf wordt nooit ingekort om binnen `light` te passen. Een halve keten meet geen keten. Wat niet
 past, valt buiten de kern-flow en wordt als OUT-OF-SCOPE met reden vastgelegd in
-`03_SITE-STRUCTURE/Template-Registry.md`.
+`03b_SITE-STRUCTURE/Template-Registry.md`.
 
 ## Overgeslagen modules
 
@@ -96,3 +96,49 @@ past, valt buiten de kern-flow en wordt als OUT-OF-SCOPE met reden vastgelegd in
 
 Een module overslaan is een besluit: noteer het hier en in `09_DECISION-LOG/Decision-Log.md`.
 Half invullen kost meer tijd dan motiveren waarom hij niet speelt.
+
+## Voorbeeld (fictief, generiek — toepasbaar op B2C en B2B)
+
+Ter illustratie van hoe de secties hierboven ingevuld worden, voor een fictief bedrijf
+"Voorbeeldbedrijf" met een hybride conversie-model (P1: `hybride`, direct afsluiten voor
+kleine klanten, offerteaanvraag voor grote klanten). Vervang elk veld door de eigen data van
+de klant; dit voorbeeld toont het format, niet een uitkomst om te kopiëren.
+
+**1. Waar ontstaat de meeste waarde**
+
+| Flow | Sessies | Primaire conversies | Waarde | Marge of kwalificatie-indicatie | E-ID |
+|------|--------:|--------------------:|-------:|--------------------------------|------|
+| Direct afsluiten (kleinzakelijk) | 8.400/mnd | 210/mnd | €180 gemiddelde orderwaarde | n.v.t. | E-BEHAV-FUNNEL-002 |
+| Offerteaanvraag (grootzakelijk) | 1.100/mnd | 34/mnd | €2.400 gemiddelde dealwaarde × 35% winkans | leadkwaliteit laag op 1 kanaal | E-CRM-DEALS-001 |
+
+**3. Waar lekt de funnel**
+
+| Lek | Omvang (met segment) | E-ID | Wordt BM |
+|-----|----------------------|------|----------|
+| Afhaken op prijspagina vóór CTA, mobiel | 61% van mobiele bezoekers verlaat binnen 10s na prijspagina | E-BEHAV-SCROLL-002 | BM-1 |
+| Offerteformulier gestart maar niet verzonden | 44% van formulier-starts, vooral bij het veld "bedrijfsgrootte" | E-BEHAV-FORM-001 | BM-2 |
+
+**5. Waar ontstaat twijfel**
+
+| Bezwaar | Bron plus E-ID | Waar in de funnel | Weerlegd door |
+|---------|----------------|-------------------|---------------|
+| "Onduidelijk of dit ook voor een klein bedrijf werkt" | Survey, E-SURVEY-FIT-002 | Landingspagina, vóór prijs | Nog niet: open research-item |
+| "Weet niet hoelang het traject duurt" | Supportlog, E-REVIEW-PROCES-002 | Offertepagina | Nog niet: open research-item |
+
+**Beslismoment-tabel**
+
+| BM | Gebruikersvraag | Frictie | Bewijs | Gewenste beslissing | Design-ingreep | Hypothese |
+|----|-----------------|---------|--------|--------------------|----------------|-----------|
+| BM-1 | "Wat kost dit voor mij?" | Prijs pas zichtbaar na scrollen, mobiel | E-BEHAV-SCROLL-002 | Prijsindicatie direct zien | Prijsindicatie above-the-fold op mobiel | H1 (zie Hypothesis-Backlog) |
+| BM-2 | "Past dit bij een bedrijf zoals het mijne?" | Offerteformulier vraagt bedrijfsgrootte vóór enige context | E-BEHAV-FORM-001 | Formulier durven starten en afmaken | Segment-gerichte voorbeelden vóór het formulier tonen | H2 (zie Hypothesis-Backlog) |
+
+**De kern-flow**
+
+Kern-flow: `HP → T1 (Oplossingspagina) → T2 (Prijs-/pakketpagina) → E1 (Offerteformulier of directe checkout)`.
+
+**Overgeslagen modules**
+
+| Module | Overgeslagen omdat |
+|--------|--------------------|
+| Market-Positioning-Matrix | Geen concurrentie-data beschikbaar binnen deze sprint; opgenomen in research backlog |
+| Retention-And-Expansion-Architecture | Traject-modus is `kern-flow`, retentie valt buiten scope van deze ronde |
