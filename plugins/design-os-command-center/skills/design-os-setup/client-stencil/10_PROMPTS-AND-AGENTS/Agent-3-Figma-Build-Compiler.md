@@ -26,6 +26,12 @@ gemaakt.
 - [KLANTMAP]/design-os/06_DESIGN/Figma-Operating-Model.md (indien aanwezig)
 - [KLANTMAP]/design-os/06_DESIGN/Figma-File-Structure.md (indien aanwezig)
 
+Deze twee zijn geen stencil-templates: er bestaat geen kant-en-klaar bestand voor. Ze zijn een
+ad hoc notitie die een sessie zelf in `06_DESIGN/` aanmaakt zodra een build complex genoeg wordt
+om een eigen operating model of file-structuur-document te verdienen (bijvoorbeeld meerdere
+Figma-files, een uitgebreide branching-afspraak, of een team dat naast jou in dezelfde file
+werkt). Ontbreken ze, dan is dat de normale situatie en geen gat: ga verder zonder.
+
 ## Figma wireframe-regels
 - Palet grijs only:
   pageBg:  { r: 0.937, g: 0.925, b: 0.925 }  #EFECEC

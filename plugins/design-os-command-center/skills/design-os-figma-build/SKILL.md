@@ -182,7 +182,7 @@ Elke nee is een fix vóór afronding, geen notitie voor later.
 
 - Figma MCP: `use_figma`, `get_design_context`, `get_screenshot`, `get_metadata`, `get_variable_defs`, `upload_assets`; alternatief `figma_tool` in de MCP Gateway (file_key uit de Figma-URL)
 - een beeldgeneratie-tool: hero-imagery en placeholder-visuals volgens de beeldstrategie uit het visuele mandaat
-- Klantmap: `09_DECISION-LOG/` (DDR's, Coverage Matrix, Decision-Log), `07_DESIGN-SYSTEM/Design-Tokens.md`, `06_DESIGN/` (wireframe-briefs, Figma-Operating-Model indien aanwezig)
+- Klantmap: `09_DECISION-LOG/` (DDR's, Coverage Matrix, Decision-Log), `07_DESIGN-SYSTEM/Design-Tokens.md`, `06_DESIGN/` (wireframe-briefs, plus Figma-Operating-Model.md en Figma-File-Structure.md indien aanwezig — dit zijn geen stencil-templates, alleen ad hoc bestanden voor een complexe build; hun afwezigheid is normaal)
 - Edit-toegang tot de afgesproken Figma-file (bevestigd door de lead per klant)
 
 ## Integratie met andere skills
