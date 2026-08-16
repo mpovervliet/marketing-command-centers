@@ -47,7 +47,7 @@ Ritme van de Red Team-reviews: bij traject-omvang (P8) `vol` volgt na elke fase 
 
 - In fase 5b wordt het aantal richtingen uit traject-omvang (P8) gegenereerd: vijf bij `vol`, drie bij `light`, nooit minder dan drie. Elke richting krijgt een eigen geisoleerde subagent met een verbodslijst van de mechaniek en visuele taal van de andere richtingen (zie `10_PROMPTS-AND-AGENTS/Claude-Design-Prompts.md` en `05b_DIRECTIONS/`). Er zijn altijd evenveel geisoleerde subagents als richtingen: minder richtingen is geen reden om ze in 1 context te schrijven. De richtingen zijn verschillende weddenschappen op dezelfde data, niet varianten van dezelfde weddenschap.
 - De lead kiest de weddenschap op basis van user case, business case en risico. Het systeem doet geen aanbeveling; zodra het kiest, wordt de onderbouwing achteraf-rationalisatie.
-- Figma wordt vroeg ingezet als redesign-workspace. De pagina-indeling staat in `06_DESIGN/Design-Brief.md` sectie 5 en dat is de enige bron; herhaal hem hier niet. Er is geen pagina met concurrerende visuele richtingen meer: die keuze is in fase 5b gemaakt en onderbouwd.
+- De Figma-werkomgeving (file-toegang, paginastructuur) wordt vroeg ingericht zodat de build zonder wachttijd kan starten zodra de gate opengaat; het daadwerkelijk bouwen van schermen begint pas na Red Team APPROVED op de betreffende DDR's en nadat de richting gekozen en gelogd is (zie `00_PLAN/Data-Governed-Design-Protocol.md`, sectie De agent-workflow). De pagina-indeling staat in `06_DESIGN/Design-Brief.md` sectie 5 en dat is de enige bron; herhaal hem hier niet. Er is geen pagina met concurrerende visuele richtingen meer: die keuze is in fase 5b gemaakt en onderbouwd.
 
 ## Eerste stap na intake
 
