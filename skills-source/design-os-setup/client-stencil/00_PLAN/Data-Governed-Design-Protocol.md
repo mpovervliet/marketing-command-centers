@@ -282,7 +282,7 @@ Voorbeeld (fictief): `C-01_PricingCard_DDR-H1-01`. Figma-annotatie bij elk compo
 
 | Agent | Rol | Waar |
 |-------|-----|------|
-| A, Conversion Architect | Vertaalt de lekken naar beslismomenten (BM-X), conversion architecture en site-structuur | fase 4, `03_SITE-STRUCTURE/` en `04_STRATEGY/` |
+| A, Conversion Architect | Vertaalt de lekken naar beslismomenten (BM-X), conversion architecture en site-structuur | fase 4, `03b_SITE-STRUCTURE/` en `04_STRATEGY/` |
 | 0, Direction Compiler | Leidt de forks uit de evidence af, genereert het aantal onderbouwde ontwerprichtingen dat bij `traject-omvang` (P8) hoort in evenzoveel geisoleerde subagents, draait de anti-convergentie-poort | fase 5b, `05b_DIRECTIONS/` |
 | 1, Design Decision Compiler | Verzamelt evidence, schrijft inzichten, maakt DDRs binnen de gekozen richting, produceert Figma-instructies | fase 6, `09_DECISION-LOG/` |
 | 2, Red Team | Toetst de Direction Cases (8 vragen) en elke DDR (12 vragen) aan dit protocol. Geeft APPROVED / NEEDS STRONGER EVIDENCE / BLOCKED plus reden | fase 5b en 6, `11_RED-TEAM/` |

@@ -84,6 +84,45 @@ Path to visual design:
   [in te vullen]
 ```
 
+## Voorbeeld (fictief, generieke B2B/leadgen)
+
+```
+Template ID: T2
+Naam: Oplossingspagina
+URL-patroon: /oplossingen/[SEGMENT]
+Sprint: 1
+Status: STUBBED
+
+Primaire gebruikersintentie:
+  "Ik wil weten of [KLANT] mijn probleem oplost en wat het traject inhoudt voordat ik een
+  offerte aanvraag of een demo boek."
+
+Gebruikersbezwaren op deze pagina:
+  - Past dit bij een bedrijf van onze omvang/sector (relevantie-onzekerheid)? (E-SURVEY-FIT-001)
+  - Hoeveel tijd/mensen kost implementatie (inspanningsonzekerheid)? (E-BEHAV-SCROLL-001)
+  - Wie beslist hier verder over mee (meerdere stakeholders, geen directe CTA-actie)? (E-REVIEW-PROCES-001)
+
+Vereiste modules (in volgorde):
+  1. Hero met probleem-oplossing-fit en primaire CTA (demo/offerte-aanvraag): relevantie-bevestiging (DDR-H1-01)
+  2. Proces-/tijdlijnsectie: verwachtingsmanagement voor het traject (DDR-H2-01)
+  3. Social proof met vergelijkbare klant-cases (sector/omvang-match): bezwaar-reductie (DDR-H3-01)
+  4. Secundaire CTA voor wie nog niet klaar is (bijv. whitepaper/nieuwsbrief i.p.v. direct offerte): lange sales-cyclus opvangen
+  5. Footer
+
+Figma-componenten:
+  - C-01 SolutionHero (DDR-H1-01): NEEDS VALIDATION
+  - C-02 ProcessTimeline (DDR-H2-01): NEEDS VALIDATION
+
+Primaire KPI voor deze template:
+  sessie → offerte-aanvraag of demo-aanvraag rate (gekwalificeerde lead, niet per se dezelfde sessie: zie P1 conversie-model)
+
+Evidence basis:
+  [in te vullen]
+
+Path to visual design:
+  [in te vullen]
+```
+
 ## Templates
 
 [per template een blok volgens het format hierboven]

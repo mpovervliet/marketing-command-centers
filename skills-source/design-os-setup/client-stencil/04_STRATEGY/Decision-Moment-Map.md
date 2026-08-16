@@ -60,3 +60,29 @@ Elk lek uit de Diagnose-Samenvatting staat óf bij een BM óf hier. Niets verdwi
 Elk BM heeft gebruikersvraag, frictie met E-ID, gewenste beslissing en design-ingreep;
 elk lek is toegewezen of expliciet buiten scope; de kern-flow is benoemd; de open
 oorzaken zijn gemarkeerd. Zie `00_PLAN/Definition-of-Done.md`.
+
+## Voorbeeld (fictief, generiek)
+
+Aansluitend op het voorbeeld in `Conversion-Architecture.md` (Voorbeeldbedrijf, hybride
+conversie-model):
+
+Kern-flow: `BM-1 t/m BM-2, via templates HP, T1 (Oplossingspagina), T2 (Prijs-/pakketpagina), E1 (Offerteformulier/checkout)`
+
+| BM | Gebruikersvraag | Frictie (met E-ID) | Gewenste beslissing | Design-ingreep | Oorzaak | Hypothese-kandidaat |
+|----|-----------------|--------------------|--------------------|----------------|---------|---------------------|
+| BM-1 | "Wat kost dit voor mij?" | Prijs pas zichtbaar na scrollen, mobiel (E-BEHAV-SCROLL-002) | Prijsindicatie direct zien | Prijsindicatie above-the-fold op mobiel | vastgesteld | H1 |
+| BM-2 | "Past dit bij een bedrijf zoals het mijne?" | Offerteformulier vraagt bedrijfsgrootte vóór context (E-BEHAV-FORM-001) | Formulier durven starten en afmaken | Segment-gerichte voorbeelden vóór het formulier | OPEN: onduidelijk of het de vraag zelf is of het ontbreken van vertrouwen | H2 |
+
+**Beslismomenten met OPEN oorzaak**
+
+| BM | Wat we weten | Wat we niet weten | Plausibele oorzaken (elk een kandidaat-fork) |
+|----|--------------|-------------------|----------------------------------------------|
+| BM-2 | 44% verlaat het formulier bij het veld "bedrijfsgrootte" | Of dit door de vraag zelf komt of door twijfel die daarvóór al bestond | (a) de vraag voelt te persoonlijk/vroeg, (b) er ontbreekt vertrouwen dat het antwoord past bij een goed aanbod, (c) technische frictie in het formulierveld zelf |
+
+**BM per template**
+
+| Template ID | Naam | Welke BM's spelen hier |
+|-------------|------|------------------------|
+| T1 | Oplossingspagina | BM-2 (voorbereidend: vertrouwen opbouwen vóór het formulier) |
+| T2 | Prijs-/pakketpagina | BM-1 |
+| E1 | Offerteformulier/checkout | BM-2 |

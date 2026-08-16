@@ -54,7 +54,7 @@ Heeft deze klant geen betaalde advertenties, noteer dan "niet van toepassing" in
 
 ## Performance (fase 3)
 
-- Meet de kern-templates uit `03_SITE-STRUCTURE/Template-Registry.md` op mobiel; noteer de Core Web Vitals in `03_DIAGNOSIS/CWV-Status.md`.
+- Meet de kern-templates uit `03b_SITE-STRUCTURE/Template-Registry.md` op mobiel; noteer de Core Web Vitals in `03_DIAGNOSIS/CWV-Status.md`.
 - Bij quota-fouten: later opnieuw proberen en de blokkade in het decision-log noteren.
 
 ## Tegenboeking voor de dedupe-check

@@ -11,7 +11,7 @@ description: >
   blueprint", "maak de page inventory", "vul de template registry", "van diagnose
   naar structuur", of elke vraag over conversiestrategie en site-structuur in het
   Design OS. Leest <klantmap>/design-os/ (02_DATA-BASELINE, 03_DIAGNOSIS,
-  01_CONTEXT), schrijft naar 03_SITE-STRUCTURE en 04_STRATEGY, en levert de BM-X-set
+  01_CONTEXT), schrijft naar 03b_SITE-STRUCTURE en 04_STRATEGY, en levert de BM-X-set
   waarop hypotheses, richtingen en DDR's terugvoeren.
 ---
 
@@ -37,7 +37,7 @@ Maatstaf voor succes: elke latere hypothese, richting en DDR kan terugvoeren op 
 ## Werkwijze
 
 1. Lees `<klantmap>/design-os/`: `01_CONTEXT/Client-Profile.md` (het conversie-model P1 bepaalt welke modules spelen en hoe je waarde uitdrukt, de traject-modus P7 of deze fase draait, en de traject-omvang P8 hoeveel templates er in scope komen), `03_DIAGNOSIS/Diagnose-Samenvatting.md` (de lekken), `02_DATA-BASELINE/Evidence-Registry.md`, `01_CONTEXT/Business-Context.md` en `Brand-Context.md`, en `04_STRATEGY/_README.md` (de zeven modules). Ontbreekt de diagnose: terug naar design-os-evidence.
-2. Check de traject-modus (P7): bij `diagnose-only` draait deze fase niet en meld je dat; bij `kern-flow` beperk je de site-structuur tot de templates in die flow. Check daarnaast de traject-omvang (P8): bij `light` bepalen de kern-flow plus maximaal 2 aanpalende templates de scope, en zet je de rest in de Template-Registry op OUT-OF-SCOPE met de reden erbij. Bouw daarna `03_SITE-STRUCTURE/Page-Inventory.md` en `Template-Registry.md`: je kunt geen beslismomenten toewijzen zonder te weten welke paginatypes er zijn.
+2. Check de traject-modus (P7): bij `diagnose-only` draait deze fase niet en meld je dat; bij `kern-flow` beperk je de site-structuur tot de templates in die flow. Check daarnaast de traject-omvang (P8): bij `light` bepalen de kern-flow plus maximaal 2 aanpalende templates de scope, en zet je de rest in de Template-Registry op OUT-OF-SCOPE met de reden erbij. Bouw daarna `03b_SITE-STRUCTURE/Page-Inventory.md` en `Template-Registry.md`: je kunt geen beslismomenten toewijzen zonder te weten welke paginatypes er zijn.
 3. Leid de beslismomenten af uit de lekken (zie Kern-kennis) en schrijf `04_STRATEGY/Conversion-Architecture.md` plus `Decision-Moment-Map.md`. Dit zijn de twee verplichte modules.
 4. Kies uit de vijf overige modules alleen wat deze klant nodig heeft; motiveer per overgeslagen module waarom hij niet speelt.
 5. Toets elke claim aan een Evidence ID of label hem als aanname in `09_DECISION-LOG/Assumptions.md`.
@@ -88,7 +88,7 @@ Volgorde-regel: Conversion-Architecture eerst, want de andere modules zijn verdi
 
 ### Site-structuur: Page-Inventory en Template-Registry
 
-Jij bezit `03_SITE-STRUCTURE/`. Zonder deze twee weet niemand later waarop gebouwd wordt.
+Jij bezit `03b_SITE-STRUCTURE/`. Zonder deze twee weet niemand later waarop gebouwd wordt.
 
 - **Page-Inventory**: alle bestaande paginatypes met volume en conversiebijdrage uit de baseline (de kolommen Sessies en Conversiebijdrage in het eindoverzicht). Doel is niet volledigheid maar prioritering: welke 20 procent van de templates draagt 80 procent van de waarde.
 - **Template-Registry**: per template een ID (HP, T1-Tn voor site, E1-En voor e-mail), primaire gebruikersintentie, bekende bezwaren met E-IDs, vereiste modules in volgorde, en de primaire KPI. Status per template: SPECCED, STUBBED of OUT-OF-SCOPE.
@@ -166,7 +166,7 @@ Lekken buiten scope: [lek plus reden]
 
 - `<klantmap>/design-os/03_DIAGNOSIS/Diagnose-Samenvatting.md` en `02_DATA-BASELINE/`: de lekken en de evidence
 - `01_CONTEXT/Business-Context.md`, `Brand-Context.md`, `Technical-Constraints.md`: commerciële kern, verboden claims, platformgrenzen
-- `03_SITE-STRUCTURE/Page-Inventory.md` en `Template-Registry.md`: jouw werklocatie
+- `03b_SITE-STRUCTURE/Page-Inventory.md` en `Template-Registry.md`: jouw werklocatie
 - `04_STRATEGY/_README.md`: de zeven modules met hun kernvragen
 - de tools van de meet-stack: omzet per flow, intentie, paid angles (profile per klant)
 - een advertentie-archief, de SERP-tool, een keyword-tool: concurrent-positionering en beloftes

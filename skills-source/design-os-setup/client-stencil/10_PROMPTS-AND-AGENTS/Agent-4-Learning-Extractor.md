@@ -65,7 +65,7 @@ naar Agent 1 en daarna naar Agent 2.
 - Welk experiment kan nu gestart of aangepast?
 
 ## Output bestanden te updaten
-- [KLANTMAP]/design-os/07_VALIDATION/Experiment-Readouts.md (toevoegen, format: Experiment-Readout-Template.md)
+- [KLANTMAP]/design-os/07b_VALIDATION/Experiment-Readouts.md (toevoegen, format: Experiment-Readout-Template.md)
 - [KLANTMAP]/design-os/02_DATA-BASELINE/Evidence-Registry.md (toevoegen E-AB-XXX)
 - [KLANTMAP]/design-os/09_DECISION-LOG/DDR-H[X]-[NN].md (update)
 - [KLANTMAP]/design-os/09_DECISION-LOG/Decision-Coverage-Matrix.md (update)

@@ -62,7 +62,7 @@ Geen losse conclusies in chat. Elke claim gekoppeld aan brondata, observatie of 
 ## Fase-prompts
 
 - **Data-baseline:** "Trek voor meetbron-property [MEETBRON_ID] (profile [PROFILE]) de baseline (90d): device-split, kanaal, new/returning, top landingspagina's met conversie, en de funnel met betrouwbare events. Doe eerst Measurement-QA en flag onbetrouwbare events in het Data-Contract."
-- **Diagnose:** "Maak per kern-flow uit `03_SITE-STRUCTURE/Template-Registry.md` een audit met bewijs (data plus heuristiek). Koppel elk probleem aan een KPI en segment en registreer bevindingen als Evidence Items."
+- **Diagnose:** "Maak per kern-flow uit `03b_SITE-STRUCTURE/Template-Registry.md` een audit met bewijs (data plus heuristiek). Koppel elk probleem aan een KPI en segment en registreer bevindingen als Evidence Items."
 - **Hypotheses:** "Zet de diagnose om in een hypothese-backlog met het vaste format en prioriteer via ICE."
 - **Strategie:** "Bouw de Conversion Architecture en Decision-Moment-Map: benoem de beslismomenten (BM-X) en koppel elk aan bewijs en een hypothese."
 - **Richtingen (fase 5b):** "Leid de forks af uit de evidence en genereer [AANTAL-RICHTINGEN] ontwerprichtingen op de kern-flow, elk in een eigen subagent met een verbodslijst van de mechaniek en visuele taal van de andere richtingen. Elk een Direction Case met user case, business case, drie bewijslagen, functioneel en visueel mandaat en een falsificatie-veld. Draai daarna de anti-convergentie-poort en de Red Team-toets."

@@ -30,16 +30,16 @@ Data → Measurement-QA → Segmentatie → Diagnose
 | 0. Plan & governance | Methodiek, scope, DoD, rollen, logs | `00_PLAN/`, `09_DECISION-LOG/`, `10_PROMPTS-AND-AGENTS/` |
 | 1. Context | Bestaande [KLANT]-kennis indexeren | `01_CONTEXT/` |
 | 2. Data-baseline | Access, measurement-QA, commercieel, segmentatie, intentie | `02_DATA-BASELINE/` |
-| 3. Diagnose | CRO/UX/mobile/checkout/SEO per flow | `03_DIAGNOSIS/` |
-| 4. Strategie | Conversion architecture, beslismomenten (BM-X), propositie, IA, page-types | `04_STRATEGY/`, `03_SITE-STRUCTURE/` |
+| 3. Diagnose | CRO/UX/mobile/conversieflow/SEO per flow | `03_DIAGNOSIS/` |
+| 4. Strategie | Conversion architecture, beslismomenten (BM-X), propositie, IA, page-types | `04_STRATEGY/`, `03b_SITE-STRUCTURE/` |
 | 5. Hypotheses | Backlog met bewijs, impact-effort, experiment-roadmap | `05_HYPOTHESES/` |
 | 5b. Richtingen | Onderbouwde weddenschappen op de kern-flow (aantal uit P8), keuze door de lead | `05b_DIRECTIONS/` |
 | 6. Besluit | DDR's binnen de gekozen richting, coverage matrix, gating | `09_DECISION-LOG/` |
 | 7. Design | Wireframes, Figma-uitwerking van de gekozen richting, componenten, prototype | `06_DESIGN/`, `07_DESIGN-SYSTEM/` |
-| 8. Validatie | User-test, A/B-plan, tracking-plan, QA | `07_VALIDATION/` |
+| 8. Validatie | User-test, A/B-plan, tracking-plan, QA | `07b_VALIDATION/` |
 | 9. Handoff | Dev, content, tracking, rollout | `08_HANDOFF/` |
 
-Let op: mapnummers zijn géén fasenummers. De map `07_DESIGN-SYSTEM/` hoort bij fase 7 en `07_VALIDATION/` bij fase 8; `03_DIAGNOSIS/` bij fase 3 en `03_SITE-STRUCTURE/` bij fase 4. Leidend is de fasetabel hierboven, niet het mapnummer.
+Let op: mapnummers zijn géén fasenummers. De map `07_DESIGN-SYSTEM/` hoort bij fase 7 en `07b_VALIDATION/` bij fase 8; `03_DIAGNOSIS/` bij fase 3 en `03b_SITE-STRUCTURE/` bij fase 4. Leidend is de fasetabel hierboven, niet het mapnummer.
 
 Ritme van de Red Team-reviews: bij traject-omvang (P8) `vol` volgt na elke fase een eigen fase-review. Bij `light` worden die fase-reviews samengevoegd tot drie momenten: een review na fase 3 (dekt 0 t/m 3), een review na fase 6 (dekt 4 t/m 6) en een review na fase 8 (dekt 7 en 8). Fase 9 handoff heeft ook bij `vol` geen eigen review en hangt aan die van fase 8. Dat verandert alleen het ritme, niet de inhoud: geen fase blijft ongetoetst, elke gate houdt zijn eigen Gate-Record en de toets per richting in fase 5b blijft los daarvan bestaan.
 

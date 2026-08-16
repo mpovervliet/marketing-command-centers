@@ -23,7 +23,7 @@ Decision-Log, dan start je niet.
 - [KLANTMAP]/design-os/05_HYPOTHESES/Screen-To-Hypothesis-Matrix.md
 - [KLANTMAP]/design-os/05b_DIRECTIONS/ (de GEKOZEN Direction Case: functioneel mandaat, visueel mandaat, ten koste van)
 - [KLANTMAP]/design-os/06_DESIGN/Design-Brief.md
-- [KLANTMAP]/design-os/03_SITE-STRUCTURE/Template-Registry.md (template-definities)
+- [KLANTMAP]/design-os/03b_SITE-STRUCTURE/Template-Registry.md (template-definities)
 - [KLANTMAP]/design-os/09_DECISION-LOG/Decision-Coverage-Matrix.md (huidige status)
 - Als competitor-data nodig: 03_DIAGNOSIS/Competitive-UX-Teardowns.md
 - Als best-practice nodig: 03_DIAGNOSIS/Cross-Industry-Best-Practice-Scan.md

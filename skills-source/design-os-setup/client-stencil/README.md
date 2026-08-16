@@ -43,14 +43,14 @@ Beleid: `00_PLAN/Client-vs-Internal-Output.md`.
 | `00_PLAN/` | Plan, scope, definition of done, governance, protocol, client-vs-internal |
 | `01_CONTEXT/` | Geindexeerde klantcontext (business, brand, SEO/SEA, technisch) plus het klantprofiel met de acht sturende parameters P1 t/m P8, waaronder P8 traject-omvang |
 | `02_DATA-BASELINE/` | Data-contract, evidence registry, reference library, measurement-QA, segmentatie |
-| `03_DIAGNOSIS/` | CRO/UX/mobile/checkout/SEO-audits plus kwalitatieve research |
-| `03_SITE-STRUCTURE/` | Pagina-inventaris en template registry (HP, T1-Tn, E1-En) |
+| `03_DIAGNOSIS/` | CRO/UX/mobile/conversieflow/SEO-audits plus kwalitatieve research |
+| `03b_SITE-STRUCTURE/` | Pagina-inventaris en template registry (HP, T1-Tn, E1-En) |
 | `04_STRATEGY/` | Conversion architecture, decision-moment-map, positionering, offer, trust, retentie |
 | `05_HYPOTHESES/` | Hypothese-backlog (H-XX), screen-to-hypothesis matrix, experiment-roadmap |
 | `05b_DIRECTIONS/` | De onderbouwde ontwerprichtingen (Direction Cases, aantal uit P8), vergelijking en keuze |
 | `06_DESIGN/` | Design brief, wireframe briefs (WF-XX), Figma operating model |
 | `07_DESIGN-SYSTEM/` | Design tokens van [KLANT] |
-| `07_VALIDATION/` | Experiment-design, tracking-spec, readouts |
+| `07b_VALIDATION/` | Experiment-design, tracking-spec, readouts |
 | `08_HANDOFF/` | Dev-, content-, tracking-handoff, rollout-plan |
 | `09_DECISION-LOG/` | DDRs, coverage matrix, beslissingen, aannames, open vragen, afgewezen ideeen |
 | `10_PROMPTS-AND-AGENTS/` | Herbruikbare prompts per tool en agent |

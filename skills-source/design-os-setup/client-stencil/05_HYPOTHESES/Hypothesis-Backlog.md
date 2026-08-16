@@ -38,6 +38,23 @@ Elke hypothese volgt het vaste format hieronder. Hypothesen komen voort uit de d
 
 ---
 
+## Voorbeeld (fictief, generieke B2B/leadgen)
+
+## H1: Procestijdlijn op de oplossingspagina
+
+- **Probleem:** bezoekers die de oplossingspagina bezoeken vragen zelden een demo of offerte aan; support-gesprekken laten zien dat onduidelijkheid over het implementatietraject een terugkerend twijfelpunt is.
+- **Bewijs:** E-BEHAV-SCROLL-001 (afhaken vóór de CTA-sectie), E-SURVEY-FIT-001 ("weet niet wat het traject inhoudt" als top-bezwaar), E-REVIEW-PROCES-001 (supportsignaal over onduidelijke doorlooptijd).
+- **Hypothese:** als de oplossingspagina een korte procestijdlijn toont (van eerste gesprek tot livegang, met indicatieve doorlooptijd), stijgt de offerte-aanvraag-rate, omdat de onzekerheid over inspanning en tijd wegvalt.
+- **Pagina/flow:** oplossingspagina plus offerte-aanvraagformulier.
+- **KPI:** sessie → offerte-aanvraag of demo-aanvraag rate (gekwalificeerde lead).
+- **Segment:** kanaal (organisch vs. betaald), nieuw vs. terugkerend.
+- **Ontwerpimpact:** nieuwe tijdlijn-component tussen hero en social proof.
+- **Testvorm:** bij voldoende volume A/B, anders voor-na-meting of gefaseerde uitrol (zie evidence-regime P3 bij `dun`).
+- **Risico:** een te concrete doorlooptijd-belofte kan verwachtingen scheppen die het salesteam niet altijd waarmaakt; afstemmen met sales voordat een getal live gaat.
+- **ICE:** [invullen]
+
+---
+
 ## H1: [titel]
 
 [invullen volgens format]
