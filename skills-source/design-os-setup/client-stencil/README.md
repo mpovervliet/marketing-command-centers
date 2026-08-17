@@ -49,6 +49,7 @@ Beleid: `00_PLAN/Client-vs-Internal-Output.md`.
 | `05_HYPOTHESES/` | Hypothese-backlog (H-XX), screen-to-hypothesis matrix, experiment-roadmap |
 | `05b_DIRECTIONS/` | De onderbouwde ontwerprichtingen (Direction Cases, aantal uit P8), vergelijking en keuze |
 | `06_DESIGN/` | Design brief, wireframe briefs (WF-XX), Figma operating model |
+| `06b_PROTOTYPE/` | Het klikbare prototype als demo-laag: register, publicatie-protocol, QA-checklist, generator-patroon en starterkit |
 | `07_DESIGN-SYSTEM/` | Design tokens van [KLANT] |
 | `07b_VALIDATION/` | Experiment-design, tracking-spec, readouts |
 | `08_HANDOFF/` | Dev-, content-, tracking-handoff, rollout-plan |

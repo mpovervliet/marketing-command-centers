@@ -1,0 +1,123 @@
+/* theme.css: de tokenlaag van het prototype.
+   Vul de waarden uit 07_DESIGN-SYSTEM/Design-Tokens.md.
+   Gebruik nergens anders in het prototype een losse kleur- of spacingwaarde:
+   alles verwijst hierheen, zodat een tokenwijziging 1 edit is.
+   Let op: paden in dit bestand zijn relatief aan css/, dus assets is ../assets/. */
+
+:root {
+  /* Kleur */
+  --color-primary: #1f2933;
+  --color-primary-dark: #111820;
+  --color-secondary: #4a5b6a;
+  --color-cta: #1f2933;
+  --color-cta-text: #ffffff;
+  --color-success: #1c7c54;
+  --color-warning: #a76a00;
+  --color-error: #b3261e;
+  --color-text: #1f2933;
+  --color-text-muted: #5c6b7a;
+  --color-background: #ffffff;
+  --color-surface: #f5f6f7;
+  --color-border: #dfe3e7;
+  --color-focus: #0057d8;
+
+  /* Typografie */
+  --font-body: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  --font-display: var(--font-body);
+  --size-h1: clamp(32px, 4.5vw, 56px);
+  --size-h2: clamp(24px, 2.6vw, 34px);
+  --size-h3: 20px;
+  --size-body: 16.5px;
+  --size-small: 13.5px;
+  --leading-tight: 1.08;
+  --leading-body: 1.55;
+
+  /* Spacing */
+  --space-xs: 6px;
+  --space-s: 12px;
+  --space-m: 24px;
+  --space-l: 48px;
+  --space-xl: 88px;
+
+  /* Vorm */
+  --radius-s: 6px;
+  --radius-m: 12px;
+  --radius-l: 20px;
+  --shadow-card: 0 2px 8px rgba(31, 41, 51, .08);
+  --wrap-max: 1200px;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: var(--font-body);
+  font-size: var(--size-body);
+  line-height: var(--leading-body);
+  color: var(--color-text);
+  background: var(--color-background);
+}
+
+.wrap { max-width: var(--wrap-max); margin: 0 auto; padding: 0 var(--space-m); }
+
+h1 { font-family: var(--font-display); font-size: var(--size-h1); line-height: var(--leading-tight); margin: 0 0 var(--space-s); }
+h2 { font-size: var(--size-h2); line-height: 1.2; margin: 0 0 var(--space-m); }
+h3 { font-size: var(--size-h3); margin: 0 0 var(--space-xs); }
+p { margin: 0 0 var(--space-s); }
+.lead { color: var(--color-text-muted); max-width: 60ch; }
+
+a { color: var(--color-primary); }
+a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visible {
+  outline: 3px solid var(--color-focus);
+  outline-offset: 2px;
+}
+
+/* Prototype-label: reist mee als de link wordt doorgestuurd. Niet verwijderen. */
+.proto-badge {
+  position: fixed; top: 0; left: 0; z-index: 999;
+  background: var(--color-warning); color: #fff;
+  font-size: 11px; letter-spacing: .08em; text-transform: uppercase;
+  padding: 4px 10px; border-bottom-right-radius: var(--radius-s);
+}
+
+.site-header { border-bottom: 1px solid var(--color-border); }
+.header-in { display: flex; align-items: center; gap: var(--space-m); padding: var(--space-s) var(--space-m); }
+.logo { font-weight: 600; text-decoration: none; }
+.nav { display: flex; gap: var(--space-m); list-style: none; margin: 0; padding: 0; flex: 1; }
+.nav a { text-decoration: none; color: var(--color-text-muted); }
+.nav a:hover { color: var(--color-text); }
+
+.hero { padding: var(--space-xl) 0 var(--space-l); }
+.section { padding: var(--space-l) 0; border-top: 1px solid var(--color-border); }
+
+.grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: var(--space-m); }
+.card { background: var(--color-surface); border-radius: var(--radius-m); padding: var(--space-m); box-shadow: var(--shadow-card); }
+
+.btn {
+  display: inline-block; border: 0; cursor: pointer;
+  padding: 12px 22px; border-radius: var(--radius-s);
+  font-size: var(--size-body); font-weight: 500; text-decoration: none;
+}
+.btn-primary { background: var(--color-cta); color: var(--color-cta-text); }
+.btn-primary:hover { background: var(--color-primary-dark); }
+
+.form { display: grid; gap: var(--space-xs); max-width: 520px; }
+.form label { font-size: var(--size-small); color: var(--color-text-muted); margin-top: var(--space-s); }
+.form input, .form textarea {
+  font: inherit; padding: 10px 12px;
+  border: 1px solid var(--color-border); border-radius: var(--radius-s); background: #fff;
+}
+.form .btn { margin-top: var(--space-m); justify-self: start; }
+.form-note { font-size: var(--size-small); color: var(--color-text-muted); }
+
+.site-footer { border-top: 1px solid var(--color-border); padding: var(--space-l) 0; color: var(--color-text-muted); font-size: var(--size-small); }
+
+@media (max-width: 720px) {
+  .header-in { flex-wrap: wrap; }
+  .nav { order: 3; width: 100%; overflow-x: auto; }
+  .hero { padding: var(--space-l) 0 var(--space-m); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation-duration: .001ms !important; transition-duration: .001ms !important; scroll-behavior: auto !important; }
+}

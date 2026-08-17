@@ -197,7 +197,7 @@ Beslisregels overdracht:
 
 ## Dependencies
 
-- `design-os-setup/client-stencil/`: de bron-stencil (README, INTAKE-CHECKLIST, 00_PLAN t/m 11_RED-TEAM, CLIENT-FACING)
+- `design-os-setup/client-stencil/`: de bron-stencil (README, INTAKE-CHECKLIST, 00_PLAN t/m 11_RED-TEAM, CLIENT-FACING), inclusief `06b_PROTOTYPE/` met de prototype-starterkit, het publicatie-protocol en de QA-checklist
 - de tools van de meet-stack, de performance-tool, de scrape-tool: verificatie-run (profile per klant)
 - Figma MCP (`get_metadata` of `get_design_context`): verificatie werkbestand en design system
 - de bestandsopslag-tool: brand assets en aangeleverde exports ophalen

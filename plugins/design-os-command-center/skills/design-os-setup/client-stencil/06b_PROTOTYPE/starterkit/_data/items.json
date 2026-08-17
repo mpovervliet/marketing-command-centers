@@ -1,0 +1,25 @@
+{
+  "_comment": "Voorbeelddata voor een gegenereerde set. Vervang door de eigen templatedata. Elk item krijgt een DDR-verwijzing, zodat de set herleidbaar is in Prototype-Register.md.",
+  "template": "detail",
+  "map": "detail",
+  "items": [
+    {
+      "slug": "voorbeeld-een",
+      "titel": "Voorbeeld een",
+      "intro": "Korte intro. Elke feitelijke claim hier moet bronbaar zijn (QA blok B1).",
+      "kenmerken": ["Kenmerk A", "Kenmerk B", "Kenmerk C"],
+      "beeld": {"bron": "", "licentie": "", "alt": "Beschrijvende alt-tekst"},
+      "cta": {"label": "Neem contact op", "doel": "../index.html#form"},
+      "ddr": "DDR-HX-NN"
+    },
+    {
+      "slug": "voorbeeld-twee",
+      "titel": "Voorbeeld twee",
+      "intro": "Tweede voorbeelditem, zodat je de generator kunt testen op meer dan 1 regel.",
+      "kenmerken": ["Kenmerk A", "Kenmerk D"],
+      "beeld": {"bron": "", "licentie": "", "alt": "Beschrijvende alt-tekst"},
+      "cta": {"label": "Neem contact op", "doel": "../index.html#form"},
+      "ddr": "DDR-HX-NN"
+    }
+  ]
+}

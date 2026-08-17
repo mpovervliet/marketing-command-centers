@@ -8,12 +8,11 @@ description: >
   meerdere sub-skills raakt. Trigger bij "start een redesign voor deze klant",
   "data-gedreven redesign", "design os", "mag dit naar Figma", "in welke fase zitten we",
   "is deze ontwerpkeuze onderbouwd", "wat zegt de evidence", "maak een DDR",
-  "conversion operating system", "van data naar design",
-  "welke hypothese hoort hierbij", "welke richting gaan we op", of elke vraag over
-  data-governed design. Leest <klantmap>/design-os/ (00_PLAN t/m 11_RED-TEAM), bewaakt
-  het protocol (score minimaal 3 voor Figma, gates per fase, richting gekozen vóór
-  DDR's) en routeert naar design-os-setup, -evidence, -strategy, -references,
-  -directions, -hypotheses-ddr, -figma-build en -red-team.
+  "mag de klant het prototype zien", "welke richting gaan we op",
+  of elke vraag over data-governed design. Leest <klantmap>/design-os/ (00_PLAN t/m
+  11_RED-TEAM), bewaakt het protocol (score minimaal 3 voor Figma, gates per fase,
+  richting gekozen vóór DDR's) en routeert naar design-os-setup, -evidence, -strategy,
+  -references, -directions, -hypotheses-ddr, -figma-build, -prototype en -red-team.
 ---
 
 # Design OS Command Center: Master Skill
@@ -61,6 +60,7 @@ Je bent de regisseur van het Design OS: het data-governed design operating syste
 | Ontwerprichtingen genereren en onderbouwen, business case per richting, richtingkeuze | design-os-directions |
 | Hypotheses formuleren, ICE-scoren, DDR's schrijven, Coverage Matrix bijwerken | design-os-hypotheses-ddr |
 | Wireframes of hi-fi bouwen in Figma, design tokens, design system pagina | design-os-figma-build |
+| Klikbaar prototype bouwen, publiceren, delen of synchroon houden met het ontwerp | design-os-prototype |
 | DDR's onafhankelijk toetsen, go/no-go voor Figma, experiment-resultaten verwerken | design-os-red-team |
 | Experiment statistisch ontwerpen of uitlezen | cro-experimentation en cro-ab-statistics |
 | Brede UX-review zonder redesign-keten | ux-audit |
@@ -82,14 +82,15 @@ Vuistregel bij twijfel: routeer naar de vroegste fase waarvan de output ontbreek
 | 5b Richtingen | Onderbouwde weddenschappen op de kern-flow, aantal uit de traject-omvang (P8): vijf bij `vol`, drie bij `light`, plus Direction Cases | 05b_DIRECTIONS | Anti-convergentie-poort groen, geldig GATE-DIR-record dat alle richtingen in de set dekt, richting door de lead gekozen en gelogd |
 | 6 Besluit | DDR's, Coverage Matrix, gating | 09_DECISION-LOG | Geldig GATE-DDR-record dat de kritieke DDR-ID's dekt, die DDR's APPROVED of PERMANENT |
 | 7 Design | Wireframes, hi-fi uitwerking van de gekozen richting, design system | Figma plus 06_DESIGN en 07_DESIGN-SYSTEM | Alle componenten DDR-gekoppeld |
+| 7b Prototype | Klikbaar prototype van de gekozen richting als demo-laag, publicatie en QA. Optioneel: draaien bij een deelmoment, een gebruikerstest of interactie die statisch niet overkomt | 06b_PROTOTYPE plus de publicatie | Elk scherm in het Prototype-Register met DDR-ID of PROTO-ONLY, QA-oordeel DELEN, publicatie-modus gelogd |
 | 8 Validatie | Experimenten, readouts, learnings | 07b_VALIDATION | Learning Records verwerkt in registry, statuswijzigingen (WINNER naar PERMANENT, LOSER naar BLOCKED) doorgevoerd |
 | 9 Handoff | Dev-, content- en tracking-handoff, gefaseerd rollout-plan | 08_HANDOFF | Alleen APPROVED of PERMANENT componenten, rollback-criteria per fase |
 
-Let op: mapnummers zijn geen fasenummers. Fase 6 schrijft naar 09_DECISION-LOG, fase 7 naar 06_DESIGN plus Figma, fase 8 naar 07b_VALIDATION en fase 9 naar 08_HANDOFF. Leidend is deze tabel, niet het nummer van de map. Dezelfde nummering staat in `00_PLAN/Definition-of-Done.md` en `00_PLAN/Plan-van-Aanpak.md`; wijkt de klantmap daarvan af, dan is de klantmap verouderd en meld je dat aan de lead.
+Let op: mapnummers zijn geen fasenummers. Fase 6 schrijft naar 09_DECISION-LOG, fase 7 naar 06_DESIGN plus Figma, fase 7b naar 06b_PROTOTYPE, fase 8 naar 07b_VALIDATION en fase 9 naar 08_HANDOFF. Leidend is deze tabel, niet het nummer van de map. Dezelfde nummering staat in `00_PLAN/Definition-of-Done.md` en `00_PLAN/Plan-van-Aanpak.md`; wijkt de klantmap daarvan af, dan is de klantmap verouderd en meld je dat aan de lead.
 
 Cadans van de gates bij traject-omvang `light` (P8): de fase-reviews van het Red Team worden samengevoegd tot drie momenten in plaats van een review na elke fase, namelijk na fase 3 (dekt 0 t/m 3), na fase 6 (dekt 4 t/m 6) en na fase 8 (dekt 7 en 8). Fase 9 handoff heeft ook bij `vol` geen eigen review en hangt aan die van fase 8. Geen fase blijft dus ongetoetst: `light` voegt reviews samen, het laat er geen vervallen, en een samengevoegde review loopt alle zeven dimensies af en benoemt per gedekte fase wat hij daar gevonden heeft. Dat ritme is het enige wat schaalt. De inhoud van een gate schaalt niet mee: elk veld van het Gate-Record, de vier controles op dat record, de 12-vragen DDR-toets, de 8-vragen Direction Case-toets, de anti-convergentie-poort op vier dimensies en de minimumscore 3 voor Figma zijn bij `light` identiek aan `vol`. Minder toetsmomenten is nooit een lagere lat; wie dat toch vraagt, vraagt om een risico-akkoord van de lead, gelogd in het Gate-Record.
 
-De keten in 1 regel: Data → Measurement-QA → Segmentatie → Diagnose → Conversion Architecture → Hypothese → Richtingen → Besluit → Figma → Prototype → Experiment → Learning. Fases 2 en 3 mogen overlappen; 5b en 6 nooit (eerst de weddenschap kiezen, dan de besluiten die erbij horen), en 6 en 7 nooit (eerst besluit, dan pixels).
+De keten in 1 regel: Data → Measurement-QA → Segmentatie → Diagnose → Conversion Architecture → Hypothese → Richtingen → Besluit → Figma → Prototype → Experiment → Learning. Fases 2 en 3 mogen overlappen; 5b en 6 nooit (eerst de weddenschap kiezen, dan de besluiten die erbij horen), en 6 en 7 nooit (eerst besluit, dan pixels). Fase 7b hangt onder 7 en niet ernaast: het prototype toont wat gebouwd en gegated is, en is nooit de route om ongegate ontwerpkeuzes toch te laten zien.
 
 Waarom 5b vóór 6: de gekozen richting bepaalt welke DDR's je überhaupt nodig hebt. Richtingen die pas ná een goedgekeurde DDR-batch komen kunnen alleen nog cosmetisch verschillen, want de inhoud ligt dan al vast en gegated. Dat is de mechanische oorzaak van ingeklapte divergentie.
 
@@ -123,6 +124,7 @@ De Evidence Score noteer je overal in één vorm: `4/5 (anker T1)`, nooit een ka
 | 1 Design Decision Compiler | Evidence → insights → DDR's → Figma-instructies, binnen de gekozen richting | 10_PROMPTS-AND-AGENTS/Agent-1 |
 | 2 Red Team Evidence QA | Direction Cases toetsen, 12-vragen toets per DDR, go/no-go voor Figma | Agent-2 |
 | 3 Figma Build Compiler | Bouwt alleen APPROVED of PERMANENT componenten van de gekozen richting, met annotaties | Agent-3 |
+| 5 Prototype Compiler | Gegate componenten van de gekozen richting → klikbaar prototype, publicatie-poort en backfill naar de ontwerp-waarheid | 06b_PROTOTYPE/_README plus Publish-Protocol en Prototype-QA-Checklist |
 | 4 Learning Extractor | Experiment-resultaat terug de kennisbasis in: WINNER zet de status op PERMANENT met liftpercentage en Experiment-ID, LOSER op BLOCKED; hij schrijft zelf geen Gate-Record | Agent-4 |
 
 De loop Conversion Architect → Direction Compiler → Decision Compiler → Red Team → Figma Build → Learning Extractor is het systeem. Agent A leeft in design-os-strategy, agent 0 in design-os-directions, agent 1 en 3 in design-os-hypotheses-ddr en design-os-figma-build, agent 2 en 4 in design-os-red-team.
@@ -136,6 +138,7 @@ Isolatie-regel, geldig voor agent 0 en 2: draai Red Team altijd als aparte sessi
 - Patroonbibliotheken: cross-industry referentie-bewijs (E-REF, E-MOB)
 - Geisoleerde subagents, 1 per richting (design-os-directions): divergentie, nooit source of truth; gekozen richting naar Decision-Log, niet-gekozen richtingen naar `05b_DIRECTIONS/Not-Selected.md` en nooit naar Rejected-Ideas
 - De designtool: productie en systeemlaag, pas na een geldig Gate-Record
+- Het prototype (fase 7b): bewegende demo-laag onder de designtool, nooit de waarheid; publicatie alleen na akkoord van de lead
 
 Kernregel, herzien augustus 2026: geisoleerde subagents divergeren tot evenveel weddenschappen op de forks in de eigen data (vijf bij `vol`, drie bij `light`, nooit minder dan drie), de lead kiest de weddenschap op user case, business case en risico, en Figma produceert die ene richting. Smaak kiest nooit, maar het systeem kiest evenmin: zodra het een voorkeur uitspreekt wordt de onderbouwing achteraf-rationalisatie.
 
@@ -198,14 +201,16 @@ Dit tempo is haalbaar met de stencil plus agent-prompts en veronderstelt een opd
 - de tools van de meet-stack: baseline en funnel-data (profile per klant)
 - `mcp__refero__refero_search_screens` (altijd platform "web") en `mcp__mobbin__search_screens`: referentie-evidence
 - Figma MCP (`use_figma`, `get_design_context`): productie, alleen na Red Team go
+- `github_tool` plus een statische hostingroute: publicatie van het prototype in fase 7b
 - Documenttooling naar keuze voor client-facing deliverables (tekstverwerker, presentatietool of het documentplatform van de klant)
 - Stencil-referentie: `design-os-setup/client-stencil/` (protocol, agent-prompts, templates)
 
 ## Integratie met andere skills
 
-- **design-os-setup, -evidence, -strategy, -references, -directions, -hypotheses-ddr, -figma-build, -red-team**: de acht sub-skills uit het Beslismodel; jij routeert en bewaakt gates, zij voeren uit.
+- **design-os-setup, -evidence, -strategy, -references, -directions, -hypotheses-ddr, -figma-build, -prototype, -red-team**: de negen sub-skills uit het Beslismodel; jij routeert en bewaakt gates, zij voeren uit.
 - **design-os-strategy**: eigenaar van fase 4; levert de beslismomenten (BM-X), de kern-flow en de site-structuur waarop alle latere hypotheses, richtingen en DDR's terugvoeren.
 - **design-os-directions**: levert de onderbouwde weddenschappen op de kern-flow en de Direction Cases; jij bewaakt dat fase 6 pas opengaat als de lead een richting heeft gekozen en dat gelogd is.
+- **design-os-prototype**: eigenaar van fase 7b; jij beslist of die fase draait en bewaakt dat een prototype-link nooit buiten de afgesproken kring gaat zonder besluit in het Decision-Log.
 - **cro-specialist en cro-experimentation**: het Design OS levert APPROVED DDR's met experiment-specs; het cro-center draait en leest de tests statistisch uit.
 - **ux-specialist**: brede UX-vragen zonder redesign-keten; bij een redesign-traject is Design OS leidend en levert ux-audit input voor fase 3.
 - **voc-review-mining**: levert de review-evidence (secties D, J, K van de registry) als gestructureerde input.
