@@ -12,6 +12,7 @@ draait direct als statische hosting.
 | `index.html` | Basispagina met noindex, prototype-label en tokenverwijzing. Startpunt voor elk handmatig scherm |
 | `css/theme.css` | Tokenlaag. Vul de waarden uit `07_DESIGN-SYSTEM/Design-Tokens.md`; gebruik nergens anders losse kleurwaarden |
 | `js/app.js` | Kleine hulplaag: prototype-label, formulier-onderschepping, reduced-motion |
+| `css/motion.css` + `js/motion.js` | Optionele bewegingslaag: reveals, sticky chain, rAF-lus met pauzeknop. Zie `MOTION-README.md` |
 | `_data/items.json` | Voorbeelddata voor een gegenereerde set |
 | `_gen_items.py` | Voorbeeldgenerator: JSON in, pagina's uit |
 | `_gen_searchindex.py` | Bouwt de zoekindex over de definitieve bestandsset. Draait altijd als laatste |

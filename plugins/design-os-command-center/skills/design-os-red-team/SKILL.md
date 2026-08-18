@@ -232,6 +232,17 @@ Op vraag 1 geldt die uitzondering **niet**. Eigen klantdata is nooit "niet van t
 | 11 | Experiment/tracking | Is er een primary KPI gedefinieerd met meetbare doelstelling? |
 | 12 | Experiment/tracking | Zijn guardrails gedefinieerd (wat mag niet verslechteren)? |
 
+Plus check 14 (geen scorepunt, wel veto, alleen bij een DDR die beweging vastlegt): de motion-poort. Ontbreekt de Motion Spec, dan gaat de DDR terug naar de Compiler zonder oordeel. Ligt hij er wel, loop dan deze vier langs, en controleer M2, M3 en M4 door in de code te kijken en de build te draaien, niet door de DDR te geloven.
+
+| Nr | Vraag | Veto als |
+|---|---|---|
+| M1 | Dient de beweging de taak van de gebruiker, of alleen de indruk? | Het antwoord alleen in esthetische termen te geven is |
+| M2 | Is de reduced-motion-eindtoestand informatie-gelijkwaardig? | De gebruiker iets verliest dat hij met beweging wel zou krijgen |
+| M3 | Past het binnen het performance-budget, en is dat gemeten of beweerd? | Er geen cijfer is, of het cijfer op een te licht apparaatprofiel is gemeten |
+| M4 | Overleeft de informatie het wegvallen van JS, van canvas en van de muis? | Een van die drie de content leegmaakt of onbereikbaar maakt |
+
+Twee dingen die hier standaard misgaan en die je expliciet natelt: een globale reduced-motion-kill-switch die alleen CSS raakt terwijl de JS-lus gewoon doorloopt, en een reveal-patroon dat zonder script op `opacity: 0` blijft staan waardoor de primaire call-to-action letterlijk onzichtbaar wordt. Beide zien er in het document uit als afgedekt. Details en de tier-plafonds: `07_DESIGN-SYSTEM/Motion-System.md` plus de skill design-os-experience-motion.
+
 Plus check 13 (geen scorepunt, wel veto): bevat de DDR een geblokkeerd patroon uit de Coverage Matrix, of bevat zijn eigen Evidence Chain een eigen meting met een significant negatief effect op deze ingreep die nog niet in de matrix staat? Zo ja: BLOCKED, ongeacht de toetsscore, en het patroon gaat alsnog de blokkade-lijst in. Oordeel per DDR: APPROVED / NEEDS STRONGER EVIDENCE / BLOCKED, met toetsscore X/12.
 
 ```

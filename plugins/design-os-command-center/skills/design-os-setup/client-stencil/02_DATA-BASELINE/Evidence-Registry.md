@@ -160,6 +160,31 @@ een DDR dragen.
 
 [nog geen items]
 
+## S: Experience-referenties (E-EXP-*)
+
+Productiesites waarvan is vastgesteld **wat er feitelijk beweegt** en welk mechanisme die
+beweging draagt. Betrouwbaarheid Middel, nooit Hoog: het is waargenomen uitvoering, geen
+gemeten effect. Verplicht per item: URL, verificatiedatum, wat er beweegt op bron- en
+assetniveau (canvas- en video-elementen, geladen libraries, bestandsnamen), het mechanisme,
+de overdraagbare les en de branche. Noteer expliciet wanneer de scroll-koppeling niet uit
+de broncode volgt maar visueel is aangenomen.
+
+Harde regel: een E-EXP-item bewijst haalbaarheid en categorie-onderscheid, nooit een lift.
+Er bestaat geen bruikbaar onderzoek dat scroll-animatie aan conversie of taakvoltooiing
+koppelt; wat wel gedocumenteerd is, is schade bij scroll-overname. Wie een effect wil
+claimen, meet het zelf. Zie de skill design-os-experience-motion.
+
+[nog geen items]
+
+## T: Motion-technieken (E-MOT-*)
+
+Reproduceerbare technieken. Betrouwbaarheid Middel. Criterium voor opname: kan een bouwteam
+dit namaken zonder de originele ontwerper? Zo nee, dan is het inspiratie en hoort het hier
+niet. Verplicht per item: bron met URL, de gebruikte API, de kostenklasse (alleen-CSS /
+composited / main-thread JS / canvas-rAF) en de reduced-motion-eindtoestand.
+
+[nog geen items]
+
 ## Ontbrekende Evidence: Research Backlog
 
 | Ontbrekende data | Impact op | Prioriteit | Status | Actie |

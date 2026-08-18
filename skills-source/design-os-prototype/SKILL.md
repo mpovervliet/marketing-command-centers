@@ -234,3 +234,27 @@ Backfill openstaand: [n] items | Oordeel: DELEN / NIET DELEN
 - Reken bij de planning op de sessie-beperking rond bulk-pushes: de eerste publicatie kost een blok van de lead zelf, en dat blok valt vaak precies op de dag van de demo.
 
 *Eerste versie: augustus 2026, gegeneraliseerd uit de eerste prototype-case. Herzien wanneer de publicatieroute wijzigt, wanneer de generator-conventies veranderen of na elke tweede klant waarbij fase 7b is gedraaid.*
+
+## Beweging in het prototype
+
+Het prototype is de plek waar bewegingsclaims waar of onwaar blijken, want hier draait echte
+code. Drie regels bovenop de gewone QA, en ze gelden ook voor "even snel intern":
+
+1. **Meet, beweer niet.** Elke T3-beweging levert cijfers: frames per seconde in beeld, buiten
+   beeld en na drie seconden stilstand, plus CLS na volledig doorscrollen en het zwaarste
+   apparaatprofiel uit de analytics. Een lus die na de animatie blijft draaien is een bug, geen
+   detail.
+2. **Test met JavaScript uit, en controleer op tekstinhoud in plaats van op containerhoogte.**
+   Reveal-patronen beginnen op `opacity: 0` en komen zonder script nooit terug; dan is de
+   primaire call-to-action letterlijk onzichtbaar. Dit is de meest voorkomende en de best
+   verborgen fout in dit soort builds, omdat een oppervlakkige test hem niet ziet.
+3. **Test met `prefers-reduced-motion: reduce` als aparte run.** Een globale kill-switch in CSS
+   dekt geen JS-gestuurde beweging. Wat overblijft moet dezelfde informatie tonen.
+
+De starterkit bevat hiervoor `css/motion.css` en `js/motion.js`: tokens, de `html.js`-guard,
+reveal met stagger, een sticky-keten, en een rAF-helper die zichzelf pauzeert buiten de viewport
+en bij `document.hidden` en stopt zodra er niets meer beweegt. Gebruik die in plaats van per
+klant opnieuw te beginnen, en voeg nooit een externe motion-library toe zonder eigen DDR.
+
+Stop-conditie: bewegingsafwijkingen die hier ontstaan gaan als schuld naar
+**design-os-experience-motion**, niet naar de volgende bouwsessie.

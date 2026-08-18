@@ -212,3 +212,19 @@ Elke nee is een fix vóór afronding, geen notitie voor later.
 - Lees met `get_design_context` eerst het bestaande klant-design-system uit voordat je hi-fi start: bestaande componenten hergebruiken is sneller en voorkomt stijl-drift.
 
 *Herzien wanneer de Figma-integratie wijzigt (nieuwe tool-namen of plugin-API-gedrag) of na elke tweede klant-uitrol van het Design OS.*
+
+## Beweging in de build
+
+Een DDR die beweging vastlegt draagt een Motion Spec van negen regels (zie de DDR-template en
+`07_DESIGN-SYSTEM/Motion-System.md`). Jij bouwt wat die spec beschrijft en verzint er niets bij:
+een overgang, een reveal of een hover-effect dat jij in de designtool toevoegt zonder dat het in
+een Motion Spec staat, is een ontwerpbeslissing zonder gate en gaat als schuld terug naar
+**design-os-experience-motion**.
+
+Twee dingen die je wel zelf doet: de motion-tokens uit `Motion-System.md` naast de kleur- en
+typografietokens zetten zodat ze in de designtool bestaan, en per component vastleggen welke
+variant de reduced-motion-eindtoestand is. Die eindtoestand is een echte variant, geen
+opmerking in een annotatie — anders bouwt het devteam hem niet.
+
+Stop-conditie: gaat de vraag over welk verhaal een pagina vertelt, welke beweging daarbij hoort
+of of een beweging überhaupt mag, dan is dat design-os-experience-motion en niet jij.

@@ -54,6 +54,24 @@ score 0 hoort er geen DDR te komen: schrijf er eerst een hypothese en een meetpl
 
 [Expliciet, ook als er geen zijn. Bij conflict: bronnen, betrouwbaarheidslabels, welke bron gevolgd is en waarom.]
 
+## Motion Spec (alleen als deze beslissing beweging vastlegt; anders deze sectie verwijderen)
+
+Verplicht zodra de gebruiker iets ziet bewegen. Ontbreekt een van de negen regels, dan is de
+DDR niet af en gaat hij terug naar de Compiler. Tokens en tier-plafonds staan in
+`07_DESIGN-SYSTEM/Motion-System.md`; de vier motion-vragen van de poort staan bij het Red Team.
+
+```
+Trigger:            [interactie / sectie in viewport (threshold) / scrollpositie binnen de sectie]
+Property:           [uitsluitend transform, opacity, clip-path, stroke-dashoffset, filter]
+Duur + easing:      [token + token]
+Afstand / stagger:  [token, aantal elementen]
+Tier:               [T1 / T2 / T3 — bij T3: het hoeveelste van maximaal 2 op deze pagina]
+Reduced-motion:     [de zichtbare eindtoestand, concreet; nooit "animaties uit"]
+Zonder JS:          [wat de gebruiker ziet als het script faalt; alle content blijft leesbaar]
+Kosten:             [alleen-CSS / composited / main-thread JS / canvas-rAF]
+Meting:             [welk cijfer dit raakt, welke drempel geldt, en de gemeten uitkomst]
+```
+
 ## Componenten in Figma
 
 | Component ID | Naam | Variant |

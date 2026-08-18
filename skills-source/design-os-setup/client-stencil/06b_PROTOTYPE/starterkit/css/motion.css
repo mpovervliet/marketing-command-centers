@@ -1,0 +1,216 @@
+/* motion.css: de bewegingslaag van het prototype, bovenop css/theme.css.
+   Laadvolgorde: theme.css -> motion.css -> de inline <style> van de pagina.
+   Kleuren staan hier NIET: die komen uit de tokens in theme.css.
+
+   Uitgangspunten (bindend, uit Motion-System.md):
+   - Alleen composited properties: transform, opacity, clip-path,
+     stroke-dashoffset, filter. Nooit width/height/top/left/margin/padding.
+   - Het LCP-element (hero-kop en hero-beeld) beweegt niet. Er staat daarom
+     bewust geen enkele hero-regel in dit bestand.
+   - Elke geanimeerde container reserveert zelf hoogte (aspect-ratio of
+     min-height), zodat beweging nul layout shift veroorzaakt.
+   - prefers-reduced-motion is een EINDTOESTAND, geen versnelling.
+   - Verbergen gebeurt uitsluitend onder html.js — zie blok 0. */
+
+:root {
+  /* Duur */
+  --mo-xs: 120ms;   /* directe feedback: hover, focus-ring, pill-state */
+  --mo-s:  200ms;   /* kleine state-wissels: chip aan/uit, dropdown-pijl */
+  --mo-m:  320ms;   /* paneel- en menuwissels, accordeon */
+  --mo-l:  560ms;   /* sectie-reveal (tekst) */
+  --mo-xl: 900ms;   /* sectie-reveal (beeld), clip-path-onthulling */
+
+  /* Easing. Geen bounce, geen overshoot, geen elastic. */
+  --ease-out:    cubic-bezier(.2,.7,.2,1);    /* alles wat binnenkomt */
+  --ease-in:     cubic-bezier(.6,0,.9,.4);    /* alleen voor wat verdwijnt */
+  --ease-inout:  cubic-bezier(.65,0,.35,1);   /* positiewissels */
+  --ease-reveal: cubic-bezier(.7,0,.2,1);     /* clip-path-onthulling */
+
+  /* Afstand en ritme */
+  --mo-rise-s: 12px;   /* tekstregels, labels */
+  --mo-rise-m: 24px;   /* kaarten, blokken */
+  --mo-rise-l: 46px;   /* hele secties */
+  --mo-stagger: 70ms;  /* vertraging per element in een reeks; plafond 8 */
+}
+
+/* -----------------------------------------------------------------------------
+   0. DE html.js-GUARD — de belangrijkste regel in dit bestand
+   motion.js zet als allereerste handeling .js op <html>. Alles wat hieronder
+   verborgen wordt, staat achter die class. Faalt het script, staat JS uit of
+   blokkeert een netwerk het bestand, dan komt .js er nooit en is ALLE content
+   gewoon zichtbaar op zijn eindtoestand. Zonder deze guard verdwijnt de halve
+   pagina bij de eerste JS-fout; dat is een contentfout, geen animatiefout.
+   Voeg je zelf een verborgen begintoestand toe, zet die dan ook onder .js.
+   -------------------------------------------------------------------------- */
+
+/* -----------------------------------------------------------------------------
+   1. REVEAL — [data-mo="rise"] en [data-mo="clip"]
+   motion.js observeert deze elementen en zet .mo-in zodra ze in beeld komen.
+   -------------------------------------------------------------------------- */
+.js [data-mo] { --mo-delay: 0ms; }
+
+.js [data-mo="rise"] {
+  opacity: 0;
+  transform: translate3d(0, var(--mo-rise, var(--mo-rise-m)), 0);
+  transition: opacity var(--mo-l) var(--ease-out) var(--mo-delay),
+              transform var(--mo-l) var(--ease-out) var(--mo-delay);
+}
+.js [data-mo="rise"].mo-in { opacity: 1; transform: none; }
+
+/* Amplitude-varianten: data-mo-rise="s" | "l" (default = m) */
+.js [data-mo-rise="s"] { --mo-rise: var(--mo-rise-s); }
+.js [data-mo-rise="l"] { --mo-rise: var(--mo-rise-l); }
+
+/* Clip-reveal: het beeld schuift open van onder naar boven. De container houdt
+   zijn volle hoogte; clip-path verplaatst geen layout. */
+.js [data-mo="clip"] {
+  clip-path: inset(0 0 100% 0);
+  transition: clip-path var(--mo-xl) var(--ease-reveal) var(--mo-delay);
+}
+.js [data-mo="clip"].mo-in { clip-path: inset(0 0 0 0); }
+
+/* Stagger: motion.js zet --mo-i (kind- of rij-index) op elk direct kind. */
+.js [data-mo-stagger] > * { --mo-delay: calc(var(--mo-i, 0) * var(--mo-stagger)); }
+
+/* will-change alleen zolang het element nog moet bewegen; motion.js haalt
+   .mo-arm weg zodra de transitie klaar is. */
+.js [data-mo].mo-arm { will-change: transform, opacity, clip-path; }
+
+/* -----------------------------------------------------------------------------
+   2. PAUZEKNOP (WCAG 2.2.2 Pause, Stop, Hide)
+   Elke beweging die langer dan 5 seconden automatisch doorloopt krijgt een
+   echte <button>. motion.js (bindPause) zet aria-pressed en het label.
+   Vaste minimumbreedte: het label wisselt, de layout mag niet verspringen.
+   -------------------------------------------------------------------------- */
+.mo-pause {
+  display: inline-flex; align-items: center; gap: var(--space-xs);
+  justify-content: center; min-width: 11em; white-space: nowrap;
+  font: inherit; font-size: var(--size-small);
+  color: var(--color-text); background: var(--color-surface);
+  border: 1px solid var(--color-border); border-radius: var(--radius-l);
+  padding: 8px 14px; cursor: pointer;
+  transition: border-color var(--mo-s) var(--ease-out),
+              color var(--mo-s) var(--ease-out);
+}
+.mo-pause:hover { border-color: var(--color-text-muted); }
+/* Vaste labelbreedte binnen de knop: "Pauzeren" en "Afspelen" mogen de tekst
+   geen pixel laten verspringen (CLS pikt dat op). */
+.mo-pause [data-mo-pause-label] { display: inline-block; min-width: 7em; text-align: left; }
+/* Icoon in een vaste doos: pauze <-> afspelen verschuift geen enkele pixel. */
+.mo-pause .mo-ic { position: relative; width: 14px; height: 11px; flex: none; }
+.mo-pause .mo-ic::before {
+  content: ""; position: absolute; top: 0; left: 2px;
+  width: 10px; height: 11px; box-sizing: border-box;
+  border-left: 3px solid currentColor; border-right: 3px solid currentColor;
+}
+.mo-pause[aria-pressed="true"] .mo-ic::before {
+  left: 3px; width: 0; height: 0; border: 0;
+  border-top: 5.5px solid transparent; border-bottom: 5.5px solid transparent;
+  border-left: 9px solid currentColor;
+}
+
+/* -----------------------------------------------------------------------------
+   3. CHAIN — sticky beeldkolom + scroll-volgende stappen
+   Scroll-VOLGEN, geen scroll-hijack: de pagina scrollt gewoon door. Het aantal
+   stappen is vrij; motion.js rekent met wat er in de HTML staat.
+   -------------------------------------------------------------------------- */
+.mo-chain-grid { display: grid; grid-template-columns: 1fr 1fr; gap: var(--space-l); align-items: start; }
+.mo-chain-media { position: sticky; top: var(--space-l); align-self: start; }
+/* Hoogte gereserveerd via aspect-ratio: de figuren staan absoluut, dus zonder
+   deze regel klapt de kolom dicht en schuift de hele sectie. */
+.mo-chain-stage {
+  position: relative; aspect-ratio: 4 / 5; overflow: hidden;
+  border-radius: var(--radius-l); background: var(--color-surface);
+}
+.mo-chain-fig {
+  position: absolute; inset: 0; background-size: cover; background-position: center;
+  opacity: 0; transform: scale(1.03);
+  transition: opacity var(--mo-m) var(--ease-out), transform var(--mo-l) var(--ease-out);
+}
+.mo-chain-fig.on { opacity: 1; transform: none; }
+
+.mo-chain-track { position: relative; padding-left: var(--space-l); }
+.mo-chain-rail { position: absolute; left: 8px; top: 10px; bottom: 10px; width: 2px; }
+.mo-chain-rail svg { width: 2px; height: 100%; display: block; overflow: visible; }
+/* Geen transitie op de lijn: JS schrijft stroke-dashoffset per rAF-frame en een
+   transitie zou 60x per seconde opnieuw starten. De scroll levert de
+   interpolatie al. */
+.mo-chain-line { transition: none; }
+
+.mo-chain-step { position: relative; padding: 0 0 var(--space-l); }
+.mo-chain-step:last-child { padding-bottom: 0; }
+.mo-chain-dot {
+  position: absolute; left: calc(var(--space-l) * -1 + 4px); top: 8px;
+  width: 10px; height: 10px; border-radius: 50%; background: var(--color-border);
+  transition: transform var(--mo-s) var(--ease-out), background var(--mo-s) var(--ease-out);
+}
+.mo-chain-dot.on { background: var(--color-primary); transform: scale(1.55); }
+/* Alleen de tekst dimt. Links en knoppen binnen een stap blijven op volle
+   sterkte: een interactief element mag nooit op halve contrastwaarde staan. */
+.js .mo-chain-step > h3,
+.js .mo-chain-step > p { opacity: .45; transition: opacity var(--mo-m) var(--ease-out); }
+.js .mo-chain-step.on > h3,
+.js .mo-chain-step.on > p { opacity: 1; }
+/* Per-stap beeld: alleen zichtbaar in de statische modus (mobiel / reduced). */
+.mo-chain-step-img { display: none; margin-top: var(--space-s); aspect-ratio: 16 / 10;
+  background-size: cover; background-position: center; border-radius: var(--radius-m); }
+
+/* -----------------------------------------------------------------------------
+   4. MEDIA-LOOP — korte video bij hover of focus
+   Een element met een GEVULDE data-mo-loop laadt de video pas bij hover/focus.
+   Leeg attribuut of reduced motion: altijd het stilstaande beeld.
+   -------------------------------------------------------------------------- */
+.mo-loop {
+  position: absolute; inset: 0; width: 100%; height: 100%;
+  object-fit: cover; opacity: 0; pointer-events: none;
+  transition: opacity var(--mo-m) var(--ease-out);
+}
+.mo-loop.on { opacity: 1; }
+
+/* -----------------------------------------------------------------------------
+   5. STATISCHE MODUS — mobiel
+   T3-beweging staat onder 900px standaard uit (performance-budget). De chain
+   valt terug op losse blokken met beeld; motion.js zet dezelfde eindtoestand.
+   -------------------------------------------------------------------------- */
+@media (max-width: 900px) {
+  .mo-chain-grid { grid-template-columns: 1fr; gap: 0; }
+  .mo-chain-media { display: none; }
+  .mo-chain-rail { display: none; }
+  .mo-chain-track { padding-left: 0; }
+  .mo-chain-dot { display: none; }
+  .mo-chain-step-img { display: block; }
+}
+
+/* -----------------------------------------------------------------------------
+   6. REDUCED MOTION — eindtoestand, geen versnelling
+   Twee ingangen die hetzelfde resultaat geven: de media query (bij laden) en
+   html.mo-reduced (motion.js, bij live omschakelen tijdens de sessie).
+   -------------------------------------------------------------------------- */
+@media (prefers-reduced-motion: reduce) {
+  .js [data-mo="rise"] { opacity: 1; transform: none; transition: none; }
+  .js [data-mo="clip"] { clip-path: none; transition: none; }
+  .js [data-mo].mo-arm { will-change: auto; }
+  .mo-pause { display: none; }           /* niets beweegt, dus niets te pauzeren */
+  .mo-chain-grid { grid-template-columns: 1fr !important; gap: 0 !important; }
+  .mo-chain-media, .mo-chain-rail, .mo-chain-dot { display: none !important; }
+  .mo-chain-track { padding-left: 0 !important; }
+  .mo-chain-step-img { display: block; }
+  .js .mo-chain-step > h3, .js .mo-chain-step > p { opacity: 1; transition: none; }
+  .mo-chain-line { stroke-dashoffset: 0 !important; }
+  .mo-chain-fig { opacity: 1; transform: none; transition: none; }
+  .mo-loop { display: none; }
+}
+
+html.mo-reduced .js [data-mo="rise"],
+html.mo-reduced [data-mo="rise"] { opacity: 1; transform: none; transition: none; }
+html.mo-reduced [data-mo="clip"] { clip-path: none; transition: none; }
+html.mo-reduced .mo-pause { display: none; }
+html.mo-reduced .mo-chain-grid { grid-template-columns: 1fr; gap: 0; }
+html.mo-reduced .mo-chain-media,
+html.mo-reduced .mo-chain-rail,
+html.mo-reduced .mo-chain-dot { display: none; }
+html.mo-reduced .mo-chain-track { padding-left: 0; }
+html.mo-reduced .mo-chain-step-img { display: block; }
+html.mo-reduced .js .mo-chain-step > h3,
+html.mo-reduced .js .mo-chain-step > p { opacity: 1; transition: none; }
+html.mo-reduced .mo-loop { display: none; }

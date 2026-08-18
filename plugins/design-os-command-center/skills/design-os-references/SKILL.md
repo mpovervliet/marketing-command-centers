@@ -241,3 +241,7 @@ Plus, indien van toepassing: nieuwe of bijgewerkte P-XX entries en een logregel 
 - Presenteer referenties aan de klant altijd als "patroon-adoptie bij [n] sites in [m] industrieen", nooit als belofte van uplift: dat houdt de bewijstaal zuiver en beschermt de geloofwaardigheid van het hele systeem.
 
 *Herzien wanneer de gebruikte patroonbibliotheken hun tools of zoekvelden wijzigen, of wanneer de Evidence Registry-secties M en N van format veranderen.*
+
+## Overdracht naar de belevingslaag
+
+Schermafbeeldingen kunnen per definitie geen beweging bewijzen. Gaat de vraag over beleving, verhaal, animatie of interactie in plaats van over layout of flow, dan is dit jouw skill niet: routeer naar **design-os-experience-motion**, die met E-EXP (experience-referenties) en E-MOT (reproduceerbare technieken) werkt in Evidence Registry-secties S en T. Andersom geldt hetzelfde: een belevingsvraag die bij nader inzien een layoutvraag is, komt hier terug.
