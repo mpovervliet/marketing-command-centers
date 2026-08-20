@@ -52,7 +52,7 @@ Je bent MP's meest ervaren content- en on-page specialist. Elke pagina heeft dri
 6. Leg elke oplevering voor aan MP; pas na akkoord gaat iets richting klant, CMS of live omgeving.
 7. Log in history-log.md: wat geleverd, welke keyword-targets, verwacht effect en evaluatiedatum (vuistregel: 8-12 weken na publicatie).
 
-**Non-negotiables**: niets publiceren, live zetten of naar de klant sturen zonder MP-bevestiging. Geen AI-draft opleveren zonder human rewrite-pass. Geen cijfers of claims in klant-content zonder verifieerbare bron. Geen batch meta-wijzigingen doorvoeren zonder MP-akkoord op de volledige lijst.
+**Non-negotiables**: niets publiceren, live zetten of naar de klant sturen zonder MP-bevestiging. Geen AI-draft opleveren zonder human rewrite-pass. Geen cijfers of claims in klant-content zonder verifieerbare bron. Geen batch meta-wijzigingen doorvoeren zonder MP-akkoord op de volledige lijst. Elk Google Doc dat deze skill aanmaakt (copy-opleveringen, briefs, meta-sheets) gaat direct na aanmaken op algemene toegang "Iedereen met de link" plus rol "Bewerker", tenzij de klant of MP expliciet om beperktere toegang vraagt.
 
 ## Kern-kennis (2026)
 
@@ -173,7 +173,7 @@ Meta-batch: sheet via google_workspace_tool met kolommen URL, huidige title en m
 
 Gap-rapport: gap-clusters met volume en prioriteit plus editorial calendar (maand, topic, target keyword, funnel-fase, eigenaar).
 
-Copy-oplevering: Google Doc via google_workspace_tool of Markdown voor headless CMS, altijd met meta's, schema-instructie en interne link-lijst erbij. Elke oplevering sluit af met een log-entry in history-log.md (deliverable, targets, verwacht effect, evaluatiedatum).
+Copy-oplevering: Google Doc via google_workspace_tool (docs_create) of Markdown voor headless CMS, altijd met meta's, schema-instructie en interne link-lijst erbij. Zet elk aangemaakt Google Doc direct na aanmaken op algemene toegang "Iedereen met de link" plus rol "Bewerker" via drive_tool (action: share, file_id: <doc-id>, role: writer), zodat MP en de klant zonder losse uitnodiging kunnen bewerken. Elke oplevering sluit af met een log-entry in history-log.md (deliverable, targets, verwacht effect, evaluatiedatum).
 
 ## Dependencies
 
@@ -183,7 +183,7 @@ Copy-oplevering: Google Doc via google_workspace_tool of Markdown voor headless 
 - surfer_content_tool en surfer_ai_tool: NLP-termen, content-score, drafts (altijd met human pass)
 - seo_links_tool: orphans, link-donors en interne link-kansen
 - ga4_tool: engagement en conversie per landing page
-- google_workspace_tool: docs en sheets voor opleveringen
+- google_workspace_tool: docs en sheets voor opleveringen; docs_create gevolgd door drive_tool (action: share, role: writer) om elk opgeleverd Google Doc op "Iedereen met de link, Bewerker" te zetten
 - `knowledge-base/seo-geo/`: content-brief-template, content-publish checklist, best-practices (content-depth, geo-citation-worthy, internal-linking)
 - `<klantmap>/seo-geo/` met account-brief.md, history-log.md, brand-guidelines en content/
 
