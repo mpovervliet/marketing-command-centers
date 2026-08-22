@@ -156,8 +156,16 @@ Eén call, geen parameters behalve `deliberation_id`. GPT werkt blind: het ziet
 `user_intent` (INTERNAL/NONE lane) of `public_intent` (PUBLIC lane), de
 gefilterde bronnen, en níét jouw positie. Resultaat: `gpt_items` met id's
 `GPT-K1…` (keuzes), `GPT-A1…` (aannames), `GPT-R1…` (risico's), `GPT-V1…`
-(metingen), elk met `origin_lane`. Reken op 1–3 minuten; `compute: deep`
-(`explore`, `pre_mortem`) kan langer duren.
+(metingen), elk met `origin_lane`.
+
+**Lange stappen zijn asynchroon.** `independent`, `audit` en `cycle2` duren
+1–3 minuten, langer dan de MCP-client toestaat. De gateway geeft daarom direct
+`{"status": "running"}` terug. Poll daarna met `action="status"` (elke ~30 s);
+zodra de job klaar is komt het volledige resultaat precies één keer via die
+`status`-call terug (`"status": "done"`). Geef de lange actie nooit opnieuw —
+dat start geen tweede call, maar het resultaat kan dan op een andere call
+meeliften als `previous_job`. Tussendoor andere acties proberen geeft ook
+`running`. `wait=true` dwingt synchroon wachten af; alleen voor scripts.
 
 ### map_divergence
 
@@ -340,5 +348,7 @@ mengt nooit twee lanes; `lanes_used` in elk antwoord zegt wat er gebeurd is.
 
 **Kosten en tijd.** Reviewer is `gpt-5.6-sol`, `store: false` afgedwongen.
 Een `verify`-ronde met twee lanes: ~80 s en ~30 items; `cycle2` verdubbelt dat.
-De gateway-proxy kapt calls boven 240 s af — zie je een timeout bij `explore`
-of `pre_mortem`, meld dat en probeer niet stilletjes een lichtere preset.
+Lange stappen lopen als achtergrondjob (zie `independent`); de job zelf heeft
+geen client-timeout, maar de deliberatie leeft 4 uur in geheugen. Kom je na een
+poll terug met een `error`, meld dat — probeer niet stilletjes een lichtere
+preset.
