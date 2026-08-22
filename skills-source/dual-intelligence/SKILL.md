@@ -305,19 +305,19 @@ start             preset, user_intent, [public_intent], [source_manifest],
                   [evidence_snapshot], [allowed_read_tools],
                   [artifact_classification], [restricted_lanes_ok], [task_id, task_type]
 record_position   position: {...}, annex: {"A1": "...", "C1": "...", "K1": "...", "V1": "..."}
-independent       —
+independent       — (async: poll status)
 map_divergence    mapping: [{"id": "GPT-K1", "bucket": "overlap|unique_gpt|conflict|uncertain", "reason": "..."}]
-audit             [artifact], [artifact_classification]
+audit             [artifact], [artifact_classification]  (async: poll status)
 adjudicate        decisions: [{"issue_id": "ISS-001", "disposition": "...", "reason": "...", "changed_refs": ["K2"]}]
 confirm_merge     merges: [{"keep": "ISS-001", "merge": "ISS-004", "reason": "..."}]
-cycle2            —
+cycle2            — (async: poll status)
 record_value      contributions: [{"value_type": "...", "source": "gpt|claude_after_gpt|human",
                     "materiality": "low|medium|high|transformative", "description": "...",
                     "affected_refs": ["K2"], "caused_by_issues": ["ISS-003"],
                     "would_exist_without_cmil": "yes|probably|probably_not|no",
                     "human_confirmed": false}]
 finalize          —
-status / dossier  —
+status / dossier  — (status levert ook het resultaat van een afgeronde job)
 sample_check      task_id, task_type
 ```
 
