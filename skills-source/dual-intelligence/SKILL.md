@@ -215,6 +215,25 @@ Geef `changed_refs` mee bij elke bevinding die daadwerkelijk tot een wijziging
 leidde (annex-refs zoals `K2`, `A1`). Dat is het enige signaal waarmee je later
 kunt zien wát GPT veranderde in plaats van dát jij van gedachten veranderde.
 
+**De meebeweeg-check.** In de eerste drie benchmark-runs (aug 2026) werden 55
+van de 59 bevindingen geheel of deels overgenomen en één verworpen. Dat kan
+terecht zijn, maar het is ook precies wat een model doet dat kritiek als
+instructie leest. Daarom, verplicht vóór je `adjudicate` verstuurt:
+
+- Tel je disposities. Is minder dan 15% `rejected`, schrijf dan in je rapport
+  aan de gebruiker één zin waarom — en kies daarbij eerlijk tussen "GPT had
+  gelijk", "mijn positie was te zwak vastgelegd" of "ik beweeg mee".
+- Per `accepted`: benoem of de fix de **beslissing** verandert of alleen de
+  **formulering**. Een ronde met twaalf formulerings-acceptaties en nul
+  beslissingswijzigingen is een bevestigingsronde, en dat hoort in het rapport
+  te staan als zodanig.
+- Zoek actief naar minstens één bevinding waar GPT de context mist die jij wél
+  hebt (klantafspraken, eerdere besluiten, randvoorwaarden). Die hoort
+  `rejected` te zijn mét die reden — niet `partially_accepted` om de vrede te
+  bewaren. Bestaat zo'n bevinding niet, zeg dat.
+- En de tegenovergestelde valkuil: verwerp nooit om de telling te halen. De
+  check bestaat om het patroon zichtbaar te maken, niet om het te corrigeren.
+
 ### confirm_merge
 
 Vindt de gateway twee bevindingen met dezelfde vingerafdruk, dan meldt hij ze als
