@@ -55,8 +55,8 @@
     {
       "name": "ai-automation-command-center",
       "source": "./plugins/ai-automation-command-center",
-      "description": "MP's AI-Automation Command Center — 16 skills voor AI-gedreven schaalvergroting en skill-ops: client-copilot-generator, agentic-commerce-readiness, ai-marketing-automation (n8n/Make workflows), ai-content-factory (contentproductie met kwaliteitspoorten), skill-distillation (dure-model-workflows vastleggen voor goedkopere modellen), skill-library-audit (kwartaal-doorlichting van de bibliotheek) en research-corpus-builder (max-recall vakkennis-corpora) en marketing-agent-builder (AI-agents met tools, MCP, guardrails en evals) en skill-github-sync (bewaakt dat elke skill-wijziging automatisch naar GitHub wordt gepusht en gesynchroniseerd).",
-      "version": "0.5.0"
+      "description": "MP's AI-Automation Command Center — 17 skills voor AI-gedreven schaalvergroting en skill-ops: client-copilot-generator, agentic-commerce-readiness, ai-marketing-automation (n8n/Make workflows), ai-content-factory (contentproductie met kwaliteitspoorten), skill-distillation (dure-model-workflows vastleggen voor goedkopere modellen), skill-library-audit (kwartaal-doorlichting van de bibliotheek) en research-corpus-builder (max-recall vakkennis-corpora) en marketing-agent-builder (AI-agents met tools, MCP, guardrails en evals) en skill-github-sync (bewaakt dat elke skill-wijziging automatisch naar GitHub wordt gepusht en gesynchroniseerd) en dual-intelligence (Cross-Model Intelligence Layer: onafhankelijke GPT-second-opinion via de MCP Gateway, Diverge→Critique→Resolve→Preserve).",
+      "version": "0.6.0"
     },
     {
       "name": "freelance-ops-command-center",

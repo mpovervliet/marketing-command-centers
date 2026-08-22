@@ -1,6 +1,6 @@
 # ai-automation-command-center
 
-MP's AI-Automation Command Center — 16 skills voor AI-gedreven schaalvergroting en skill-ops: client-copilot-generator, agentic-commerce-readiness, ai-marketing-automation (n8n/Make workflows), ai-content-factory (contentproductie met kwaliteitspoorten), skill-distillation (dure-model-workflows vastleggen voor goedkopere modellen), skill-library-audit (kwartaal-doorlichting van de bibliotheek) en research-corpus-builder (max-recall vakkennis-corpora) en marketing-agent-builder (AI-agents met tools, MCP, guardrails en evals) en skill-github-sync (bewaakt dat elke skill-wijziging automatisch naar GitHub wordt gepusht en gesynchroniseerd).
+MP's AI-Automation Command Center — 17 skills voor AI-gedreven schaalvergroting en skill-ops: client-copilot-generator, agentic-commerce-readiness, ai-marketing-automation (n8n/Make workflows), ai-content-factory (contentproductie met kwaliteitspoorten), skill-distillation (dure-model-workflows vastleggen voor goedkopere modellen), skill-library-audit (kwartaal-doorlichting van de bibliotheek) en research-corpus-builder (max-recall vakkennis-corpora) en marketing-agent-builder (AI-agents met tools, MCP, guardrails en evals) en skill-github-sync (bewaakt dat elke skill-wijziging automatisch naar GitHub wordt gepusht en gesynchroniseerd) en dual-intelligence (Cross-Model Intelligence Layer: onafhankelijke GPT-second-opinion via de MCP Gateway, Diverge→Critique→Resolve→Preserve).
 
 ## Skills in deze plugin
 
@@ -20,5 +20,6 @@ MP's AI-Automation Command Center — 16 skills voor AI-gedreven schaalvergrotin
 - `ai-cost-optimization`
 - `copilot-ops`
 - `skill-github-sync`
+- `dual-intelligence`
 
 Gegenereerd door `build-plugins.py` uit `skills-source/`.
