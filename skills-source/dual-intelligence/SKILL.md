@@ -119,6 +119,14 @@ behandeld. `evidence_snapshot` is iets anders: de daadwerkelijke broninhoud van
 díé run. Het manifest bewijst welke vraag je stelde, de snapshot welke feiten GPT
 zag.
 
+**Is het object van de deliberatie een bestaand document** — een audit, een
+plan, een rapport van iemand anders of van jezelf — dan gaat de documenttekst
+zelf als `evidence_snapshot` mee bij `start`. `independent` is blind voor jóuw
+positie, niet voor het object: zonder de tekst ziet de blinde lane alleen
+bronverwijzingen en levert hij procesadvies in plaats van tegenspraak
+(benchmark-run 5, 22 aug 2026: de hele diverge-fase liep daardoor leeg).
+`artifact` bij `audit` vervangt dit niet; dat komt pas ná het blinde standpunt.
+
 Selecteer bronnen waar mogelijk volgens regel — de hele klantmap, het hele
 datumbereik — in plaats van met de hand. Elke handmatige selectie noem je
 expliciet: je maakt de besmetting niet nul, je maakt hem zichtbaar.
